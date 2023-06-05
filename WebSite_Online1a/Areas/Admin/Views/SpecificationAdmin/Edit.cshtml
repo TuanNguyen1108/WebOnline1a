@@ -1,0 +1,84 @@
+﻿@model WebSite_Online1a.Models.Specification
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="SpecificationAdmin" asp-action="Index">Danh Sách Thông Số</a>
+            </li>
+            <li class="breadcrumb-item active">
+                Chỉnh Sửa Thông Số Kỹ Thuật
+            </li>
+        </ol>
+    </div>
+    <hr class="my-10">
+
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="SpecificationId" />
+
+        <div class="col-md-10">
+            <label class="form-control-label">Tên Loại Sản Phẩm:</label>
+            <input class="form-control" type="text" asp-for="NameSpecification">
+        </div>
+        <div class="col-md-10">
+            <label class="form-control-label">Cpu:</label>
+            <input class="form-control" type="text" asp-for="Cpu">
+        </div>
+        <div class="col-md-10">
+            <label class="form-control-label">Màn Hình:</label>
+            <input class="form-control" type="text" asp-for="SizeCreen">
+        </div>
+        <div class="col-md-10">
+            <label class="form-control-label">Hệ Điều Hành:</label>
+            <input class="form-control" type="text" asp-for="OperatingSystem">
+        </div>
+        <div class="col-md-10">
+            <label class="form-control-label">Ram:</label>
+            <input class="form-control" type="text" asp-for="Ram">
+        </div>
+        <div class="col-md-10">
+            <label class="form-control-label">Camera:</label>
+            <input class="form-control" type="text" asp-for="Camera">
+        </div>
+        <div class="col-md-10">
+            <label class="form-control-label">Camera Selfie:</label>
+            <input class="form-control" type="text" asp-for="CameraSelfie">
+        </div>
+        <div class="col-md-10">
+            <label class="form-control-label">Dung Lượng Pin:</label>
+            <input class="form-control" type="text" asp-for="Battery">
+        </div>
+        <div class="col-md-10">
+            <label class="form-control-label">Mô Tả Sản Phẩm:</label>
+            <textarea id="summernote" asp-for="Description" class="form-control"></textarea>
+        </div>
+        <div>
+            <hr class="my-10">
+        </div>
+        <div class="col-md-10">
+            <button type="submit" class="btn btn-outline-success">Tạo mới</button>
+            <button asp-action="Index" class="btn btn-outline-secondary">Quay về</button>
+        </div>
+
+    </form>
+    <hr class="my-10">
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#summernote').summernote();
+        });
+    </script>
+}

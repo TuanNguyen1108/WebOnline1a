@@ -1,0 +1,1733 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebSite_Online1a.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebSite_Online1a.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\articles\\t2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\articles\\t2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\articles\\t3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\articles\\t3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\articles\\t4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\articles\\t4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\articles\\t5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\articles\\t5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\articles\\t6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\articles\\t6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\articles\\t7.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\articles\\t7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp1-2-79f5daab-f723-4b49-a04d-d8609dbe6e26.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp1-2-79f5daab-f723-4b49-a04d-d8609dbe6e26.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp1-3-d1ec191b-74d4-482a-abe8-87ca774874ea.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp1-3-d1ec191b-74d4-482a-abe8-87ca774874ea.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp1-4-67cc5a7a-4a39-45b4-8ee4-f163c9661954.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp1-4-67cc5a7a-4a39-45b4-8ee4-f163c9661954.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp1-5-0d290449-7f43-4a4d-92fe-b2b1b3d096e6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp1-5-0d290449-7f43-4a4d-92fe-b2b1b3d096e6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp1-5c062487-6d90-4a39-bfcf-f62fc06007dd.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp1-5c062487-6d90-4a39-bfcf-f62fc06007dd.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp12-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp12-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp12-3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp12-3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp12-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp12-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp12-5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp12-5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp12.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp12.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp19-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp19-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp20-1.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp20-1.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp20-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp20-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp20-3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp20-3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp20-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp20-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp20-5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp20-5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp20-6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp20-6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp20.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp20.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp23-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp23-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp23-3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp23-3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp23-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp23-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp23-5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp23-5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp23-6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp23-6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp23-7.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp23-7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\products\\sp23.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\products\\sp23.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\1-sao.svg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\1-sao.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\2-sao.svg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\2-sao.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\3-sao.svg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\3-sao.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\4-sao.svg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\4-sao.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\5-sao.svg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\5-sao.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\account_oder_style.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\account_oder_style.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\ajaxcart.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\ajaxcart.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\arrow_down.svg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\arrow_down.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\background-apple-watch.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\background-apple-watch.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\background-ipad.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\background-ipad.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\background-laptop.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\background-laptop.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\background-tai-nghe.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\background-tai-nghe.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\banner-collection.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\banner-collection.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\bg-smart-phone.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\bg-smart-phone.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\blog_article_style.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\blog_article_style.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\bootstrap-4-3-min.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\bootstrap-4-3-min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\bpr-products-module.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\bpr-products-module.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\breadcrumb_style.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\breadcrumb_style.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\cartpage.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\cartpage.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\check-symbol-black.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\check-symbol-black.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\check-symbol.svg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\check-symbol.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\check.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\check.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\col.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\col.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\collection_style.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\collection_style.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\contact_style.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\contact_style.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\cookie.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\cookie.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\count.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\count.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\favicon.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\favicon.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\flashsale.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\flashsale.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\font.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\font.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\ico-select.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\ico-select.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon-filter-bg.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon-filter-bg.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon-filter-close-bg.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon-filter-close-bg.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_payment_1.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_payment_1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_payment_2.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_payment_2.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_payment_3.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_payment_3.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_payment_4.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_payment_4.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_service_1.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_service_1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_service_2.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_service_2.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_service_3.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_service_3.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_service_4.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\icon_service_4.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\image_review_1.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\image_review_1.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\image_review_2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\image_review_2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_1.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_1.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_slide.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_slide.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_slide_2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_slide_2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_slide_3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_banner_slide_3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_one_banner.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\img_one_banner.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\index.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\index.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\jquery-ui-min.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\jquery-ui-min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\jquery-ui-min.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\jquery-ui-min.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\jquery.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\jquery.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\lazy.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\lazy.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\lg2.ttf",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\lg2.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\logo-footer.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\logo-footer.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\logo.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\logo.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\main.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\main.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\main.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\main.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\page-compare.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\page-compare.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\page-wishlist.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\page-wishlist.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\picbox.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\picbox.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\picbox.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\picbox.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\product_style.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\product_style.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\quickview.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\quickview.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\quickviews_popup_cart.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\quickviews_popup_cart.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\roboto-regular.ttf",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\roboto-regular.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\search_filter.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\search_filter.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\select-pro.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\select-pro.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\sidebar_style.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\sidebar_style.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\slider_1.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\slider_1.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\slider_2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\slider_2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\soldout.png",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\soldout.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\store.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\store.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\style_page.scss.css",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\style_page.scss.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\sweetalert-min.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\sweetalert-min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\swiper.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\swiper.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\tabletop.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\tabletop.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\three_banner_1_image.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\three_banner_1_image.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\three_banner_2_image.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\three_banner_2_image.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\three_banner_3_image.jpg",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\three_banner_3_image.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\100\\449\\923\\themes\\875305\\assets\\wishlist-compare.js",
+      "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\wishlist-compare.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\Panner\\panner1.png",
+      "PackagePath": "staticwebassets\\Asset\\Panner\\panner1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\Panner\\panner2.png",
+      "PackagePath": "staticwebassets\\Asset\\Panner\\panner2.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\Panner\\panner3.png",
+      "PackagePath": "staticwebassets\\Asset\\Panner\\panner3.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\Panner\\panner4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\Panner\\panner4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\Panner\\panner5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\Panner\\panner5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\Panner\\panner6.png",
+      "PackagePath": "staticwebassets\\Asset\\Panner\\panner6.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\a.src,d",
+      "PackagePath": "staticwebassets\\Asset\\a.src,d"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\ajax\\libs\\jqueryui-touch-punch\\0.2.3\\jquery.ui.touch-punch.min.js",
+      "PackagePath": "staticwebassets\\Asset\\ajax\\libs\\jqueryui-touch-punch\\0.2.3\\jquery.ui.touch-punch.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\assets\\admin\\images\\login\\fb-btn.svg",
+      "PackagePath": "staticwebassets\\Asset\\assets\\admin\\images\\login\\fb-btn.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\assets\\admin\\images\\login\\gp-btn.svg",
+      "PackagePath": "staticwebassets\\Asset\\assets\\admin\\images\\login\\gp-btn.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\assets\\themes_support\\bizweb-api.js",
+      "PackagePath": "staticwebassets\\Asset\\assets\\themes_support\\bizweb-api.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\assets\\themes_support\\common.js",
+      "PackagePath": "staticwebassets\\Asset\\assets\\themes_support\\common.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\assets\\themes_support\\customer.js",
+      "PackagePath": "staticwebassets\\Asset\\assets\\themes_support\\customer.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\d,b",
+      "PackagePath": "staticwebassets\\Asset"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\data_image\\gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=",
+      "PackagePath": "staticwebassets\\Asset\\data_image"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\dist\\js\\stats.min.js",
+      "PackagePath": "staticwebassets\\Asset\\dist\\js\\stats.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\maps\\embed",
+      "PackagePath": "staticwebassets\\Asset\\maps"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\grande\\100\\449\\923\\themes\\875305\\assets\\slider_1.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\grande\\100\\449\\923\\themes\\875305\\assets\\slider_1.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\grande\\100\\449\\923\\themes\\875305\\assets\\slider_2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\grande\\100\\449\\923\\themes\\875305\\assets\\slider_2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-2-79f5daab-f723-4b49-a04d-d8609dbe6e26.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-2-79f5daab-f723-4b49-a04d-d8609dbe6e26.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-3-d1ec191b-74d4-482a-abe8-87ca774874ea.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-3-d1ec191b-74d4-482a-abe8-87ca774874ea.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-4-67cc5a7a-4a39-45b4-8ee4-f163c9661954.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-4-67cc5a7a-4a39-45b4-8ee4-f163c9661954.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-5-0d290449-7f43-4a4d-92fe-b2b1b3d096e6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-5-0d290449-7f43-4a4d-92fe-b2b1b3d096e6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-5c062487-6d90-4a39-bfcf-f62fc06007dd.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp1-5c062487-6d90-4a39-bfcf-f62fc06007dd.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp20-6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp23-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp23-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp23-3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp23-3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp23-6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp23-6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp23-7.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\icon\\100\\449\\923\\products\\sp23-7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp1-2-79f5daab-f723-4b49-a04d-d8609dbe6e26.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp1-2-79f5daab-f723-4b49-a04d-d8609dbe6e26.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp1.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp1.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp10.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp10.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp11.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp11.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp12.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp12.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp13-7.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp13-7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp14-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp14-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp15.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp15.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp17.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp17.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp18.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp18.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp19-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp19-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp20-6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp20-6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp21.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp21.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp22.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp22.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp23.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp23.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp6-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp6-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp7.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp8.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp8.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\large\\100\\449\\923\\products\\sp9-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\large\\100\\449\\923\\products\\sp9-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\articles\\t6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-2-79f5daab-f723-4b49-a04d-d8609dbe6e26.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-2-79f5daab-f723-4b49-a04d-d8609dbe6e26.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-3-d1ec191b-74d4-482a-abe8-87ca774874ea.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-3-d1ec191b-74d4-482a-abe8-87ca774874ea.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-4-67cc5a7a-4a39-45b4-8ee4-f163c9661954.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-4-67cc5a7a-4a39-45b4-8ee4-f163c9661954.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-5-0d290449-7f43-4a4d-92fe-b2b1b3d096e6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-5-0d290449-7f43-4a4d-92fe-b2b1b3d096e6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-5c062487-6d90-4a39-bfcf-f62fc06007dd.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp1-5c062487-6d90-4a39-bfcf-f62fc06007dd.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12-3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12-3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12-5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12-5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp12.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp19-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp19-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-1.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-1.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20-6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp20.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-2.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-3.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-4.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-5.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-6.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-7.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23-7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23.jpg",
+      "PackagePath": "staticwebassets\\Asset\\thumb\\medium\\100\\449\\923\\products\\sp23.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\14-pro-max.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\14-pro-max.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\ava-s22ultra-green.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\ava-s22ultra-green.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-12.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-12.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-13-series.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-13-series.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-13.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-13.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-14-pro.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-14-pro.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-14-series.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-14-series.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\samsung-galaxy-z-fold4-5g-xanh.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\samsung-galaxy-z-fold4-5g-xanh.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\01052023.vietnamtrungquoc02.png",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\01052023.vietnamtrungquoc02.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\30-tuoi-moi-di-SEA-Games-VdV-Tay-Nguyen-hoang2-1684318917-174-width740height519.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\30-tuoi-moi-di-SEA-Games-VdV-Tay-Nguyen-hoang2-1684318917-174-width740height519.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\638207095891280513_cach-tao-video-tu-anh.webp",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\638207095891280513_cach-tao-video-tu-anh.webp"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\PC-Gaming-E-Power-G1660ti-3.webp",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\PC-Gaming-E-Power-G1660ti-3.webp"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\UEFA_CHAMPIONS_LEAGUE.png",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\UEFA_CHAMPIONS_LEAGUE.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\asus-vivobook-s530fn-1.webp",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\asus-vivobook-s530fn-1.webp"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\dsc09492-16841327259551681481616.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\dsc09492-16841327259551681481616.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\duongthuyvi1-1--1684293358-846-width650height433.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\duongthuyvi1-1--1684293358-846-width650height433.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\edge-for-gamers-thump.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\edge-for-gamers-thump.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\gtx.webp",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\gtx.webp"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\t2.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\t2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\t3.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\t3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\t5.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\t5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\t6.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\t6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\tat-hieu-ung-trong-windows-11-01.webp",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\tat-hieu-ung-trong-windows-11-01.webp"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\thanh-thuy-5191.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\thanh-thuy-5191.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\13.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\13.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-13-Hong - 1.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-13-Hong - 1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-13-Trắng - 1.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-13-Trắng - 1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-13-Xanh - 1.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-13-Xanh - 1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-13-Đen - 1.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-13-Đen - 1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-13-Đen.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-13-Đen.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Bạc.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Bạc.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Tím.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Tím.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Vàng.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Vàng.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Đen.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Đen.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\ava-s22ultra-black.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-black.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\ava-s22ultra-green.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-green.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\ava-s22ultra-scream.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-scream.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\den_qtzx-cs_crca-ac_dx9w-hf.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\den_qtzx-cs_crca-ac_dx9w-hf.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\do_9b9x-zd_0oao-ab.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\do_9b9x-zd_0oao-ab.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-den_rxui-io - Copy.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-den_rxui-io - Copy.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-den_rxui-io.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-den_rxui-io.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-do_r7zg-qb_nb95-o2.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-do_r7zg-qb_nb95-o2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-tim_cw1y-o6 - Copy.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-tim_cw1y-o6 - Copy.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-tim_cw1y-o6.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-tim_cw1y-o6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-trang_linv-08.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-trang_linv-08.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-vang_36j3-5w.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-vang_36j3-5w.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-xanh_asqx-zm - Copy.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-xanh_asqx-zm - Copy.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\iphone-14-xanh_asqx-zm.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-xanh_asqx-zm.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-den - 512Gb.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-den - 512Gb.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-den.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-den.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-kem - 512Gb.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-kem - 512Gb.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-kem.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-kem.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-xanh - 512Gb.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-xanh - 512Gb.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-xanh.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-xanh.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\trang_xrxc-l0_dnpu-7t_zi5v-z8.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\trang_xrxc-l0_dnpu-7t_zi5v-z8.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\xanh-la_8k0s-ul_hs17-ke_44v5-3b.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\xanh-la_8k0s-ul_hs17-ke_44v5-3b.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\xanh_e4cf-rt_ppez-fc_rdrv-70.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\xanh_e4cf-rt_ppez-fc_rdrv-70.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\13.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\13.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone 14.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone 14.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\ava-s22ultra-green.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\ava-s22ultra-green.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-12.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-12.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-pro-max-tim_6wwl-cw_n9nk-3h_c7vz-un_j1l5-06.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-pro-max-tim_6wwl-cw_n9nk-3h_c7vz-un_j1l5-06.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-pro.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-pro.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-trang_linv-08.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-trang_linv-08.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-xanh_asqx-zm.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-xanh_asqx-zm.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\samsung-galaxy-z-fold4-5g-kem.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\samsung-galaxy-z-fold4-5g-kem.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\samsung-galaxy-z-fold4-5g-xanh.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\samsung-galaxy-z-fold4-5g-xanh.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\trang_xrxc-l0_dnpu-7t_zi5v-z8.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\trang_xrxc-l0_dnpu-7t_zi5v-z8.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\xanh_e4cf-rt_ppez-fc_rdrv-70.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\xanh_e4cf-rt_ppez-fc_rdrv-70.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\favicon.ico"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\images\\illustration\\img-1.png",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\images\\illustration\\img-1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\javascript\\theme.js",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\javascript\\theme.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\stylesheets\\custom.css",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\stylesheets\\custom.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\stylesheets\\theme-dark.min.css",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\stylesheets\\theme-dark.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\stylesheets\\theme.min.css",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\stylesheets\\theme.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\particles.js\\particles.js",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\particles.js\\particles.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\vendor\\popper.js\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\assetsLogin\\vendor\\popper.js\\umd\\popper.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\bootstrap.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\bootstrap.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\profile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\profile.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\profile.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\profile.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\sketch.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\sketch.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\slack.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\slack.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\team1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\team1.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\team2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\team2.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\team3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\team3.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\team4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\team4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces10.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces11.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces12.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces13.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces14.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces15.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces16.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces16.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces17.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces17.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces18.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces18.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces19.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces19.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces2.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces20.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces20.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces21.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces21.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces3.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces4.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces5.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces6.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces8.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\images\\avatars\\uifaces9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\uifaces9.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\javascript\\pages\\dashboard-demo.js",
+      "PackagePath": "staticwebassets\\assets\\javascript\\pages\\dashboard-demo.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\javascript\\pages\\profile-demo.js",
+      "PackagePath": "staticwebassets\\assets\\javascript\\pages\\profile-demo.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\javascript\\theme.min.js",
+      "PackagePath": "staticwebassets\\assets\\javascript\\theme.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\stylesheets\\custom.css",
+      "PackagePath": "staticwebassets\\assets\\stylesheets\\custom.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\stylesheets\\theme-dark.min.css",
+      "PackagePath": "staticwebassets\\assets\\stylesheets\\theme-dark.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\stylesheets\\theme.min.css",
+      "PackagePath": "staticwebassets\\assets\\stylesheets\\theme.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\chart.js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\chart.js\\Chart.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\easy-pie-chart\\jquery.easypiechart.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\easy-pie-chart\\jquery.easypiechart.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\flatpickr\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\flatpickr\\flatpickr.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\flatpickr\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\flatpickr\\flatpickr.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fortawesome\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\jquery\\jquery-3.6.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\jquery\\jquery-3.6.4.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\pace-progress\\pace.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\pace-progress\\pace.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\popper.js\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\popper.js\\umd\\popper.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\vendor\\stacked-menu\\js\\stacked-menu.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\stacked-menu\\js\\stacked-menu.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\js\\JavaScript.js",
+      "PackagePath": "staticwebassets\\js\\JavaScript.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\panner3.png",
+      "PackagePath": "staticwebassets\\panner3.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebSite_Online1a.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebSite_Online1a.props",
+      "PackagePath": "build\\WebSite_Online1a.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebSite_Online1a.props",
+      "PackagePath": "buildMultiTargeting\\WebSite_Online1a.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebSite_Online1a.props",
+      "PackagePath": "buildTransitive\\WebSite_Online1a.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

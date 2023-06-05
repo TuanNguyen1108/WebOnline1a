@@ -1,0 +1,88 @@
+﻿@model List<CartItem_YeuThich>
+@{
+    ViewData["Title"] = "Index of CartYeuThich";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="bodywrap">
+    <div class="layout-collection">
+        <section class="bread-crumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="home">
+                        <a href="/home"><span>Trang chủ</span></a>
+                        <span class="mr_lr">&nbsp;/&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="changeurl" href="/CartYeuThich"><span>Yêu Thích Sản Phẩm</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row margin-10-">
+                <div class="block-collection col-lg-12 col-12 padding-10">
+                    <h1 class="title-page d-none">Apple</h1>
+                    <div class="category-products">
+                        <div class="products-view products-view-grid list_hover_pro">
+                            <div class="row margin">
+                                @foreach (var item in Model)
+                                {
+                                    string url = $"ProductAll/details/{@item.MaHh}";
+                                    <div class="col-6 col-xl-2 col-lg-4 col-md-4 padding">
+                                        <div class="item_product_main">
+                                            <form method="post" class="variants product-action " data-cart-form data-id="product-actions-27357040" enctype="multipart/form-data">
+                                                <div class="product-thumbnail">
+                                                    <a class="image_thumb scale_hover" href="@url">
+                                                        <img class="lazyload" src="~/IMAGE/Products/@item.HinhAnh">
+                                                    </a>
+                                                    <div class="actions-primary">
+                                                        <input class="hidden" type="hidden" name="variantId" value="70241716" />
+                                                        @*<button class="btn-cart" title="Tùy chọn" type="button" onclick="window.location.href='iphone-13-pro-max-128gb'">
+                                                    Tùy chọn
+                                                    </button>*@
+                                                        <button asp-controller="ProductAll" asp-action="Details" asp-route-id="@item.MaHh">
+                                                            <span>Xem Sản Phẩm</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name" style=" font-weight: bold;"><a href="@url">@item.TenHH</a></h3>
+                                                    <div class="price-box" style="color:  #ff0000; font-weight: bold;">
+                                                        @item.Gia.ToString("#,##,00").Replace(",",".") VND &nbsp;
+                                                    </div>
+                                                </div>
+
+                                                <div class="action d-xl-block d-none">
+                                                    <div class="actions-secondary">
+                                                        <a asp-controller="CartYeuThich" asp-action="Remove" asp-route-id="@item.MaHh" class="ajax-delete-to-cart1 action btn-compare js-btn-wishlist setWishlist btn-views active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                                                                <path d="M1.21763 5.64124C0.581381 3.86545 1.37671 1.60538 3.12641 1.12108C4.08078 0.798209 5.35327 1.12106 5.98952 2.08967C6.62577 1.12106 7.89826 0.798209 8.85263 1.12108C10.7614 1.76682 11.3977 3.86545 10.7614 5.64124C9.96609 8.38563 6.78483 10 5.98952 10C5.19421 9.83856 2.17201 8.54707 1.21763 5.64124Z" stroke="white" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="setCompare btn-views js-compare-product-add active" data-compare="iphone-13-pro-max-128gb" data-type="Điện thoại" tabindex="0" title="Bỏ so sánh" style="cursor: default;">
+                                                            <svg x="0" y="0" viewBox="0 0 459 459.648" style="enable-background:new 0 0 512 512">
+                                                                <path xmlns="http://www.w3.org/2000/svg" d="m416.324219 293.824219c0 26.507812-21.492188 48-48 48h-313.375l63.199219-63.199219-22.625-22.625-90.511719 90.511719c-6.246094 6.25-6.246094 16.375 0 22.625l90.511719 90.511719 22.625-22.625-63.199219-63.199219h313.375c44.160156-.054688 79.945312-35.839844 80-80v-64h-32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                                <path xmlns="http://www.w3.org/2000/svg" d="m32.324219 165.824219c0-26.511719 21.488281-48 48-48h313.375l-63.199219 63.199219 22.625 22.625 90.511719-90.511719c6.246093-6.25 6.246093-16.375 0-22.625l-90.511719-90.511719-22.625 22.625 63.199219 63.199219h-313.375c-44.160157.050781-79.949219 35.839843-80 80v64h32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

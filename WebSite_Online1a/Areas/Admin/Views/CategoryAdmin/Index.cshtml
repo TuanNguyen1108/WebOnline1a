@@ -1,0 +1,132 @@
+﻿@model IEnumerable<WebSite_Online1a.Models.Category>
+
+@{
+    ViewData["Title"] = "giao diện quản lý danh mục Admin";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="CategoryAdmin" asp-action="Index">Quản Lý Danh Mục</a>
+            </li>
+        </ol>
+    </div>
+    <!-- table -->
+    <hr class="my-10">
+    <div class="card card-fluid">
+        <!-- .card-body -->
+        <div class="card-body">
+            <div class="input-group input-group-alt">
+                <form asp-action="Search" method="get" class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                        </div>
+                        <input id="keyword" name="keyword" class="form-control" placeholder="Tìm Kiếm Danh Mục">
+                        <button class="btn btn-danger">Tìm</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-responsive">
+                <!-- .table -->
+                <table class="table">
+                    <!-- thead -->
+                    <thead>
+                        <tr>
+                            <th>
+                                Tên Danh Mục
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th>Thương Hiệu</th>
+                            <th>Hình ảnh</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead><!-- /thead -->
+                    <!-- tbody -->
+                    <tbody id="records_table">
+                        @if (Model != null && Model.Count() > 0)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="align-middle">
+                                        @item.NameCategory
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align-middle">
+                                        @item.Brand.NameBrand
+                                    </td>
+                                    <td>
+                                        <img width="100" height="100"  src="~/IMAGE/Categorys/@item.CategoryImage" />
+                                    </td>
+                                    <td></td>
+                                    <td class="align-middle text-right">
+                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Details" asp-route-id="@item.CategoryId">
+                                            <i class="fa fa-calendar-week"></i>
+                                            <span class="sr-only">Details</span>
+                                        </a>
+                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Edit" asp-route-id="@item.CategoryId">
+                                            <i class="fa fa-pencil-alt"></i>
+                                            <span class="sr-only">Edit</span>
+                                        </a>
+                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Delete" asp-route-id="@item.CategoryId">
+                                            <i class="far fa-trash-alt"></i>
+                                            <span class="sr-only">Remove</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+                <div class="card-footer">
+                    <a asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Danh Mục</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-10">
+    <!-- .section-block -->
+    <!--Phân trang-->
+    @*<div aria-label="Page navigation example">
+    <ul class="pagination">
+    <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="Category" asp-action="Index" />
+    </ul>
+    </div>*@
+    <!--Phân trang-->
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#keyword").keyup(function () {
+                var strkeyword = $('#keyword').val();
+                $.ajax({
+                    url: '/Admin/SearchAdmin/FindCategory/',
+                    datatype: "json",
+                    type: "POST",
+                    data: { keyword: strkeyword },
+                    async: true,
+                    success: function (results) {
+                        $("#records_table").html("");
+                        $("#records_table").html(results);
+                    },
+                    error: function (xhr) {
+                        alert('error');
+                    }
+                });
+            });
+        });
+    </script>
+
+}

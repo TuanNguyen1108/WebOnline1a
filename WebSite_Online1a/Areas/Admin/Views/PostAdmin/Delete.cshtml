@@ -1,0 +1,36 @@
+﻿@model WebSite_Online1a.Models.Post
+
+@{
+    ViewData["Title"] = "Delete tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="AdminPost" asp-action="Index">Danh Sách Tin</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a>Xóa Tin</a>
+            </li>
+        </ol>
+    </div>
+    <hr class="my-10">
+
+    <div class="col-md-10">
+
+        <h6>xác nhận xóa: @Model.Title</h6>
+
+    </div>
+    <form asp-action="Delete">
+        <button asp-action="Delete" class="btn btn-danger">Xóa</button> |
+        <button asp-action="Index" class="btn btn-outline-secondary">Quay về</button>
+    </form>
+
+    <hr class="my-10">
+</div>

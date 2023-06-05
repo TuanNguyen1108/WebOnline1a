@@ -1,0 +1,104 @@
+﻿@model WebSite_Online1a.Models.Post
+
+@{
+    ViewData["Title"] = "Details tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item ">
+                <a asp-controller="Post" asp-action="Index">Danh Sách Tin</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a>Chi Tiết Tin: @Model.Title</a>
+            </li>
+        </ol>
+    </div>
+    <hr class="my-10">
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="PostId" />
+
+        <tr class="row-details bg-light collapse" id="details-cid5743">
+            <td colspan="6">
+                <div class="row">
+                    <div class="col-md-auto text-center">
+                        <div class="tile tile-xl tile-circle bg-purple mb-2">
+                            O
+                        </div>
+                        <h3 class="card-title mb-4"> Chi Tiết Tin Đăng </h3>
+                    </div>
+                    <div class="col-md-7">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td> Tiêu Đề </td>
+                                    <td> @Model.Title </td>
+                                </tr>
+                                <tr>
+                                    <td> Tác Giả </td>
+                                    <td> @Model.Author </td>
+                                </tr>
+                                <tr>
+                                    <td> Trạng Thái</td>
+                                    <td> @Model.Published </td>
+                                </tr>
+                                <tr>
+                                    <td> Tin Hot </td>
+                                    <td> @Model.IsHot </td>
+                                </tr>
+                                <tr>
+                                    <td> NewFeed </td>
+                                    <td> @Model.IsNewfeed </td>
+                                </tr>
+                                <tr>
+                                    <td> Hình Ảnh </td>
+                                    <td>
+                                        <img width="100" height="100" src="~/IMAGE/News/@Model.Image" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Ngày tạo </td>
+                                    <td> @Model.CreateDate </td>
+                                </tr>
+                                <tr>
+                                    <td> MetaKey </td>
+                                    <td> @Model.MetaKey </td>
+                                </tr>
+                                <tr>
+                                    <td> MetaDesc </td>
+                                    <td> @Model.MetaDesc </td>
+                                </tr>
+                                <tr>
+                                    <td> Nội dung </td>
+                                    @*<td> @Model.Contents </td>*@
+                                   <td>
+                                        @{
+                                            var content = Model.Contents; // Lấy nội dung từ CSDL
+                                        }
+                                        <div id="summernote-content">
+                                            @Html.Raw(content) <!-- Sử dụng Html.Raw để hiển thị nội dung HTML mà không bị mã hóa -->
+                                        </div>
+                                   </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <div>
+            <hr class="my-10">
+        </div>
+        <div class="col-md-5">
+            <button asp-action="Index" class="btn btn-outline-secondary">Quay về</button>
+        </div>
+    </form>
+    <hr class="my-10">
+</div>

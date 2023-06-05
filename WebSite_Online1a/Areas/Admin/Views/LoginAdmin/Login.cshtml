@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayoutLogin.cshtml";
+}
+
+@model Account
+
+@using (Html.BeginForm("Login", "LoginAdmin", FormMethod.Post))
+{    
+    <div class="auth-form">
+        <div class="form-group">
+            <div class="form-label-group">
+                <input type="text" class="form-control" placeholder="Username" autofocus="autofocus" asp-for="Email">
+                <label for="inputUser">Username</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-label-group">
+                <input type="password" class="form-control" placeholder="Password" autofocus="autofocus" asp-for="Password">
+                <label for="inputUser">Password</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="text-danger">
+                @ViewBag.Message
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+        </div>
+
+        <div class="form-group text-center">
+            <div class="custom-control custom-control-inline custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="remember-me"> <label class="custom-control-label" for="remember-me">Keep me sign in</label>
+            </div>
+        </div>
+
+        <div class="text-center pt-3">
+            <a href="" class="link">Forgot Username?</a> <span class="mx-2">·</span> <a href="" class="link">Forgot Password?</a>
+        </div>
+
+    </div>
+}
+

@@ -1,0 +1,39 @@
+﻿@model List<Specification>
+
+@if (Model != null && Model.Count() > 0)
+{
+    foreach (var item in Model)
+    {
+        <tr>
+            <td class="align-middle px-0" style="width: 1.5rem">
+                <button type="button" class="btn btn-sm btn-icon btn-light" data-toggle="collapse" data-target="#details-cid5743"><span class="collapse-indicator"><i class="fa fa-angle-right"></i></span></button>
+            </td>
+            <td class="align-middle">
+                @item.NameSpecification
+            </td>
+            <td></td>
+            <td class="align-middle">@item.SizeCreen</td>
+            <td class="align-middle">@item.Cpu</td>
+            <td class="align-middle">@item.OperatingSystem</td>
+            <td class="align-middle">@item.Ram</td>
+            <td class="align-middle">@item.Camera</td>
+            <td class="align-middle">@item.CameraSelfie</td>
+            <td class="align-middle">@item.Battery</td>
+            <td></td>
+            <td class="align-middle text-right">
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="SpecificationAdmin" asp-action="Details" asp-route-id="@item.SpecificationId">
+                    <i class="fa fa-calendar-week"></i>
+                    <span class="sr-only">Details</span>
+                </a>
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="SpecificationAdmin" asp-action="Edit" asp-route-id="@item.SpecificationId">
+                    <i class="fa fa-pencil-alt"></i>
+                    <span class="sr-only">Edit</span>
+                </a>
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="SpecificationAdmin" asp-action="Delete" asp-route-id="@item.SpecificationId">
+                    <i class="far fa-trash-alt"></i>
+                    <span class="sr-only">Remove</span>
+                </a>
+            </td>
+        </tr>
+    }
+}

@@ -1,0 +1,112 @@
+﻿@model WebSite_Online1a.Models.Price
+
+@{
+    ViewData["Title"] = "Edit chi tiết sản phẩm admin";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="PriceAdmin" asp-action="Index">Danh Sách Chi Tiết Sản Phẩm</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a>Chỉnh Sửa Chi Tiết Sản Phẩm</a>
+            </li>
+        </ol>
+    </div>
+    <hr class="my-10">
+    @using (Html.BeginForm("Edit", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        <form asp-action="Edit">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PriceId" />
+            <input type="hidden" asp-for="ColorImage" />
+
+            <div class="col-md-5">
+                <label class="form-control-label">Tên Chi Tiết Sản Phẩm:</label>
+                <input class="form-control" type="text" asp-for="NamePrice">
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Sản Phẩm Chính:</label>
+                <select asp-for="ProductId" class="form-control" asp-items="ViewBag.NameProduct"></select>
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Giá Cũ:</label>
+                <input class="form-control" id="priceInput1" oninput="formatPrice1()" type="text" asp-for="PriceOld">
+                <span id="formattedPrice1"></span>
+
+                <script>
+                    function formatPrice1() {
+                        var priceInput1 = document.getElementById("priceInput1");
+                        var formattedPrice1 = document.getElementById("formattedPrice1");
+
+                        var price = parseFloat(priceInput1.value);
+                        if (!isNaN(price)) {
+                            formattedPrice1.innerText = price.toLocaleString("vi-VN") + " vnđ";
+                        } else {
+                            formattedPrice1.innerText = "";
+                        }
+                    }
+                </script>
+
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Giá Mới:</label>
+                <input class="form-control" id="priceInput" oninput="formatPrice()" type="text" asp-for="PriceNew">
+                <span id="formattedPrice"></span>
+
+                <script>
+                    function formatPrice() {
+                        var priceInput = document.getElementById("priceInput");
+                        var formattedPrice = document.getElementById("formattedPrice");
+
+                        var price = parseFloat(priceInput.value);
+                        if (!isNaN(price)) {
+                            formattedPrice.innerText = price.toLocaleString("vi-VN") + " vnđ";
+                        } else {
+                            formattedPrice.innerText = "";
+                        }
+                    }
+                </script>
+
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Số Gb:</label>
+                <input class="form-control" type="text" asp-for="Gb">
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Màu Sắc:</label>
+                <input class="form-control" type="text" asp-for="Color">
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Hình Ảnh:</label>
+                <input name="userfiles" type="file" multiple asp-for="ColorImage">
+@*                <img id="preview" src="#" width="100" height="100" class="hidden1" />
+
+                <script>
+                    ColorImage.onchange = evt => {
+                        const [file] = ColorImage.files
+                        if (file) {
+                            preview.src = URL.createObjectURL(file);
+                            $("#preview").removeClass("hidden1");
+                        }
+                    }
+                </script>*@
+            </div>
+            <div>
+                <hr class="my-10">
+            </div>
+            <div class="col-md-5">
+                <button asp-action="Edit" class="btn btn-danger" value="Show Alert" id="btn">Lưu</button> |
+                <button asp-action="Index" class="btn btn-outline-secondary" value="Show Alert" id="btn1">Quay về</button>
+            </div>
+        </form>
+    }
+    <hr class="my-10">
+</div>

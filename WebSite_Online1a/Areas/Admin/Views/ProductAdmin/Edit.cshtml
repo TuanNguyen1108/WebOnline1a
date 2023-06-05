@@ -1,0 +1,145 @@
+﻿@model WebSite_Online1a.Models.Product
+
+@{
+    ViewData["Title"] = "Edit sản phẩm admin";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="ProductAdmin" asp-action="Index">Danh Sách Sản Phẩm</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a>Chỉnh Sửa Sản Phẩm</a>
+            </li>
+        </ol>
+    </div>
+    <hr class="my-10">
+    @using (Html.BeginForm("Edit", "ProductAdmin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        <form asp-action="Edit">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProductId" />
+            <input type="hidden" asp-for="ProductImage" />
+
+            <div class="col-md-5">
+                <label class="form-control-label">Tên Loại Sản Phẩm:</label>
+                <input class="form-control" type="text" asp-for="NameProduct">
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Danh Mục:</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.NameCategory"></select>
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Thương Hiệu:</label>
+                <select asp-for="BrandId" class="form-control" asp-items="ViewBag.NameBrand"></select>
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Thông Số:</label>
+                <select asp-for="SpecificationId" class="form-control" asp-items="ViewBag.NameSpecification"></select>
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Dung Lượng:</label>
+                <input class="form-control" type="text" asp-for="Gb">
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Giá:</label>
+                <input class="form-control" id="priceInput1" oninput="formatPrice1()" type="text" asp-for="PriceOld">
+                <span id="formattedPrice1"></span>
+
+                <script>
+                    function formatPrice1() {
+                        var priceInput1 = document.getElementById("priceInput1");
+                        var formattedPrice1 = document.getElementById("formattedPrice1");
+
+                        var price = parseFloat(priceInput1.value);
+                        if (!isNaN(price)) {
+                            formattedPrice1.innerText = price.toLocaleString("vi-VN") + " vnđ";
+                        } else {
+                            formattedPrice1.innerText = "";
+                        }
+                    }
+                </script>
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Giá Mới:</label>
+                <input class="form-control" id="priceInput" oninput="formatPrice()" type="text" asp-for="Price">
+                <span id="formattedPrice"></span>
+
+                <script>
+                    function formatPrice() {
+                        var priceInput = document.getElementById("priceInput");
+                        var formattedPrice = document.getElementById("formattedPrice");
+
+                        var price = parseFloat(priceInput.value);
+                        if (!isNaN(price)) {
+                            formattedPrice.innerText = price.toLocaleString("vi-VN") + " vnđ";
+                        } else {
+                            formattedPrice.innerText = "";
+                        }
+                    }
+                </script>
+            </div>
+            <div class="form-group form-check col-md-5">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SpGiamGia"><span>Sản Phẩm Sale</span>
+                </label>
+                <label class="form-control-label">% Sale:</label>
+                <input class="form-control" type="text" asp-for="PhanTramGiamGia">
+            </div>
+            <div class="form-group form-check col-md-5">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SpNoiBat"><span>Sản Phẩm Nổi Bật</span>
+                </label>
+            </div>
+            <div class="col-md-5">
+                <label class="form-control-label">Hình Ảnh:</label>
+                <img width="100" height="100" src="~/IMAGE/Products/@Model.ProductImage">
+                <input name="userfiles" type="file" multiple asp-for="ProductImage" onchange="showImage(this)">
+                <img id="preview" src="#" width="100" height="100" class="hidden" />
+
+                <script>
+                    function showImage(input) {
+                        if (input.files && input.files[0]) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                document.getElementById("preview").src = e.target.result;
+                            };
+
+                            reader.readAsDataURL(input.files[0]);
+                        }
+                    }
+                </script>
+            </div>
+            <div>
+                <hr class="my-10">
+            </div>
+            <div class="col-md-5">
+                <button asp-action="Edit" class="btn btn-danger" value="Show Alert" id="btn">Lưu</button> |
+                <button asp-action="Index" class="btn btn-outline-secondary" value="Show Alert" id="btn1">Quay về</button>
+                <script>
+                    var button = document.getElementById("btn");
+                    button.onclick = function () {
+                        alert("Cập nhật thành công Phẩm Thành Công");
+                    }
+                </script>
+                <script>
+                    var button1 = document.getElementById("btn1");
+                    button1.onclick = function () {
+                        alert("Bạn chưa lưu sản phẩm, có chắc chắn muốn quay về");
+                    }
+                </script>
+
+            </div>
+        </form>
+    }
+    <hr class="my-10">
+</div>
+

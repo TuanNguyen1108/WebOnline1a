@@ -1,0 +1,36 @@
+﻿@model List<Product>
+
+@if (Model != null && Model.Count() > 0)
+{
+    foreach (var item in Model)
+    {
+        <tr>
+            <th class="align-middle">
+                @item.NameProduct
+            </th>
+            <td class="align-middle">@item.Category.NameCategory</td>
+            <td class="align-middle">@item.Brand.NameBrand</td>
+            <td class="align-middle">@item.Specification.NameSpecification</td>
+            <td class="align-middle">@item.Price.Value.ToString("#,##0")₫</td>
+            <td class="align-middle">
+                <img width="100" height="100" src="~/IMAGE/Products/@item.ProductImage">
+            </td>
+
+            <td class="align-middle text-right">
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="ProductAdmin" asp-action="Details" asp-route-id="@item.ProductId">
+                    <i class="fa fa-calendar-week"></i>
+                    <span class="sr-only">Details</span>
+                </a>
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="ProductAdmin" asp-action="Edit" asp-route-id="@item.ProductId">
+                    <i class="fa fa-pencil-alt"></i>
+                    <span class="sr-only">Edit</span>
+                </a>
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="ProductAdmin" asp-action="Delete" asp-route-id="@item.ProductId">
+                    <i class="far fa-trash-alt"></i>
+                    <span class="sr-only">Remove</span>
+                </a>
+            </td>
+
+        </tr>
+    }
+}

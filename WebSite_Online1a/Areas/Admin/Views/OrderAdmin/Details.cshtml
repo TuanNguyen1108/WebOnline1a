@@ -1,0 +1,83 @@
+﻿@model WebSite_Online1a.Models.Order
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    List<OderDetail> chitietdonhang = ViewBag.ChiTietDonHang;
+}
+
+<div class="page-inner">
+
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="OrderAdmin" asp-action="Index">Quản Lý Đơn Hàng</a>
+            </li>
+        </ol>
+    </div>
+    <!-- table -->
+    <hr class="my-10">
+    <div class="card card-fluid">
+        <!-- .card-body -->
+        <div class="card-body">
+            <div class="table-responsive">
+                <!-- .table -->
+                <table class="table">
+                    <!-- thead -->
+                    <thead>
+                        <tr>
+                            <th class="align-middle">
+                                Đơn Hàng
+                            </th>
+                            <th class="align-middle">
+                                Hình Ảnh
+                            </th>
+                            <th class="align-middle">
+                                Tên Sản Phẩm
+                            </th>
+                            <th class="align-middle">
+                                Số Lượng
+                            </th>
+                            <th class="align-middle">
+                                Giá
+                            </th>
+                        </tr>
+                    </thead><!-- /thead -->
+                    <!-- tbody -->
+                    <tbody>
+                        @if (chitietdonhang != null && chitietdonhang.Count() > 0)
+                        {
+                            foreach (var item in chitietdonhang)
+                            {
+                                <tr>
+                                    <td class="align-middle">
+                                        @item.OrderId
+                                    </td>
+                                    <td class="align-middle">
+                                        <img width="70" height="70" src="~/IMAGE/Product_Details/@item.PriceNavigation.ColorImage">
+                                    </td>
+                                    <td class="align-middle">
+                                        @item.Product.NameProduct - @item.PriceNavigation.Color
+                                    </td>
+                                    <td class="align-middle">
+                                        @item.Num
+                                    </td>
+                                    <td class="align-middle">
+                                        <b class="span_pending" style="color: #EB4B13; font-weight: 600;">
+                                            @item.Price.Value.ToString("#,##,00").Replace(",",".") VND &nbsp
+                                        </b>
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr class="my-10">
+</div>

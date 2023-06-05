@@ -1,0 +1,37 @@
+﻿@model WebSite_Online1a.Models.Brand
+
+@{
+    ViewData["Title"] = "Edit thương hiệu admin";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="BrandAdmin" asp-action="Index">Quản Lý Thương Hiệu</a>
+            </li>
+            <li class="breadcrumb-item active">
+                Chỉnh Sửa Thương Hiệu
+            </li>
+        </ol>
+    </div>
+    <hr class="my-10">
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="BrandId" />
+        <div class="col-md-5">
+            <label class="form-control-label">Tên Danh Mục:</label>
+            <input class="form-control" type="text" asp-for="NameBrand">
+        </div>
+        <hr class="my-10">
+        <div class="col-md-5">
+            <button asp-action="Edit" class="btn btn-danger">Lưu</button> |
+            <button asp-action="Index" class="btn btn-outline-secondary">Quay về</button>
+        </div>
+    </form>
+
+</div>

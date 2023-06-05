@@ -1,0 +1,199 @@
+﻿@using PagedList.Core.Mvc
+@model PagedList.Core.IPagedList<WebSite_Online1a.Models.Price>
+
+@{
+    ViewData["Title"] = "Index chi tiết sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="PriceAdmin" asp-action="Index">Danh Sách Sản Phẩm</a>
+            </li>
+        </ol>
+    </div>
+    <!-- table -->
+    <hr class="my-10">
+    <div class="card card-fluid">
+        <!-- .card-body -->
+        <div class="card-body">
+            <div class="form-group">
+                <!-- .input-group -->
+                <div class="input-group input-group-alt">
+                    <form asp-action="Index" method="get" class="form-inline">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                            </div>
+                            <input id="keyword" name="keyword" type="text" class="form-control" placeholder="Tìm Kiếm Sản Phẩm">
+                            <button class="btn btn-danger">Tìm</button>
+                        </div>
+                    </form>
+                </div><!-- /.input-group -->
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+
+                            <th class="align-middle">Tên Sản Phẩm</th>
+                            <th class="align-middle td">ID SP Chính</th>
+                            <th class="align-middle">Giá Cũ</th>
+                            <th class="align-middle">Giá Mới</th>
+                            <th class="align-middle">Gb</th>
+                            <th class="align-middle">Màu</th>
+                            <th class="align-middle">Hình Ảnh</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="records_table">
+                        @if (Model != null && Model.Count() > 0)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th class="align-middle">
+                                        @item.NamePrice
+                                    </th>
+                                    <td class="align-middle">@item.ProductId</td>
+                                    <td class="align-middle">@item.PriceOld.Value.ToString("#,##0")₫</td>
+                                    <td class="align-middle">@item.PriceNew.Value.ToString("#,##0")₫</td>
+                                    <td class="align-middle">@item.Gb</td>
+                                    <td class="align-middle">@item.Color</td>
+                                    <td class="align-middle">
+                                        <img width="140" height="100" src="~/IMAGE/Product_Details/@item.ColorImage">
+                                    </td>
+
+                                    <td class="align-middle text-right">
+                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="PriceAdmin" asp-action="Details" asp-route-id="@item.PriceId">
+                                            <i class="fa fa-calendar-week"></i>
+                                            <span class="sr-only">Details</span>
+                                        </a>
+                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="PriceAdmin" asp-action="Edit" asp-route-id="@item.PriceId">
+                                            <i class="fa fa-pencil-alt"></i>
+                                            <span class="sr-only">Edit</span>
+                                        </a>
+                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="PriceAdmin" asp-action="Delete" asp-route-id="@item.PriceId">
+                                            <i class="far fa-trash-alt"></i>
+                                            <span class="sr-only">Remove</span>
+                                        </a>
+                                    </td>
+
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                <div class="card-footer">
+                    <a asp-area="Admin" asp-controller="PriceAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Chi Tiết</a>
+                </div>
+
+                <div aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="PriceAdmin" asp-action="Index" />
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-10">
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#keyword").keyup(function () {
+                var strkeyword = $('#keyword').val();
+                $.ajax({
+                    url: '/Admin/SearchAdmin/Find_ProductDetail/',
+                    datatype: "json",
+                    type: "POST",
+                    data: { keyword: strkeyword },
+                    async: true,
+                    success: function (results) {
+                        $("#records_table").html("");
+                        $("#records_table").html(results);
+                    },
+                    error: function (xhr) {
+                        alert('error');
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+
+
+
+@*<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NamePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PriceOld)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PriceNew)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColorImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NamePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PriceOld)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PriceNew)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gb)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColorImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product.ProductId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PriceId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PriceId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PriceId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@

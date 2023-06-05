@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "OrderDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<OderDetail> chitietdonhang = ViewBag.ChiTietDonHang;
+}
+
+@model WebSite_Online1a.Models.Account
+<section class="bread-crumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li class="home">
+                <a href="/home"><span>Trang chủ</span></a>
+                <span class="mr_lr">&nbsp;/&nbsp;</span>
+            </li>
+            <li class="home">
+                <a href="/Account/Orders"><span>Đơn Hàng Của Bạn</span></a>
+                <span class="mr_lr">&nbsp;/&nbsp;</span>
+            </li>
+            <li><strong><span>Chi Tiết Đơn Hàng</span></strong></li>
+
+        </ul>
+    </div>
+</section>
+<section class="signup page_customer_account">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-lg-3 col-left-ac">
+                <div class="block-account">
+                    <h5 class="title-account">Trang tài khoản</h5>
+                    <p>Xin chào, <span style="color:#ef4339;">@Model.HoTen</span>&nbsp;!</p>
+                    <ul>
+                        <li>
+                            <a class="title-info" href="/Account/AccountInfo">Thông tin tài khoản</a>
+                        </li>
+                        <li>
+                            <a class="title-info active" href="/Account/orders">Đơn hàng của bạn</a>
+                        </li>
+                        <li>
+                            <a class="title-info" href="/account/changepassword">Đổi mật khẩu</a>
+                        </li>
+                        <p>
+                            <a asp-controller="Account" asp-action="Logout">
+                                Logout
+                            </a>
+                        </p>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 col-12 col-right-ac">
+                <h1 class="title-head margin-top-0">Chi Tiết Đơn hàng:</h1>
+                <div class="my-account">
+                    <div class="dashboard">
+
+                        <div class="recent-orders">
+                            <div class="table-responsive-block tab-all" style="overflow-x:auto;">
+                                <table class="table table-cart table-order" id="my-orders-table">
+                                    <thead class="thead-default">
+                                        <tr>
+                                            <th>Đơn Hàng</th>
+                                            <th>Hình Ảnh</th>
+                                            <th>Tên Sản Phẩm</th>                                            
+                                            <th>Số Lượng</th>
+                                            <th>Giá</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (chitietdonhang != null && chitietdonhang.Count() > 0)
+                                        {
+                                            foreach (var item in chitietdonhang)
+                                            {
+                                                <tr>
+
+                                                    <td><a href="" title="">@item.OrderId</a></td>
+                                                    <td>
+                                                        <img width="70" height="70" src="~/IMAGE/Product_Details/@item.PriceNavigation.ColorImage">
+                                                    </td>
+                                                    <td>@item.Product.NameProduct - @item.PriceNavigation.Color </td>
+                                                    <td>
+                                                        <span class="price">@item.Num</span>
+                                                    </td>
+                                                    <td>
+                                                        <b class="span_pending" style="color: #EB4B13; font-weight: 600;">@item.Price.Value.ToString("#,##,00").Replace(",",".") VND &nbsp</b>
+                                                    </td>
+                                                    
+                                                </tr>
+                                            }
+                                        }
+
+                                    </tbody>
+                                </table>
+                                @*<div>Tổng Tiền: @Model.Sum</div>*@
+                            </div>
+                            <div class="paginate-pages pull-right page-account text-right col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

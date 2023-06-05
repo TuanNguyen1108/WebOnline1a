@@ -1,0 +1,230 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*@model WebSite_Online1a.Models.Account*@
+<header class="header 123">
+    <div class="midder-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-12 block-logo">
+                    <a href="" class="logo" title="Logo">
+                        <img width="217" height="28" src="~/Asset/100/449/923/themes/875305/assets/logo.png?1681121784559" alt="ND Tech">
+                    </a>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12  block-search">
+                    <div class="header_search">
+                        @*<form class="input-group search-bar" action="search" method="get" role="search">
+                        <div class="collection-selector">
+                        <div class="search_text">Tất cả sản phẩm</div>
+
+                        </div>
+                        <input type="search" name="query" value="" placeholder="Tìm kiếm..." class="input-group-field st-default-search-input search-text" autocomplete="off" required>
+                        <span class="input-group-btn">
+                        <button class="btn icon-fallback-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66667 1.75C4.39898 1.75 1.75 4.39898 1.75 7.66667C1.75 10.9344 4.39898 13.5833 7.66667 13.5833C10.9344 13.5833 13.5833 10.9344 13.5833 7.66667C13.5833 4.39898 10.9344 1.75 7.66667 1.75ZM0.25 7.66667C0.25 3.57055 3.57055 0.25 7.66667 0.25C11.7628 0.25 15.0833 3.57055 15.0833 7.66667C15.0833 11.7628 11.7628 15.0833 7.66667 15.0833C3.57055 15.0833 0.25 11.7628 0.25 7.66667Z" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0244 12.0252C12.3173 11.7323 12.7921 11.7323 13.085 12.0252L17.5295 16.4697C17.8224 16.7625 17.8224 17.2374 17.5295 17.5303C17.2366 17.8232 16.7617 17.8232 16.4688 17.5303L12.0244 13.0859C11.7315 12.793 11.7315 12.3181 12.0244 12.0252Z" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4904 10.918C13.9039 10.9426 14.2191 11.2977 14.1945 11.7112C14.1549 12.3767 14.0217 13.0217 13.5448 13.4941C13.0819 13.9527 12.4326 14.1079 11.7576 14.1891C11.3463 14.2385 10.9729 13.9452 10.9234 13.534C10.874 13.1227 11.1672 12.7492 11.5785 12.6998C12.204 12.6246 12.4068 12.5101 12.4892 12.4285C12.5576 12.3607 12.663 12.195 12.6971 11.6221C12.7218 11.2086 13.0769 10.8934 13.4904 10.918Z" fill="white">
+                        </svg>
+                        </button>
+                        </span>
+                        </form>*@
+                        <form asp-controller="Home" asp-action="Search" method="get" class="input-group search-bar">
+                            <div class="collection-selector">
+                                <div class="search_text">Tên sản phẩm</div>
+                            </div>
+                            <input name="name" type="text" placeholder="Tìm kiếm..." class="input-group-field st-default-search-input search-text" autocomplete="off" required>
+                            <span class="input-group-btn">
+                                <button class="btn icon-fallback-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66667 1.75C4.39898 1.75 1.75 4.39898 1.75 7.66667C1.75 10.9344 4.39898 13.5833 7.66667 13.5833C10.9344 13.5833 13.5833 10.9344 13.5833 7.66667C13.5833 4.39898 10.9344 1.75 7.66667 1.75ZM0.25 7.66667C0.25 3.57055 3.57055 0.25 7.66667 0.25C11.7628 0.25 15.0833 3.57055 15.0833 7.66667C15.0833 11.7628 11.7628 15.0833 7.66667 15.0833C3.57055 15.0833 0.25 11.7628 0.25 7.66667Z" fill="white">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0244 12.0252C12.3173 11.7323 12.7921 11.7323 13.085 12.0252L17.5295 16.4697C17.8224 16.7625 17.8224 17.2374 17.5295 17.5303C17.2366 17.8232 16.7617 17.8232 16.4688 17.5303L12.0244 13.0859C11.7315 12.793 11.7315 12.3181 12.0244 12.0252Z" fill="white">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4904 10.918C13.9039 10.9426 14.2191 11.2977 14.1945 11.7112C14.1549 12.3767 14.0217 13.0217 13.5448 13.4941C13.0819 13.9527 12.4326 14.1079 11.7576 14.1891C11.3463 14.2385 10.9729 13.9452 10.9234 13.534C10.874 13.1227 11.1672 12.7492 11.5785 12.6998C12.204 12.6246 12.4068 12.5101 12.4892 12.4285C12.5576 12.3607 12.663 12.195 12.6971 11.6221C12.7218 11.2086 13.0769 10.8934 13.4904 10.918Z" fill="white">
+                                    </svg>
+                                </button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 col-cart-account-wish">
+                    <div class="block-account menu-bar d-lg-none d-block">
+                        <a href="javascript:;" title="Tài khoản của bạn" rel="nofollow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958984 1C0.958984 0.516751 1.35074 0.125 1.83398 0.125H12.334C12.8172 0.125 13.209 0.516751 13.209 1C13.209 1.48325 12.8172 1.875 12.334 1.875H1.83398C1.35074 1.875 0.958984 1.48325 0.958984 1Z" fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958984 15C0.958984 14.5168 1.35074 14.125 1.83398 14.125H8.83399C9.31723 14.125 9.70899 14.5168 9.70899 15C9.70899 15.4832 9.31723 15.875 8.83399 15.875H1.83398C1.35074 15.875 0.958984 15.4832 0.958984 15Z" fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958984 8C0.958984 7.51675 1.35074 7.125 1.83398 7.125H18.1673C18.6506 7.125 19.0423 7.51675 19.0423 8C19.0423 8.48325 18.6506 8.875 18.1673 8.875H1.83398C1.35074 8.875 0.958984 8.48325 0.958984 8Z" fill="white"></path>
+                            </svg>
+                            <span class="info">
+                                <span>Danh mục</span>
+                                <span>Sản phẩm</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="block-account">
+                        <a href="/Account/AccountInfo" title="Tài khoản của bạn" rel="nofollow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="28" viewBox="0 0 25 28" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3984 2.4C10.4102 2.4 8.79844 4.01178 8.79844 6C8.79844 7.98823 10.4102 9.6 12.3984 9.6C14.3867 9.6 15.9984 7.98823 15.9984 6C15.9984 4.01178 14.3867 2.4 12.3984 2.4ZM6.39844 6C6.39844 2.68629 9.08473 0 12.3984 0C15.7121 0 18.3984 2.68629 18.3984 6C18.3984 9.31371 15.7121 12 12.3984 12C9.08473 12 6.39844 9.31371 6.39844 6Z" fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4 16.8C9.85303 16.8 6.3364 17.7237 4.22092 18.5154C3.1234 18.9262 2.4 20.0187 2.4 21.2943V26.8C2.4 27.4628 1.86274 28 1.2 28C0.537258 28 0 27.4628 0 26.8V21.2943C0 19.1234 1.24936 17.065 3.37967 16.2677C5.61835 15.4298 9.443 14.4 12.4 14.4C15.4391 14.4 18.7442 15.4922 21.1681 16.3052C23.4139 17.0584 24.8 19.1827 24.8 21.4724V26.8C24.8 27.4628 24.2627 28 23.6 28C22.9373 28 22.4 27.4628 22.4 26.8V21.4724C22.4 20.1339 21.5989 18.9811 20.4049 18.5806C17.9122 17.7446 14.9809 16.8 12.4 16.8Z" fill="white"></path>
+                            </svg>
+                            @{
+                                var account = Context.Session.GetInt32("AccountId");
+                                if (account == null)
+                                {
+                                    <span class="info">
+                                        <span>Đăng nhập</span>
+                                        <span>Tài khoản</span>
+                                    </span>
+                                }
+                                else
+                                {
+                                    var HoTen = Context.Session.GetString("HoTen");
+                                    <span class="info">
+                                        <span>Quản Lý</span>
+                                        <span>Tài khoản</span>
+                                    </span>
+                                    <div class="drop-account">
+                                        <a href="/Account/AccountInfo">@HoTen</a>
+                                        <a href="/Account/ChangePassWord">Đổi Mật Khẩu</a>
+                                        <a href="/Account/logout">Đăng xuất</a>
+                                    </div>
+                                }
+                            }
+                        </a>
+                    </div>
+                    <div class="block-wish">
+                        <a href="/CartYeuThich" class="wishlist_header" title="Sản phẩm yêu thích">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="29" viewBox="0 0 31 29" fill="none">
+                                    <path d="M1.63113 14.9237C-0.213996 9.59636 2.09247 2.81615 7.16658 1.36324C9.93428 0.394626 13.6245 1.36319 15.4696 4.26902C17.3147 1.36319 21.0049 0.394626 23.7726 1.36324C29.308 3.30045 31.1532 9.59636 29.3081 14.9237C27.0017 23.1569 17.776 28 15.4696 28C13.1632 27.5157 4.39883 23.6412 1.63113 14.9237Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span class="headerWishlistCount" id="cart_count">
+                                    @using WebSite_Online1a.Helpers;
+                                    @{
+                                        var data1 = Context.Session.Get<List<CartItem_YeuThich>>("GioHang1");
+                                        if (data1 == null)
+                                        {
+                                            data1 = new List<CartItem_YeuThich>();
+                                        }
+                                    }
+                                    @(data1.Sum(c => c.SoLuong))
+                                </span>
+                            </span>
+                            <span class="info">
+                                <span>Yêu thích</span>
+                                <span>Sản phẩm</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="block-cart">
+                        <a href="/cart" class="header-cart" aria-label="Xem giỏ hàng" title="Giỏ hàng">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="31" viewBox="0 0 27 31" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.160015 15.2726C-0.823176 11.2022 2.8873 7.74798 6.82992 8.39249C11.4344 9.14521 15.4124 9.16777 20.1547 8.39867C24.0998 7.75886 27.8249 11.2168 26.84 15.2942L24.1192 26.5581C23.5249 29.0186 21.32 30.75 18.7879 30.75H8.21736C5.68523 30.75 3.48033 29.0186 2.886 26.5581L0.160015 15.2726ZM6.45665 10.6759C3.94943 10.266 1.86049 12.4585 2.40901 14.7293L5.13499 26.0148C5.47776 27.4339 6.7509 28.4363 8.21736 28.4363H18.7879C20.2543 28.4363 21.5275 27.4339 21.8702 26.0148L24.591 14.751C25.1402 12.4772 23.0414 10.2744 20.5251 10.6825C15.5333 11.4921 11.3042 11.4683 6.45665 10.6759Z" fill="white"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7078 2.98597C10.3651 2.98597 8.46603 4.88505 8.46603 7.22769L8.46601 13.9101C8.46601 14.549 7.94808 15.0669 7.30918 15.0669C6.67027 15.0669 6.15234 14.549 6.15234 13.91L6.15236 7.22769C6.15236 3.60725 9.08731 0.672302 12.7078 0.672302H14.2502C17.8706 0.672302 20.8056 3.60726 20.8056 7.2277V14.1687C20.8056 14.8076 20.2877 15.3255 19.6488 15.3255C19.0098 15.3255 18.4919 14.8076 18.4919 14.1687V7.2277C18.4919 4.88506 16.5928 2.98597 14.2502 2.98597H12.7078Z" fill="white"></path>
+                                </svg>
+                                <span class="count_item_pr" id="cart_count1">
+                                    @{
+                                        var data = Context.Session.Get<List<CartItem>>("GioHang");
+                                        if (data == null)
+                                        {
+                                            data = new List<CartItem>();
+                                        }
+                                    }
+                                    @(data.Sum(d => d.SoLuong))
+                                </span>
+                            </span>
+                            <span class="info">
+                                <span>Giỏ hàng</span>
+                                <span>Của bạn</span>
+                            </span>
+                        </a>
+                        <div class="top-cart-content">
+                            <div class="CartHeaderContainer">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-cate d-lg-block d-none">
+                    <div class="block-cate">
+                        <div class="block-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958984 1C0.958984 0.516751 1.35074 0.125 1.83398 0.125H12.334C12.8172 0.125 13.209 0.516751 13.209 1C13.209 1.48325 12.8172 1.875 12.334 1.875H1.83398C1.35074 1.875 0.958984 1.48325 0.958984 1Z" fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958984 15C0.958984 14.5168 1.35074 14.125 1.83398 14.125H8.83399C9.31723 14.125 9.70899 14.5168 9.70899 15C9.70899 15.4832 9.31723 15.875 8.83399 15.875H1.83398C1.35074 15.875 0.958984 15.4832 0.958984 15Z" fill="white"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958984 8C0.958984 7.51675 1.35074 7.125 1.83398 7.125H18.1673C18.6506 7.125 19.0423 7.51675 19.0423 8C19.0423 8.48325 18.6506 8.875 18.1673 8.875H1.83398C1.35074 8.875 0.958984 8.48325 0.958984 8Z" fill="white"></path>
+                            </svg>
+                            Danh mục sản phẩm
+                        </div>
+                        <ul class="block-nav">
+                            <li class="nav-item ">
+                                <a class="a-img" asp-controller="ProductSamsung" asp-action="Index" title="SamSung">
+                                    SamSung
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="a-img" asp-controller="ProductApple" asp-action="Index" title="Apple">
+                                    Apple
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-10 col-menu">
+                    <nav class="header-nav">
+                        <ul class="item_big">
+                            <li class="nav-item active ">
+                                <a asp-controller="Home" asp-action="Index">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a asp-controller="Home" asp-action="GioiThieu" title="Giới thiệu">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="a-img caret-down" href="/ProductAll">
+                                    Sản phẩm
+                                </a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul class="item_small">
+                                    <li class="nav-item ">
+                                        <a class="a-img" asp-controller="ProductSamsung" asp-action="Index" title="SamSung">
+                                            SamSung
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="a-img" asp-controller="ProductApple" asp-action="Index" title="Apple">
+                                            Apple
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a asp-controller="Post" asp-action="Index" title="Tin tức">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a asp-area="" asp-controller="home" asp-action="LienHe" title="Liên hệ">
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+

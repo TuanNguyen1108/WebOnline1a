@@ -1,0 +1,424 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    List<Product> SpNoiBat = ViewBag.SpNoiBat;
+    List<Product> SpSale = ViewBag.SpSale;
+}
+
+<div class="bodywrap">
+
+    <section class="section_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 slider">
+                    <div class="home-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                        <div class="swiper-wrapper" style="transform: translate3d(-575px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-prev" style="width: 575px;">
+                                <a href="#" class="clearfix" title="ND Tech">
+                                    <picture>
+                                        <img width="578" height="445" src="~/Asset/thumb/grande/100/449/923/themes/875305/assets/slider_1.jpg?1681121784559" alt="ND Tech" class="img-responsive">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" style="width: 575px;">
+                                <a href="#" class="clearfix" title="ND Tech">
+                                    <picture>
+                                        <img width="578" height="445" src="~/Asset/thumb/grande/100/449/923/themes/875305/assets/slider_2.jpg?1681121784559" alt="ND Tech" class="img-responsive">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 banner">
+                    <div class="item thumb-1">
+                        <a class="image_hover" href="#" title="ND Tech">
+                            <img class="lazyload loaded" src="~/Asset/100/449/923/themes/875305/assets/img_banner_slide.jpg?1681121784559" data-src="~/Asset/100/449/923/themes/875305/assets/img_banner_slide.jpg?1681121784559" alt="ND Tech" data-was-processed="true">
+                        </a>
+                    </div>
+                    <div class="item thumb-2">
+                        <a class="image_hover" href="#" title="ND Tech">
+                            <img class="lazyload loaded" src="~/Asset/100/449/923/themes/875305/assets/img_banner_slide_2.jpg?1681121784559" data-src="~/Asset/100/449/923/themes/875305/assets/img_banner_slide_2.jpg?1681121784559" alt="ND Tech" data-was-processed="true">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 banner">
+                    <div class="item thumb-3">
+                        <a class="image_hover" href="#" title="ND Tech">
+                            <img class="lazyload loaded" src="~/Asset/100/449/923/themes/875305/assets/img_banner_slide_3.jpg?1681121784559" data-src="~/Asset/100/449/923/themes/875305/assets/img_banner_slide_3.jpg?1681121784559" alt="ND Tech" data-was-processed="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--nút chuyển slide-->
+            <script>
+                var swiper = new Swiper('.home-slider', {
+                    autoplay: false,
+                    pagination: {
+                        el: '.home-slider .swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.home-slider .swiper-button-next',
+                        prevEl: '.home-slider .swiper-button-prev',
+                    },
+                });
+            </script>
+            <!--nút chuyển slide-->
+        </div>
+    </section>
+    <!--Panner-->
+
+    <section class="section_product_featured module_product">
+        <div class="container">
+            <div class="block-title">
+                <h2>
+                    <a href="san-pham-noi-bat" title="Top sản phẩm nổi bật">Top sản phẩm nổi bật</a>
+                </h2>
+                <div class="view-more">
+                    <a href="/ProductAll" title="Xem thêm">
+                        Xem thêm
+                    </a>
+                </div>
+            </div>
+            <div class="block-product">
+                <div class="product-featured-swiper swiper-container">
+                    <div class="swiper-wrapper">
+                        @if (SpNoiBat != null && SpNoiBat.Count() > 0)
+                        {
+                            foreach (var item in SpNoiBat)
+                            {
+                                string url = $"/ProductAll/details/{@item.ProductId}";
+                                <div class="swiper-slide">
+                                    <div class="item_product_main">
+                                        <form action="cart/add" method="post" class="variants product-action " data-cart-form data-id="product-actions-27357040" enctype="multipart/form-data">
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb scale_hover" href="@url">
+                                                    <img class="lazyload" src="~/IMAGE/Products/@item.ProductImage">
+                                                </a>
+                                                <div class="actions-primary">
+                                                    <input class="hidden" type="hidden" name="variantId" value="70241716" />
+                                                    <button asp-controller="ProductAll" asp-action="Details" asp-route-id="@item.ProductId">
+                                                        <span>Xem Sản Phẩm</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name" style=" font-weight: bold;"><a href="@url">@item.NameProduct</a></h3>
+                                                <div class="price-box" style="color:  #ff0000; font-weight: bold;">
+                                                    @item.Price.Value.ToString("#,##,00").Replace(",",".") VND &nbsp;
+                                                    <span class="compare-price">
+                                                        @item.PriceOld.Value.ToString("#,##,00").Replace(",",".") VND &nbsp;
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="action d-xl-block d-none">
+                                                <div class="actions-secondary">
+                                                    <a type="button" data-id="@item.ProductId" class="ajax-add-to-cart1 action btn-compare js-btn-wishlist setWishlist btn-views">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                                                            <path d="M1.21763 5.64124C0.581381 3.86545 1.37671 1.60538 3.12641 1.12108C4.08078 0.798209 5.35327 1.12106 5.98952 2.08967C6.62577 1.12106 7.89826 0.798209 8.85263 1.12108C10.7614 1.76682 11.3977 3.86545 10.7614 5.64124C9.96609 8.38563 6.78483 10 5.98952 10C5.19421 9.83856 2.17201 8.54707 1.21763 5.64124Z" stroke="white" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                    <a type="button" data-id="@item.ProductId" class="ajax-add-to-compare setCompare btn-views js-compare-product-add active">
+                                                        <svg x="0" y="0" viewBox="0 0 459 459.648" style="enable-background:new 0 0 512 512">
+                                                            <path xmlns="http://www.w3.org/2000/svg" d="m416.324219 293.824219c0 26.507812-21.492188 48-48 48h-313.375l63.199219-63.199219-22.625-22.625-90.511719 90.511719c-6.246094 6.25-6.246094 16.375 0 22.625l90.511719 90.511719 22.625-22.625-63.199219-63.199219h313.375c44.160156-.054688 79.945312-35.839844 80-80v-64h-32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                            <path xmlns="http://www.w3.org/2000/svg" d="m32.324219 165.824219c0-26.511719 21.488281-48 48-48h313.375l-63.199219 63.199219 22.625 22.625 90.511719-90.511719c6.246093-6.25 6.246093-16.375 0-22.625l-90.511719-90.511719-22.625 22.625 63.199219 63.199219h-313.375c-44.160157.050781-79.949219 35.839843-80 80v64h32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script>
+        var swiperwish = new Swiper('.product-featured-swiper', {
+            slidesPerView: 6,
+            loop: false,
+            grabCursor: true,
+            spaceBetween: 20,
+            roundLengths: true,
+            slideToClickedSlide: false,
+            navigation: {
+                nextEl: '.product-featured-swiper .swiper-button-next',
+                prevEl: '.product-featured-swiper .swiper-button-prev',
+            },
+            pagination: {
+                el: '.product-featured-swiper .swiper-pagination',
+                clickable: true,
+            },
+            autoplay: false,
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                991: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 6,
+                    spaceBetween: 20
+                }
+            }
+        });
+    </script>
+
+    <div class="section_category">
+        <div class="container">
+            <div class="block-title">
+                <h2>
+                    Danh mục phổ biến
+                </h2>
+            </div>
+            <div class="block-content">
+                <div class="cate-swiper swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" style="cursor: grab;">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide item swiper-slide-active" style="width: 218px; margin-right: 20px;">
+                            <div class="info">
+                                <h3 href="/ProductAll">
+                                    <a href="/ProductAll" title="Smart Phone">
+                                        Smart Phone
+                                    </a>
+                                </h3>
+                                <div class="count">(10 sản phẩm)</div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide item swiper-slide-next" style="width: 218px; margin-right: 20px;">
+                            <div class="info">
+                                <h3>
+                                    <a>
+                                        Laptop
+                                    </a>
+                                </h3>
+                                <div class="count">(0 sản phẩm)</div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide item" style="width: 218px; margin-right: 20px;">
+                            <div class="info">
+                                <h3>
+                                    <a>
+                                        Tai nghe
+                                    </a>
+                                </h3>
+                                <div class="count">(0 sản phẩm)</div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide item" style="width: 218px; margin-right: 20px;">
+                            <div class="info">
+                                <h3>
+                                    <a>
+                                        Apple Watch
+                                    </a>
+                                </h3>
+                                <div class="count">(0 sản phẩm)</div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide item" style="width: 218px; margin-right: 20px;">
+                            <div class="info">
+                                <h3>
+                                    <a>
+                                        Ipad
+                                    </a>
+                                </h3>
+                                <div class="count">(0 sản phẩm)</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Danh Mục Phổ Biến-->
+    <script>
+        var swiperwish = new Swiper('.cate-swiper', {
+            slidesPerView: 5,
+            loop: false,
+            grabCursor: true,
+            spaceBetween: 20,
+            roundLengths: true,
+            slideToClickedSlide: false,
+            navigation: {
+                nextEl: '.cate-swiper .swiper-button-next',
+                prevEl: '.cate-swiper .swiper-button-prev',
+            },
+            pagination: {
+                el: '.cate-swiper .swiper-pagination',
+                clickable: true,
+            },
+            autoplay: false,
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                991: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                }
+            }
+        });
+    </script>
+
+    <link rel="preload" as="script" href="100/449/923/themes/875305/assets/count.js?1681307816797" />
+    <script src="~/Asset/100/449/923/themes/875305/assets/count.js?1681307816797" type="text/javascript"></script>
+
+    <div class="section_deal_hot">
+        <div class="container">
+            <div class="block-title">
+                <h2>
+                    <a href="san-pham-noi-bat" title="Deal HOT hàng ngày">
+                        Deal HOT hàng ngày
+                    </a>
+                </h2>
+
+                <div class="timer">
+                    <span class="text d-none">Hết hạn trong:</span>
+                    <div class="time" data-countdown="countdown" data-date="10-2-2022-09-15-45"><div class="lof-labelexpired"> Hết hạn</div></div>
+                </div>
+
+            </div>
+            <div class="block-content">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-12">
+                        <div class="deal-hot-swiper swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" style="cursor: grab;">
+                            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+
+                                @if (SpSale != null && SpSale.Count() > 0)
+                                {
+                                    foreach (var item in SpSale)
+                                    {
+                                        string url = $"/ProductAll/details/{@item.ProductId}";
+                                        <div class="swiper-slide swiper-slide-active" style="width: 178px; margin-right: 20px;">
+                                            <div class="item_product_main">
+
+                                                <form action="cart/add" method="post" class="variants product-action " data-cart-form="" data-id="product-actions-27357040" enctype="multipart/form-data">
+                                                    <div class="product-thumbnail">
+                                                        <a class="image_thumb scale_hover" href="@url">
+                                                            <img class="lazyload" src="~/IMAGE/Products/@item.ProductImage">
+                                                        </a>
+                                                        <span class="smart">
+                                                            - @item.PhanTramGiamGia
+                                                        </span>
+                                                        <div class="actions-primary">
+                                                            <input class="hidden" type="hidden" name="variantId" value="70241716" />
+                                                            <button asp-controller="ProductAll" asp-action="Details" asp-route-id="@item.ProductId">
+                                                                <span>Xem Sản Phẩm</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <h3 class="product-name" style=" font-weight: bold;"><a href="@url">@item.NameProduct</a></h3>
+                                                        <div class="price-box" style="color:  #ff0000; font-weight: bold;">
+                                                            @item.Price.Value.ToString("#,##,00").Replace(",",".") VND &nbsp;
+                                                        </div>
+                                                    </div>
+                                                    <div class="action d-xl-block d-none">
+                                                        <div class="actions-secondary">
+                                                            <a type="button" data-id="@item.ProductId" class="ajax-add-to-cart1 action btn-compare js-btn-wishlist setWishlist btn-views">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                                                                    <path d="M1.21763 5.64124C0.581381 3.86545 1.37671 1.60538 3.12641 1.12108C4.08078 0.798209 5.35327 1.12106 5.98952 2.08967C6.62577 1.12106 7.89826 0.798209 8.85263 1.12108C10.7614 1.76682 11.3977 3.86545 10.7614 5.64124C9.96609 8.38563 6.78483 10 5.98952 10C5.19421 9.83856 2.17201 8.54707 1.21763 5.64124Z" stroke="white" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                                                            </a>
+                                                            <a type="button" data-id="@item.ProductId" class="ajax-add-to-compare setCompare btn-views js-compare-product-add active">
+                                                                <svg x="0" y="0" viewBox="0 0 459 459.648" style="enable-background:new 0 0 512 512">
+                                                                    <path xmlns="http://www.w3.org/2000/svg" d="m416.324219 293.824219c0 26.507812-21.492188 48-48 48h-313.375l63.199219-63.199219-22.625-22.625-90.511719 90.511719c-6.246094 6.25-6.246094 16.375 0 22.625l90.511719 90.511719 22.625-22.625-63.199219-63.199219h313.375c44.160156-.054688 79.945312-35.839844 80-80v-64h-32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                                    <path xmlns="http://www.w3.org/2000/svg" d="m32.324219 165.824219c0-26.511719 21.488281-48 48-48h313.375l-63.199219 63.199219 22.625 22.625 90.511719-90.511719c6.246093-6.25 6.246093-16.375 0-22.625l-90.511719-90.511719-22.625 22.625 63.199219 63.199219h-313.375c-44.160157.050781-79.949219 35.839843-80 80v64h32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="flashsale__bottom" style="">
+
+
+
+                                                    <div class="flashsale__progressbar   ">
+                                                        <div class="flashsale___percent" style="width: 66%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Deal Hot-->
+    <script>
+        window.falshSale = {
+            type: "hours",
+            dateStart: "",
+            dateFinish: "",
+            hourStart: "00:00",
+            hourFinish: "24",
+            activeDay: "7",
+            finishAction: "show",
+            percentMin: "40",
+            percentMax: "80",
+            maxInStock: "300",
+            useSoldQuantity: false,
+            quantityType: "sold",
+            timestamp: new Date().getTime(),
+        }
+    </script>
+    <script src="~/Asset/100/449/923/themes/875305/assets/flashsale.js?1681307816797" defer></script>
+
+    <script>
+        (function ($) { "use strict"; $.ajaxChimp = { responses: { "We have sent you a confirmation email": 0, "Please enter a valueggg": 1, "An email address must contain a single @@": 2, "The domain portion of the email address is invalid (the portion after the @@: )": 3, "The username portion of the email address is invalid (the portion before the @@: )": 4, "This email address looks fake or invalid. Please enter a real email address": 5 }, translations: { en: null }, init: function (selector, options) { $(selector).ajaxChimp(options) } }; $.fn.ajaxChimp = function (options) { $(this).each(function (i, elem) { var form = $(elem); var email = form.find("input[type=email]"); var label = form.find("label[for=" + email.attr("id") + "]"); var settings = $.extend({ url: form.attr("action"), language: "en" }, options); var url = settings.url.replace("post?", "post-json?").concat("&c=?"); form.attr("novalidate", "true"); email.attr("name", "EMAIL"); form.submit(function () { var msg; function successCallback(resp) { if (resp.result === "success") { msg = "We have sent you a confirmation email"; label.removeClass("error").addClass("valid"); email.removeClass("error").addClass("valid") } else { email.removeClass("valid").addClass("error"); label.removeClass("valid").addClass("error"); var index = -1; try { var parts = resp.msg.split(" - ", 2); if (parts[1] === undefined) { msg = resp.msg } else { var i = parseInt(parts[0], 10); if (i.toString() === parts[0]) { index = parts[0]; msg = parts[1] } else { index = -1; msg = resp.msg } } } catch (e) { index = -1; msg = resp.msg } } if (settings.language !== "en" && $.ajaxChimp.responses[msg] !== undefined && $.ajaxChimp.translations && $.ajaxChimp.translations[settings.language] && $.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]]) { msg = $.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]] } label.html(msg); label.show(2e3); if (settings.callback) { settings.callback(resp) } } var data = {}; var dataArray = form.serializeArray(); $.each(dataArray, function (index, item) { data[item.name] = item.value }); $.ajax({ url: url, data: data, success: successCallback, dataType: "jsonp", error: function (resp, text) { console.log("mailchimp ajax submit error: " + text) } }); var submitMsg = "Submitting..."; if (settings.language !== "en" && $.ajaxChimp.translations && $.ajaxChimp.translations[settings.language] && $.ajaxChimp.translations[settings.language]["submit"]) { submitMsg = $.ajaxChimp.translations[settings.language]["submit"] } label.html(submitMsg).show(2e3); return false }) }); return this } })(jQuery);
+    </script>
+
+</div>
+
+<script src="~/js/JavaScript.js"></script>

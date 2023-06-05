@@ -1,0 +1,36 @@
+﻿@model List<Category>
+
+@if (Model != null && Model.Count() > 0)
+{
+    foreach (var item in Model)
+    {
+        <tr>
+            <td class="align-middle">
+                @item.NameCategory
+            </td>
+            <td></td>
+            <td></td>
+            <td class="align-middle">
+                @item.Brand.NameBrand
+            </td>
+            <td>
+                <img width="100" height="100" src="~/IMAGE/Categorys/@item.CategoryImage" />
+            </td>
+            <td></td>
+            <td class="align-middle text-right">
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Details" asp-route-id="@item.CategoryId">
+                    <i class="fa fa-calendar-week"></i>
+                    <span class="sr-only">Details</span>
+                </a>
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Edit" asp-route-id="@item.CategoryId">
+                    <i class="fa fa-pencil-alt"></i>
+                    <span class="sr-only">Edit</span>
+                </a>
+                <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Delete" asp-route-id="@item.CategoryId">
+                    <i class="far fa-trash-alt"></i>
+                    <span class="sr-only">Remove</span>
+                </a>
+            </td>
+        </tr>
+    }
+}

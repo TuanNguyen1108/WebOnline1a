@@ -1,0 +1,276 @@
+﻿@{
+    ViewData["Title"] = "Index Product of SamSung ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Product>
+
+<div class="bodywrap">
+    <div class="layout-collection">
+        <section class="bread-crumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="home">
+                        <a href="/home"><span>Trang chủ</span></a>
+                        <span class="mr_lr">&nbsp;/&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="changeurl" href="/ProductAll"><span>Sản Phẩm</span></a>
+                        <span class="mr_lr">&nbsp;/&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="changeurl" href="/ProductSamSung"><span>SamSung</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section_slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12 slider">
+                        <div class="home-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-prev" style="height: 370px">
+                                    <a class="clearfix" title="ND Tech">
+                                        <picture>
+                                            <img src="/Asset/Panner/panner6.png" alt="ND Tech" class="img-responsive">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active" style=" height: 350px">
+                                    <a class="clearfix" title="ND Tech">
+                                        <picture>
+                                            <img src="/Asset/Panner/panner5.jpg" alt="ND Tech" class="img-responsive">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <!--nút chuyển slide-->
+                <script>
+                    var swiper = new Swiper('.home-slider', {
+                        autoplay: false,
+                        pagination: {
+                            el: '.home-slider .swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.home-slider .swiper-button-next',
+                            prevEl: '.home-slider .swiper-button-prev',
+                        },
+                    });
+                </script>
+                <!--nút chuyển slide-->
+            </div>
+        </section>
+        <div class="container">
+            <div class="row margin-10-">
+                <div class="block-collection col-lg-12 col-12 padding-10">
+                    <h1 class="title-page d-none">Apple</h1>
+                    <div class="category-products">
+                        <div class="products-view products-view-grid list_hover_pro">
+                            <div class="row margin">
+                                @foreach (var item in Model)
+                                {
+                                    string url = $"ProductAll/details/{@item.ProductId}";
+                                    <div class="col-6 col-xl-2 col-lg-4 col-md-4 padding">
+                                        <div class="item_product_main">
+                                            <form method="post" class="variants product-action " data-cart-form data-id="product-actions-27357040" enctype="multipart/form-data">
+                                                <div class="product-thumbnail">
+                                                    <a class="image_thumb scale_hover" href="@url">
+                                                        <img class="lazyload" src="~/IMAGE/Products/@item.ProductImage">
+                                                    </a>
+                                                    <div class="actions-primary">
+                                                        <input class="hidden" type="hidden" name="variantId" value="70241716" />
+                                                        @* <button class="btn-cart" title="Tùy chọn" type="button" onclick="window.location.href='iphone-13-pro-max-128gb'">
+                                                    Tùy chọn
+                                                    </button>*@
+                                                        <button asp-controller="ProductAll" asp-action="Details" asp-route-id="@item.ProductId">
+                                                            <span>Xem Sản Phẩm</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name" style=" font-weight: bold;"><a href="@url">@item.NameProduct</a></h3>
+                                                    <div class="price-box" style="color:  #ff0000; font-weight: bold;">
+                                                        @item.Price.Value.ToString("#,##,00")VND &nbsp;
+                                                    </div>
+                                                </div>
+
+                                                <div class="action d-xl-block d-none">
+                                                    <div class="actions-secondary">
+                                                        <a type="button" data-id="@item.ProductId" class="ajax-add-to-cart1 action btn-compare js-btn-wishlist setWishlist btn-views active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                                                                <path d="M1.21763 5.64124C0.581381 3.86545 1.37671 1.60538 3.12641 1.12108C4.08078 0.798209 5.35327 1.12106 5.98952 2.08967C6.62577 1.12106 7.89826 0.798209 8.85263 1.12108C10.7614 1.76682 11.3977 3.86545 10.7614 5.64124C9.96609 8.38563 6.78483 10 5.98952 10C5.19421 9.83856 2.17201 8.54707 1.21763 5.64124Z" stroke="white" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="setCompare btn-views js-compare-product-add active" data-compare="iphone-13-pro-max-128gb" data-type="Điện thoại" tabindex="0" title="Bỏ so sánh" style="cursor: default;">
+                                                            <svg x="0" y="0" viewBox="0 0 459 459.648" style="enable-background:new 0 0 512 512">
+                                                                <path xmlns="http://www.w3.org/2000/svg" d="m416.324219 293.824219c0 26.507812-21.492188 48-48 48h-313.375l63.199219-63.199219-22.625-22.625-90.511719 90.511719c-6.246094 6.25-6.246094 16.375 0 22.625l90.511719 90.511719 22.625-22.625-63.199219-63.199219h313.375c44.160156-.054688 79.945312-35.839844 80-80v-64h-32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                                <path xmlns="http://www.w3.org/2000/svg" d="m32.324219 165.824219c0-26.511719 21.488281-48 48-48h313.375l-63.199219 63.199219 22.625 22.625 90.511719-90.511719c6.246093-6.25 6.246093-16.375 0-22.625l-90.511719-90.511719-22.625 22.625 63.199219 63.199219h-313.375c-44.160157.050781-79.949219 35.839843-80 80v64h32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <div class="page-content page-content-img">
+                    <p class="MsoNormal" align="center" style="margin-bottom:6.0pt;text-align:center;line-height:150%">
+                        <b>
+                            <span lang="EN" style="font-size:18.0pt;line-height:150%">
+                                Mua SamSung chính hãng  tại itechStore
+                                <o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Trên thị trường hiện nay có rất nhiều thương hiệu smartphone đến từ các quốc gia khác nhau.
+                            Với thiết kế mẫu mã đa dạng, người dùng có nhiều lựa chọn sản phẩm trong các mức giá khác nhau.
+                            Samsung là một trong số ít các thương hiệu có smartphone bán ở tất cả các phân khúc, từ giá rẻ,
+                            tầm trung đến cao cấp. Điện thoại Samsung cũng được sử dụng rất phổ biến tại Việt Nam.
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <b>
+                            <span lang="EN" style="font-size:16.0pt;line-height:150%">
+                                Thương hiệu công nghệ “khổng lồ” đến từ Hàn Quốc
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Samsung là tập đoàn đa quốc gia thành lập từ năm 1938 và có trụ sở tại Seoul, Hàn Quốc.
+                            Ra đời và hoạt động từ quốc gia có ngành công nghiệp hiện đại, phát triển,
+                            Samsung nhanh chóng đạt được các cột mốc ấn tượng. Không chỉ dừng lại ở một dòng sản phẩm,
+                            Samsung không ngừng sáng tạo, thử nghiệm công nghệ mới, liên tục giới thiệu rất nhiều thiết bị điện tử
+                            hữu ích cho cuộc sống hàng ngày. Nhưng trong đó, các mẫu smartphone vẫn là dòng sản phẩm chủ lực, được công ty
+                            đầu tư phát triển, đổi mới không ngừng. Tại Việt Nam, một số mẫu điện thoại Samsung phổ biến như Galaxy A, Galaxy S, Galaxy Z,...
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <b>
+                            <span lang="EN" style="font-size:16.0pt;line-height:150%">
+                                Thiết kế đột phá, không ngừng thay đổi <o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Mặc dù không phải thị trường nhu cầu khổng lồ như Trung Quốc nhưng tại Việt Nam,
+                            Samsung vẫn đang cạnh tranh với rất nhiều tên tuổi khác như Apple, Xiaomi, hay OPPO.
+                            Dù vậy, các mẫu điện thoại của Samsung vẫn được rất nhiều người dùng ưa chuộng bởi thiết kế trẻ trung
+                            và đổi mới không ngừng. Dù là dòng Galaxy A tầm trung hay Galaxy S cao cấp, Samsung vẫn sử dụng các chất liệu bền bỉ,
+                            chắc chắn để người dùng có cảm giác cầm thoải mái nhất. Ngoài ra, điện thoại gập Galaxy Z Series là một bước đột phá
+                            thiết kế của “ông lớn” Hàn Quốc. Tất cả các mẫu smartphone Samsung đều có rất nhiều tùy chọn màu sắc trẻ trung như
+                            trắng, đen, tím, xanh lá,... bắt mắt và hợp xu hướng. Điện thoại Samsung được trang bị công nghệ màn hình hàng đầu,
+                            mang đến trải nghiệm thị giác chất lượng nhất cho người dùng.<o:p></o:p>
+                        </span>
+                    </p>
+
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+
+                        <b>
+                            <span lang="EN" style="font-size:16.0pt;line-height:150%">
+                                Cấu hình mạnh mẽ, công nghệ camera hàng đầu<o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Bên cạnh thiết kế hiện đại, nhà sản xuất Samsung cũng rất đầu tư cho cấu hình bên trong của điện thoại.
+                            Samsung tự phát triển con chip Exynos và là đối tác quan trọng của nhà sản xuất Qualcomm và chip Snapdragon.
+                            Vì thế, dù là dòng smartphone nào, các thiết bị đều sở hữu cấu hình mạnh mẽ, hoạt động ổn định, mượt mà trên
+                            từng thao tác. Một ưu điểm nữa trên những chiếc điện thoại Samsung đó là dung lượng pin vô cùng ấn tượng, tối
+                            đa lên tới 5000mAh. Giao diện người dùng thân thiện, nhiều tính năng hữu ích, điện thoại Samsung còn được đánh
+                            giá cao về khả năng chụp ảnh. Nhà sản xuất luôn nỗ lực hoàn thiện công nghệ và cảm biến, để điện thoại có thể
+                            hỗ trợ người dùng chụp đa chế độ như: chân dung, xóa phông hay zoom không vỡ nét. Những chiếc flagship nhà Samsung
+                            liên tục góp mặt trong danh sách smartphone có camera tốt nhất trên bảng xếp hạng DxOMark..<o:p></o:p>
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Camera cũng là một ưu điểm được nhiều người dùng đánh giá cao trên những chiếc iPhone.
+                            Apple luôn sử dụng những công nghệ hàng đầu, để chiếc iPhone có thể hỗ trợ chụp ảnh đa chế độ như HDR,
+                            chân dung, xóa phông,... cũng như quay video chất lượng cao sắc nét nhất. Ngoài ra iPhone còn rất nhiều tính năng hữu
+                            ích, chắc chắn sẽ đáp ứng nhu cầu sử dụng và làm hài lòng người dùng.<o:p></o:p>
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <b>
+                            <span lang="EN" style="font-size:16.0pt;line-height:150%">
+                                Mua điện thoại Samsung chính hãng giá rẻ tại itechStore<o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Với xu hướng thay đổi không ngừng, những chiếc điện thoại thông minh ngày sẽ được bổ sung thêm nhiều
+                            tính năng để hỗ trợ người dùng. Trong tương lai, smartphone Samsung sẽ được hoàn thiện cả về thiết kế
+                            và tính năng, mỗi sản phẩm trên tay đều làm hài lòng bất kỳ người dùng nào. Nếu bạn đang có nhu cầu tìm
+                            mua một chiếc điện thoại Samsung trong phân khúc giá rẻ, tầm trung hoặc cao cấp thì hãy xem tại website
+                            itechStore Mobile và đặt mua để nhận được chế độ bảo hành chính hãng 12 tháng cùng rất nhiều ưu đãi hấp dẫn
+                            khác. Tham khảo thông tin trên và đặt mua sản phẩm ngay hôm nay. <o:p></o:p>
+                        </span>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/JavaScript.js"></script>
+}
+
+@*<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    $(document).ready(function () {
+        $(".ajax-add-to-cart1").click(function () {
+            $.ajax({
+                url: "/CartYeuThich/AddToCart",
+                data: {
+                    id: $(this).data("id"),
+                    SoLuong: 1,
+                    type: "ajax"
+                },
+                success: function (data) {
+                    console.log(data);
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Thêm Sản Phẩm Yêu Thích Thành Công ! Vui Lòng Xem Ở Sản Phẩm Yêu Thích',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    $("#cart_count").html(data.soLuong);
+                },
+                error: function () {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Thêm Sản Phẩm Yêu Thích Thất Bại',
+                        text: 'Vui Lòng Thử Lại',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+            });
+        });
+    });
+</script>
+*@

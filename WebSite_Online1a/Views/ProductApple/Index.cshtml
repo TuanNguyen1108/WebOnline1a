@@ -1,0 +1,290 @@
+﻿@{
+    ViewData["Title"] = "Index Product of Apple ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Category> Category = ViewBag.Category;
+}
+
+@model List<Product>
+
+<div class="bodywrap">
+    <div class="layout-collection">
+        <section class="bread-crumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="home">
+                        <a href="/home"><span>Trang chủ</span></a>
+                        <span class="mr_lr">&nbsp;/&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="changeurl" href="/ProductAll"><span>Sản Phẩm</span></a>
+                        <span class="mr_lr">&nbsp;/&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="changeurl" href="/ProductApple"><span>Apple</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section_slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12 slider">
+                        <div class="home-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-prev" style="height: 350px">
+                                    <a class="clearfix" title="ND Tech">
+                                        <picture>
+                                            <img src="/Asset/Panner/panner1.png" alt="ND Tech" class="img-responsive">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active" style=" height: 350px">
+                                    <a class="clearfix" title="ND Tech">
+                                        <picture>
+                                            <img src="/Asset/Panner/panner5.jpg" alt="ND Tech" class="img-responsive">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <!--nút chuyển slide-->
+                <script>
+                    var swiper = new Swiper('.home-slider', {
+                        autoplay: false,
+                        pagination: {
+                            el: '.home-slider .swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.home-slider .swiper-button-next',
+                            prevEl: '.home-slider .swiper-button-prev',
+                        },
+                    });
+                </script>
+                <!--nút chuyển slide-->
+            </div>
+        </section>
+        <div class="container">
+            <div class="row margin-10-">
+                <div class="block-collection col-lg-12 col-12 padding-10">
+
+                    <div class="category-products">
+                        <div class="products-view products-view-grid list_hover_pro">
+                            <h6 style="font-weight: bold">
+                                Điện Thoại Iphone (Apple):
+                            </h6>
+                            <div class="row margin">
+                                @foreach (var item in Model)
+                                {
+                                    string url = $"ProductAll/details/{@item.ProductId}";
+                                    <div class="col-6 col-xl-2 col-lg-4 col-md-4 padding">
+                                        <div class="item_product_main">
+                                            <form method="post" class="variants product-action " data-cart-form data-id="product-actions-27357040" enctype="multipart/form-data">
+                                                <div class="product-thumbnail">
+                                                    <a class="image_thumb scale_hover" href="@url">
+                                                        <img class="lazyload" src="~/IMAGE/Products/@item.ProductImage">
+                                                    </a>
+                                                    <div class="actions-primary">
+                                                        <input class="hidden" type="hidden" name="variantId" value="70241716" />
+                                                        @*<button class="btn-cart" title="Tùy chọn" type="button" onclick="window.location.href='iphone-13-pro-max-128gb'">
+                                                    Tùy chọn
+                                                    </button>*@
+                                                        <button asp-controller="ProductAll" asp-action="Details" asp-route-id="@item.ProductId">
+                                                            <span>Xem Sản Phẩm</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name" style=" font-weight: bold;"><a href="@url">@item.NameProduct</a></h3>
+                                                    <div class="price-box" style="color:  #ff0000; font-weight: bold;">
+                                                        @item.Price.Value.ToString("#,##,00")VND &nbsp;
+                                                    </div>
+                                                </div>
+
+                                                <div class="action d-xl-block d-none">
+                                                    <div class="actions-secondary">
+                                                        <a type="button" data-id="@item.ProductId" class="ajax-add-to-cart1 action btn-compare js-btn-wishlist setWishlist btn-views active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                                                                <path d="M1.21763 5.64124C0.581381 3.86545 1.37671 1.60538 3.12641 1.12108C4.08078 0.798209 5.35327 1.12106 5.98952 2.08967C6.62577 1.12106 7.89826 0.798209 8.85263 1.12108C10.7614 1.76682 11.3977 3.86545 10.7614 5.64124C9.96609 8.38563 6.78483 10 5.98952 10C5.19421 9.83856 2.17201 8.54707 1.21763 5.64124Z" stroke="white" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="setCompare btn-views js-compare-product-add active" data-compare="iphone-13-pro-max-128gb" data-type="Điện thoại" tabindex="0" title="Bỏ so sánh" style="cursor: default;">
+                                                            <svg x="0" y="0" viewBox="0 0 459 459.648" style="enable-background:new 0 0 512 512">
+                                                                <path xmlns="http://www.w3.org/2000/svg" d="m416.324219 293.824219c0 26.507812-21.492188 48-48 48h-313.375l63.199219-63.199219-22.625-22.625-90.511719 90.511719c-6.246094 6.25-6.246094 16.375 0 22.625l90.511719 90.511719 22.625-22.625-63.199219-63.199219h313.375c44.160156-.054688 79.945312-35.839844 80-80v-64h-32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                                <path xmlns="http://www.w3.org/2000/svg" d="m32.324219 165.824219c0-26.511719 21.488281-48 48-48h313.375l-63.199219 63.199219 22.625 22.625 90.511719-90.511719c6.246093-6.25 6.246093-16.375 0-22.625l-90.511719-90.511719-22.625 22.625 63.199219 63.199219h-313.375c-44.160157.050781-79.949219 35.839843-80 80v64h32zm0 0" fill="#7B7B7B" data-original="#000000" style=""></path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <div class="page-content page-content-img">
+                    <p class="MsoNormal" align="center" style="margin-bottom:6.0pt;text-align:center;line-height:150%">
+                        <b>
+                            <span lang="EN" style="font-size:18.0pt;line-height:150%">
+                                Mua iPhone chính hãng VN/A  tại itechStore
+                                <o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Điện thoại thông minh đã trở thành một phần không thể thiếu trong đời sống hàng ngày của người dùng. Trong đó, những chiếc iPhone của Apple luôn là thương hiệu smartphone được yêu thích ở rất nhiều quốc gia trên toàn thế giới. Điều gì đã khiến cho Apple và iPhone luôn giữ được vị trí dẫn đầu trong thị trường này, cùng tìm hiểu dưới đây. <o:p></o:p>
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <b>
+                            <span lang="EN" style="font-size:16.0pt;line-height:150%">
+                                Apple - Khác biệt để dẫn đầu xu hướng<o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Thương hiệu Apple được thành lập từ những năm 1976 tại Hoa Kỳ, cũng là nơi đặt trụ sở chính của công ty đến thời điểm hiện tại. Trải qua nhiều năm, với sự phát triển và thay đổi để hoàn thiện, người dùng trên toàn thế giới bắt đầu biết đến và nhớ tới thương hiệu qua logo quả táo khuyết. Không chỉ thế, người dùng còn nhớ đến Apple bởi slogan “Think different” và những sáng tạo không ngừng trên những sản phẩm đã ra mắt. Năm 2007, chiếc iPhone đầu tiên ra đời đánh dấu bước tiến lớn trong ngành công nghiệp smartphone. Cũng kể từ đó, iPhone luôn được nhớ đến với những thiết kế thời thượng, tính năng khác biệt, dẫn đầu xu hướng và vượt lên trên tất cả các nhà sản xuất khác trong ngành. <o:p></o:p>
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <b>
+                            <span lang="EN" style="font-size:16.0pt;line-height:150%">
+                                Thiết kế thời thượng, khẳng định đẳng cấp <o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Những chiếc điện thoại iPhone của Apple luôn nổi bật với với thiết kế nguyên khối thời thượng.
+                            Gần đây nhất từ sau dòng iPhone 12 Series, những chiếc điện thoại nhà Apple xuất hiện với kiểu dáng góc cạnh,
+                            vuông vức, giúp sản phẩm trở nên cao cấp và sang trọng hơn rất nhiều.
+                            Hầu hết các mẫu iPhone đều được hoàn thiện từ chất liệu cao cấp, mỏng nhẹ với màn hình tràn viền thời thượng.
+                            Đến dòng iPhone 14 series, Apple còn thay “tai thỏ” thành Dynamic Island biến đổi linh hoạt các hình dạng.
+                            Nhà sản xuất đã sáng tạo không ngừng để mang đến cho người dùng chiếc điện thoại có thiết kế hoàn hảo nhất.
+                            iPhone cũng có các màu sắc cơ bản như đen, trắng, bạc, vàng tùy theo từng dòng máy sẽ thêm một số màu như xanh dương,
+                            hồng,... Bạn có thể chọn màu điện thoại theo sở thích và tự tin thể hiện chất riêng của mình.<o:p></o:p>
+                        </span>
+                    </p>
+
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+
+                        <b>
+                            <span lang="EN" style="font-size:16.0pt;line-height:150%">
+                                Hiệu năng đỉnh cao, công nghệ chụp ảnh hiện đại<o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Bên cạnh thiết kế đỉnh cao, iPhone của Apple còn sở hữu cấu hình mạnh mẽ.
+                            Một trong những điểm khác biệt của iPhone so với các mẫu điện thoại khác trên thị trường chính là hệ điều hành độc
+                            quyền iOS. Theo đánh giá từ người dùng, iOS đem lại sự ổn định, mượt mà và tối ưu hơn trong quá trình sử dụng.
+                            Ngoài ra, những con chip được Apple trang bị trên iPhone cũng có hiệu năng mạnh nhất thị trường, đảm bảo xử lý các tác
+                            vụ mượt mà.<o:p></o:p>
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Camera cũng là một ưu điểm được nhiều người dùng đánh giá cao trên những chiếc iPhone.
+                            Apple luôn sử dụng những công nghệ hàng đầu, để chiếc iPhone có thể hỗ trợ chụp ảnh đa chế độ như HDR,
+                            chân dung, xóa phông,... cũng như quay video chất lượng cao sắc nét nhất. Ngoài ra iPhone còn rất nhiều tính năng hữu
+                            ích, chắc chắn sẽ đáp ứng nhu cầu sử dụng và làm hài lòng người dùng.<o:p></o:p>
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <b>
+                            <span lang="EN" style="font-size:16.0pt;line-height:150%">
+                                Mua điện thoại iPhone chính hãng giá rẻ tại itechStore<o:p></o:p>
+                            </span>
+                        </b>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Trong những năm tới, iPhone chắc chắn vẫn sẽ là dòng smartphone được yêu thích tại thị trường Việt Nam
+                            cũng như trên toàn thế giới. Thiết kế sang trọng, tính năng đa dạng và chất lượng chính là các yếu tố để người
+                            dùng tin tưởng sử dụng sản phẩm của Apple. Từ năm 2020, Hoàng Hà Mobile đã trở thành nhà bán lẻ ủy quyền chính
+                            thức của Apple tại Việt Nam, chuyên cung cấp các sản phẩm chính hãng VN/A với mức giá tốt nhất cùng chế độ bảo hành
+                            và rất nhiều ưu đãi.<o:p></o:p>
+                        </span>
+                    </p>
+                    <p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:150%">
+                        <span lang="EN" style="font-size:12.0pt;line-height:150%">
+                            Nếu bạn đang có nhu cầu tìm mua điện thoại iPhone chính hãng VN/A hãy tham khảo tại website của Hoàng Hà Mobile và đặt hàng ngay hôm nay nhé.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/JavaScript.js"></script>
+}
+
+
+
+@*
+<style>
+    /* Chỉnh kích thước của hộp thông báo */
+    .swal2-popup {
+        font-size: 0.6rem; /* Kích thước chữ trong hộp thông báo */
+    }
+
+    /* Chỉnh kích thước của nút */
+    .swal2-actions .swal2-confirm,
+    .swal2-actions .swal2-cancel {
+        font-size: 0.8rem; /* Kích thước chữ trong nút */
+    }
+</style>
+
+@section scripts{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            $(".ajax-add-to-cart1").click(function () {
+                $.ajax({
+                    url: "/CartYeuThich/AddToCart",
+                    data: {
+                        id: $(this).data("id"),
+                        SoLuong: 1,
+                        type: "ajax"
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            title: 'Thêm Sản Phẩm Yêu Thích Thành Công ! Vui Lòng Xem Ở Sản Phẩm Yêu Thích',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        $("#cart_count").html(data.soLuong);
+                    },
+                    error: function () {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Thêm Sản Phẩm Yêu Thích Thất Bại',
+                            text: 'Vui Lòng Thử Lại',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}*@

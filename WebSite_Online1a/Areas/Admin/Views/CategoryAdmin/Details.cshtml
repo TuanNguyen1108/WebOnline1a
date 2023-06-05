@@ -1,0 +1,43 @@
+﻿@model WebSite_Online1a.Models.Category
+
+@{
+    ViewData["Title"] = "Details danh mục admin";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-inner">
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a asp-controller="CategoryAdmin" asp-action="Index">Danh Sách Danh Mục</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a>Chi Tiết Danh Mục</a>
+            </li>
+        </ol>
+    </div>
+    <hr class="my-10">
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="CategoryId" />
+        <div class="form-group">
+            <label class="form-control-label">Tên Danh Mục:  <h4>@Html.DisplayFor(model => model.NameCategory)</h4></label>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">Hình Ảnh:</label>
+            <div>
+                @if (!string.IsNullOrEmpty(Model.CategoryImage))
+                {
+                    <img width="120" height="140" src="~/IMAGE/Categorys/@Model.CategoryImage" />
+                }
+            </div>
+        </div>
+        <div class="col-md-5">
+            <button asp-action="Index" class="btn btn-outline-secondary">Quay về</button>
+        </div>
+    </form>
+    <hr class="my-10">
+</div>

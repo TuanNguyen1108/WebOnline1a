@@ -1,0 +1,602 @@
+﻿@model WebSite_Online1a.Models.Product
+@{
+    ViewData["Title"] = "Details all Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Price> Image = ViewBag.Image;
+}
+<div class="bodywrap">
+    <section class="bread-crumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="home">
+                    <a href="/home"><span>Trang chủ</span></a>
+                    <span class="mr_lr">&nbsp;/&nbsp;</span>
+                </li>
+                <li>
+                    <a class="changeurl" href="/ProductAll"><span>Sản Phẩm</span></a>
+                    <span class="mr_lr">&nbsp;/&nbsp;</span>
+                </li>
+                <li><strong><span>@Model.NameProduct</span></strong></li>
+            </ul>
+        </div>
+    </section>
+    <section class="product layout-product" itemscope itemtype="https://schema.org/Product">
+        <div class="container">
+            <div class="details-product">
+                <div class="row margin-am-10">
+
+                    <div class="product-detail-left product-images col-12 col-md-12 col-lg-7 col-left">
+                        <div class="product-image-block relative">
+                            <div class="swiper-image">
+                                <div class="swiper-container gallery-top swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                                    <div class="swiper-wrapper" id="lightgallery" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                                        @if (Image != null && Image.Count() > 0)
+                                        {
+                                            foreach (var item in Image)
+                                            {
+                                                <a class="swiper-slide swiper-slide-next" title="Click để xem" style="width: 543px;">
+                                                    <img height="540" width="540" src="~/IMAGE/Product_Details/@item.ColorImage" class="img-responsive mx-auto d-block swiper-lazy swiper-lazy-loaded">
+                                                </a>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                                <div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-vertical swiper-container-pointer-events swiper-container-thumbs">
+                                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                        @if (Image != null && Image.Count() > 0)
+                                        {
+                                            foreach (var item in Image)
+                                            {
+                                                <div class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" data-hash="0" style="height: 100px; margin-bottom: 10px;">
+                                                    <div class="p-100">
+                                                        <img height="80" width="80" src="~/IMAGE/Product_Details/@item.ColorImage" class="swiper-lazy">
+                                                    </div>
+                                                </div>
+                                            }
+                                        }
+                                        <div class="swiper-slide swiper-slide-visible" data-hash="4" style="height: 100px; margin-bottom: 10px;">
+                                            <div class="p-100">
+                                                <img height="80" width="80" src="~/IMAGE/Products/@Model.ProductImage" class="swiper-lazy">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-product d-flex align-items-center">
+                                <div class="swiper-prenext space-x-2">
+                                    <div class="swiper-button-prev swiper-button-disabled"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <div class="btn-tag space-x-2">
+                                    <a type="button" data-id="@Model.ProductId" class="ajax-add-to-cart1 action btn-compare js-btn-wishlist setWishlist btn-views">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                                            <path d="M1.21763 5.64124C0.581381 3.86545 1.37671 1.60538 3.12641 1.12108C4.08078 0.798209 5.35327 1.12106 5.98952 2.08967C6.62577 1.12106 7.89826 0.798209 8.85263 1.12108C10.7614 1.76682 11.3977 3.86545 10.7614 5.64124C9.96609 8.38563 6.78483 10 5.98952 10C5.19421 9.83856 2.17201 8.54707 1.21763 5.64124Z" stroke="white" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    @*<script>
+                                        $(".ajax-add-to-cart1").click(function () {
+                                            $.ajax({
+                                                url: "/CartYeuThich/AddToCart",
+                                                data: {
+                                                    id: $(this).data("id"),
+                                                    SoLuong: 1,
+                                                    type: "ajax"
+                                                },
+                                                success: function (data) {
+                                                    console.log(data);
+                                                    Swal.fire({
+                                                        position: 'top-end',
+                                                        icon: 'success',
+                                                        title: 'Thêm Sản Phẩm Yêu Thích Thành Công ! Vui Lòng Xem Ở Sản Phẩm Yêu Thích',
+                                                        showConfirmButton: false,
+                                                        timer: 1500
+                                                    });
+                                                    $("#cart_count").html(data.soLuong);
+                                                },
+                                                error: function () {
+                                                    Swal.fire({
+                                                        icon: 'error',
+                                                        title: 'Thêm Sản Phẩm Yêu Thích Thất Bại',
+                                                        text: 'Vui Lòng Thử Lại',
+                                                        showConfirmButton: false,
+                                                        timer: 1500
+                                                    });
+                                                }
+                                            });
+                                        });
+                                    </script>*@
+                                    <a href="javascript:void(0)" class="setCompare btn-views js-compare-product-add pd-compare-product-add" data-compare="iphone-13-pro-max-128gb" data-type="Điện thoại" tabindex="0" title="Thêm vào so sánh">
+                                        <svg width="20" height="20" x="0" y="0" viewBox="0 0 459 459.648" style="enable-background:new 0 0 512 512">
+                                            <path xmlns="http://www.w3.org/2000/svg" d="m416.324219 293.824219c0 26.507812-21.492188 48-48 48h-313.375l63.199219-63.199219-22.625-22.625-90.511719 90.511719c-6.246094 6.25-6.246094 16.375 0 22.625l90.511719 90.511719 22.625-22.625-63.199219-63.199219h313.375c44.160156-.054688 79.945312-35.839844 80-80v-64h-32zm0 0" fill="#ffffff" data-original="#000000" style=""></path>
+                                            <path xmlns="http://www.w3.org/2000/svg" d="m32.324219 165.824219c0-26.511719 21.488281-48 48-48h313.375l-63.199219 63.199219 22.625 22.625 90.511719-90.511719c6.246093-6.25 6.246093-16.375 0-22.625l-90.511719-90.511719-22.625 22.625 63.199219 63.199219h-313.375c-44.160157.050781-79.949219 35.839843-80 80v64h32zm0 0" fill="#ffffff" data-original="#000000" style=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="append-product-tab-mobile">
+                            <div class="product-tab e-tabs not-dqtab">
+                                <ul class="tabs tabs-title clearfix">
+                                    <li class="tab-link active">
+                                        <h3>Đặc điểm nổi bật</h3>
+                                    </li>
+                                </ul>
+                                <div class="tab-float">
+                                    <div id="tab-1" class="tab-content active content_extab">
+                                        <div class="rte product_getcontent">
+                                            <div id="content" class="has-height">
+                                                <div>                                                  
+                                                    @{
+                                                        var content = Model.Specification.Description; // Lấy nội dung từ CSDL
+                                                    }
+                                                    <div id="summernote-content">
+                                                        @Html.Raw(content) <!-- Sử dụng Html.Raw để hiển thị nội dung HTML mà không bị mã hóa -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-md-12 col-lg-5 col-right">
+                        <div class="product-sticky">
+                            <div class="details-pro">
+                                <h1 class="title-product" style="color:  #000000; font-weight: bold;">@Model.NameProduct</h1>
+
+                                <div class="sapo-product-reviews-badge sapo-product-reviews-badge-detail" data-id="27357040"></div>
+
+                                @*<form enctype="multipart/form-data" data-cart-form id="add-to-cart-form" action="cart/add" method="post" class="form-inline">*@
+                                <form enctype="multipart/form-data" method="post" class="form-inline">
+                                    <div class="price-box clearfix">
+
+                                        <span class="special-price">
+                                            <span id="priceSpan" style="color:  #ff0000; font-weight: bold;" >@Model.Price.Value.ToString("#,##,00").Replace(",",".") ₫</span>
+                                            @*<span id="priceSpan"></span>*@
+                                        </span> <!-- Giá Khuyến mại -->
+
+                                        <span class="old-price" itemprop="priceSpecification" itemscope="" itemtype="http://schema.org/priceSpecification">
+                                            <del class="price product-price-old">
+                                                @Model.PriceOld.Value.ToString("#,##,00").Replace(",",".") ₫
+                                            </del>
+                                        </span> <!-- Giá gốc -->
+
+                                    </div>
+                                    <div class="km-hot">
+                                        <div class="box-km">
+                                            <h2 class="title_km">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M1.3125 11.026V19.3155C1.3125 20.0782 1.90181 20.6971 2.625 20.6971H9.1875V11.026H1.3125Z" fill="white">
+                                                            <path d="M19.6875 5.49972H15.5348C15.8327 5.28557 16.0886 5.07281 16.2671 4.88215C17.3263 3.76169 17.3263 1.93801 16.2671 0.81755C15.2381 -0.273898 13.4453 -0.271134 12.4176 0.81755C11.8479 1.41854 10.3386 3.86531 10.5473 5.49972H10.4528C10.6601 3.86531 9.15075 1.41854 8.58244 0.81755C7.55344 -0.271134 5.76056 -0.271134 4.73287 0.81755C3.675 1.93801 3.675 3.76169 4.73156 4.88215C4.91138 5.07281 5.16731 5.28557 5.46525 5.49972H1.3125C0.589312 5.49972 0 6.12005 0 6.8813V8.95367C0 9.33498 0.294 9.64446 0.65625 9.64446H9.1875V6.8813H11.8125V9.64446H20.3438C20.706 9.64446 21 9.33498 21 8.95367V6.8813C21 6.12005 20.412 5.49972 19.6875 5.49972ZM9.11006 5.45413C9.11006 5.45413 9.05494 5.49972 8.86725 5.49972C7.96031 5.49972 6.22913 4.50775 5.66344 3.90814C5.1135 3.32511 5.1135 2.37459 5.66344 1.79156C5.92987 1.50972 6.28294 1.35498 6.65831 1.35498C7.03237 1.35498 7.38544 1.50972 7.65188 1.79156C8.5365 2.72827 9.41588 5.12117 9.11006 5.45413ZM12.1314 5.49972C11.9451 5.49972 11.8899 5.45551 11.8899 5.45413C11.5841 5.12117 12.4635 2.72827 13.3481 1.79156C13.8771 1.22926 14.8024 1.2265 15.3366 1.79156C15.8878 2.37459 15.8878 3.32511 15.3366 3.90814C14.7709 4.50775 13.0397 5.49972 12.1314 5.49972Z" fill="white">
+                                                                <path d="M11.8125 11.026V20.6971H18.375C19.0995 20.6971 19.6875 20.0782 19.6875 19.3155V11.026H11.8125Z" fill="white">
+                                                    </svg>
+                                                    Khuyến mãi
+                                                </span>
+                                            </h2>
+                                            <div class="box-promotion">
+                                                <ul>
+                                                    <li><meta charset="utf-8" />Tặng thêm <strong><em>Phiếu mua hàng 200.000đ</em></strong> (áp dụng từ ngày 30/4/2023)</li>
+                                                    <li><em><strong>Trả góp</strong></em> 0% lãi suất</li>
+                                                    <li>Chiết khấu member ship</li>
+                                                    <li><em><strong>Giảm giá thêm 100.000đ</strong></em> khi mua kèm Airpods Pro (VN/A)</li>
+                                                    <li><em><strong>Giảm thêm 200.000đ</strong></em> khi mua kèm Macbook Air M1 8GB/256GB (VN/A)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="config-group-container">
+                                        <h5>Phiên Bản:</h5>
+                                        <div class="d-flex flex-wrap config-group-holder">
+                                            <a class="item current ">
+                                                <span class="name">                                                    
+                                                    @Model.Gb
+                                                </span>
+                                                <span class="config-price" style="color:  #ff0000; font-weight: bold;">@Model.Price.Value.ToString("#,##,00").Replace(",",".") ₫</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <form id="productForm">
+                                        <div class="config-group-container">
+                                            <h5>Lựa Chọn Màu:</h5>
+                                            <script>
+                                                function formatCurrency(price) {
+                                                    return price.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
+                                                }
+                                                // hàm để updata giá khi click option (onclick="updatePrice(@@item.PriceNew)")
+                                                function updatePrice(price) {
+                                                    var formattedPrice = formatCurrency(price);
+                                                    document.getElementById("priceSpan").textContent = formattedPrice;
+                                                }
+                                            </script>
+                                            <div class="d-flex flex-wrap config-group-holder">
+                                                @{
+                                                    bool isFirstOption = true; // Biến để kiểm tra vòng lặp đầu tiên
+                                                }
+                                                @if (Image != null && Image.Count() > 0)
+                                                {
+                                                    foreach (var item in Image)
+                                                    {
+                                                        <a class="item">
+                                                            <span class="name">
+                                                                <input class="form-check-input" type="radio" name="productOption" value="@item.PriceId" onclick="updatePrice(@item.PriceNew)" @(isFirstOption ? "checked" : "")>
+                                                                @item.Color
+                                                                <div>
+                                                                    <span class="config-price" style="color:  #ff0000; font-weight: bold; ">@item.PriceNew.Value.ToString("#,##,00").Replace(",",".") ₫</span>
+                                                                </div>
+                                                            </span>
+                                                        </a>
+                                                        isFirstOption = false; // Đặt biến isFirstOption thành false sau vòng lặp đầu tiên
+                                                    }
+                                                }
+                                            </div>
+                                        </div>
+
+                                        <div class="form-product">
+                                            <div class="clearfix form-group ">
+                                                <div class="flex-quantity">
+                                                    <div class="custom custom-btn-number show">
+                                                        <label class="sl section">Số lượng:</label>
+                                                        <div class="input_number_product form-control">
+                                                            <button class="btn_num num_1 button button_qty" onClick="var result = document.getElementById('quantity'); var qtypro = result.value; if( !isNaN( qtypro ) &amp;&amp; qtypro &gt; 1 ) result.value--;return false;" type="button">-</button>
+                                                            <input type="text" id="quantity" name="quantity" value="1" maxlength="3" class="form-control prd_quantity" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" onchange="if(this.value == 0)this.value=1;">
+                                                            <button class="btn_num num_2 button button_qty" onClick="var result = document.getElementById('quantity'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type="button">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-mua button_actions clearfix">
+                                                        @*<button data-id="@Model.ProductId" type="button" id="checkoutButton" class="btn btn_base normal_button btn_add_cart add_to_cart btn-cart">
+                                                            <span>Mua Ngay</span>
+                                                        </button>
+
+                                                        <button data-id="@Model.ProductId" type="button" id="addToCartButton" class="btn btn_base normal_button btn_add_cart add_to_cart btn-cart">
+                                                            <span>Thêm Vào Giỏ Hàng</span>
+                                                        </button>*@
+                                                        <div class="group-button">
+                                                            <a data-id="@Model.ProductId" type="button" id="checkoutButton">
+                                                                <span>MUA NGAY</span> 
+                                                            </a>
+                                                            <a data-id="@Model.ProductId" type="button" id="addToCartButton">
+                                                                <span>THÊM GIỎ HÀNG</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>                                                                                                       
+                                                    <!--script checkout sản phẩm-->
+                                                    <script>
+                                                        $('#checkoutButton').on('click', function () {
+                                                            var selectedOption = $('input[name="productOption"]:checked').val();
+                                                            var selectedQuantity = $('#quantity').val();
+                                                            // Gửi yêu cầu Ajax để thêm sản phẩm vào giỏ hàng
+                                                            $.ajax({
+                                                                url: '/Cart/AddToCart',
+                                                                type: 'POST',
+                                                                dataType: "JSON",
+                                                                data: {
+                                                                    idprice: selectedOption,
+                                                                    SoLuong: selectedQuantity,
+                                                                    id: $(this).data("id"),
+                                                                    type: "ajax"
+                                                                },
+                                                                success: function (response) {
+                                                                    window.location.href = '/CheckOut/Index';
+                                                                },
+                                                                error: function () {
+                                                                    // Hiển thị thông báo lỗi
+                                                                    alert('Thêm Sản phẩm thất bại.');
+                                                                }
+                                                            });
+                                                        });
+                                                    </script>
+                                                    <!--script add sản phẩm vào giỏ hàng-->
+                                                    @*<script>
+                                                        $('#addToCartButton').on('click', function () {                                                           
+                                                            var selectedOption = $('input[name="productOption"]:checked').val();                                                            
+                                                            var selectedQuantity = $('#quantity').val();
+                                                            // Gửi yêu cầu Ajax để thêm sản phẩm vào giỏ hàng
+                                                            $.ajax({
+                                                                url: '/Cart/AddToCart',
+                                                                type: 'POST',
+                                                                dataType: "JSON",
+                                                                data: {
+                                                                    idprice: selectedOption,
+                                                                    SoLuong: selectedQuantity,
+                                                                    id: $(this).data("id"),
+                                                                    type: "ajax"
+                                                                },
+                                                                success: function (response) { 
+                                                                    //alert(response.message);
+                                                                    Swal.fire({
+                                                                        position: 'top-end',
+                                                                        icon: 'success',
+                                                                        title: 'Thêm Sản Phẩm Vào Giỏ Hàng Thành Công',
+                                                                        showConfirmButton: false,
+                                                                        timer: 1500
+                                                                    });
+                                                                    $("#cart_count1").html(response.soLuong);
+                                                                },
+                                                                error: function () {
+                                                                    // Hiển thị thông báo lỗi
+                                                                    alert('Thêm Sản phẩm thất bại.');
+                                                                }
+                                                            });
+                                                        });
+                                                    </script>*@
+                                                    <!--script add sản phẩm vào giỏ hàng-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </form>
+                            </div>
+
+                            <!--Thông Số Kĩ Thuật-->
+                            <div class="specifications margin-bottom-20">
+                                <h2 class="fs-dttop">Thông số kỹ thuật</h2>
+                                <div class="fs-tsright">
+                                        <table border="1" cellpadding="1" cellspacing="1">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Kích thước màn hình:</td>
+                                                    <td>@Model.Specification.SizeCreen</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Camera sau:</td>
+                                                    <td>@Model.Specification.Camera</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Camera góc siêu rộng:</td>
+                                                    <td>@Model.Specification.CameraSelfie</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chipset:</td>
+                                                    <td>@Model.Specification.Cpu</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-specifications" data-toggle="modal" data-target="#specifications">
+                                    Xem cấu hình chi tiết
+                                </button>
+                                <div class="modal fade" id="specifications" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="specifications-overlay"></div>
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close close-specifications" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Thông số kỹ thuật chi tiết</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                    <table border="1" cellpadding="1" cellspacing="1">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Kích thước màn hình:</td>
+                                                                <td>@Model.Specification.SizeCreen</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Camera sau:</td>
+                                                                <td>@Model.Specification.Camera</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Camera Selfie:</td>
+                                                                <td>@Model.Specification.CameraSelfie</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Hệ Điều Hành:</td>
+                                                                <td>@Model.Specification.OperatingSystem</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Chipset:</td>
+                                                                <td>@Model.Specification.Cpu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Dung lượng RAM:</td>
+                                                                <td>@Model.Specification.Ram</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bộ nhớ trong:</td>
+                                                                <td>@Model.Gb</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Pin:</td>
+                                                                <td>@Model.Specification.Battery</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Thông Số Kĩ Thuật-->
+                            <!--Thông Số Kĩ Thuật-->
+                            <script>
+                                $(document).ready(function () {
+                                    var modal = $('#specifications');
+                                    var btn = $('.btn-specifications');
+                                    var span = $('.close-specifications');
+                                    var overlay = $('.specifications-overlay');
+                                    btn.click(function () {
+                                        modal.show();
+                                        modal.addClass('active');
+                                    });
+
+                                    span.click(function () {
+                                        modal.hide();
+                                        modal.removeClass('active');
+                                    });
+                                    overlay.click(function () {
+                                        modal.hide();
+                                        modal.removeClass('active');
+                                    });
+                                    $(window).on('click', function (e) {
+                                        if ($(e.target).is('.modal')) {
+                                            modal.hide();
+                                        }
+                                    });
+                                });
+                            </script>
+                            <!--Thông Số Kĩ Thuật-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@*ở trang details thì không dùng @section mà dùng  <script></script>*@
+
+<!--script chuyển ảnh-->
+<script>
+    setTimeout(function () {
+        var ch = $('.product_getcontent').height(),
+            smore = $('.show-more');
+        if (ch > 500) {
+            $('#content').addClass('has-height');
+            smore.removeClass('d-none');
+        }
+    }, 200);
+    $('.btn--view-more').on('click', function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.parents('.tab-content').find('.product_getcontent').toggleClass('expanded');
+        $('html, body').animate({ scrollTop: $('.product_getcontent').offset().top - 110 }, 'slow');
+        $(this).toggleClass('active');
+        return false;
+    });
+
+    var getLimit = 6;
+    var alias = 'iphone-13-pro-max-128gb';
+
+    function activeTab(obj) {
+        $('.product-tab ul li').removeClass('active');
+        $(obj).addClass('active');
+        var id = $(obj).attr('data-tab');
+        $('.tab-content').removeClass('active');
+        $(id).addClass('active');
+    }
+
+
+    $('.product-tab ul li').click(function () {
+        activeTab(this);
+        return false;
+    });
+
+
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 5,
+        slidesPerView: 10,
+        lazy: false,
+        hashNavigation: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        direction: 'vertical',
+        loop: false,
+        loopAdditionalSlides: 0,
+        breakpoints: {
+            300: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                direction: 'horizontal',
+            },
+            500: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                direction: 'horizontal',
+            },
+            640: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                direction: 'horizontal',
+            },
+            768: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 0,
+        lazy: true,
+        hashNavigation: true,
+        navigation: {
+            nextEl: '.swiper-prenext .swiper-button-next',
+            prevEl: '.swiper-prenext .swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+    var swiper = new Swiper('.product-relate-swiper', {
+        slidesPerView: 5,
+        loop: false,
+        grabCursor: true,
+        spaceBetween: 30,
+        roundLengths: true,
+        slideToClickedSlide: false,
+        navigation: {
+            nextEl: '.product-relate-swiper .swiper-button-next',
+            prevEl: '.product-relate-swiper .swiper-button-prev',
+        },
+        autoplay: false,
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 20
+            }
+        }
+    });
+    $(document).ready(function () {
+        $("#lightgallery").lightGallery({
+            thumbnail: false
+        });
+        $("#playvideo").lightGallery();
+    });
+
+
+    if ($(window).width() < 991) {
+        var appendHtml = $('.append-product-tab-mobile').html();
+        $('.product-tab-mobile').append(appendHtml);
+        $('.append-product-tab-mobile').remove();
+
+    }
+</script>
+<!--script chuyển ảnh-->
+
+
+<script src="~/js/JavaScript.js"></script>
+

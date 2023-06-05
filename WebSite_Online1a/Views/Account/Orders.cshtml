@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Order> DonHang = ViewBag.DanhSachDonHang;
+}
+@model WebSite_Online1a.Models.Account
+
+<section class="bread-crumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li class="home">
+                <a href="/home"><span>Trang chủ</span></a>
+                <span class="mr_lr">&nbsp;/&nbsp;</span>
+            </li>
+            <li class="home">
+                <a href="/Account/AccountInfo"><span>Trang khách hàng</span></a>
+                <span class="mr_lr">&nbsp;/&nbsp;</span>
+            </li>
+            <li><strong><span>Đơn Hàng</span></strong></li>
+
+        </ul>
+    </div>
+</section>
+<section class="signup page_customer_account">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-lg-3 col-left-ac">
+                <div class="block-account">
+                    <h5 class="title-account">Trang tài khoản</h5>
+                    <p>Xin chào, <span style="color:#ef4339;">@Model.HoTen</span>&nbsp;!</p>
+                    <ul>
+                        <li>
+                            <a class="title-info" href="/Account/AccountInfo">Thông tin tài khoản</a>
+                        </li>
+                        <li>
+                            <a class="title-info active" href="/Account/orders">Đơn hàng của bạn</a>
+                        </li>
+                        <li>
+                            <a class="title-info" href="/account/changepassword">Đổi mật khẩu</a>
+                        </li>
+                        <p>
+                            <a asp-controller="Account" asp-action="Logout">
+                                Logout
+                            </a>
+                        </p>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 col-12 col-right-ac">
+                <h1 class="title-head margin-top-0">Đơn hàng của bạn</h1>
+
+                <div class="my-account">
+                    <div class="dashboard">
+
+                        <div class="recent-orders">
+                            <div class="table-responsive-block tab-all" style="overflow-x:auto;">
+                                <table class="table table-cart table-order" id="my-orders-table">
+                                    <thead class="thead-default">
+                                        <tr>
+                                            <th>Đơn hàng</th>
+                                            <th>Ngày</th>
+                                            <th>Địa chỉ</th>
+                                            <th>Giá trị đơn hàng</th>
+                                            <th>TT thanh toán</th>
+                                            <th>TT Đơn Hàng</th>
+                                            <th>Xem Chi Tiết</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (DonHang != null && DonHang.Count() > 0)
+                                        {
+                                            foreach (var item in DonHang)
+                                            {
+                                                <tr>
+
+                                                    <td><a href="" title="">@item.OrderId</a></td>
+                                                    <td>@item.OderDate.Value.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                                                    <td>
+                                                        @item.Address
+                                                    </td>
+                                                    <td>
+                                                        <span class="price">@item.TotalMoney.Value.ToString("#,##,00").Replace(",",".")đ &nbsp</span>
+                                                    </td>
+                                                    <td>
+                                                        <b class="span_pending" style="color: #E49C06; font-weight: 600;">Chưa thanh toán</b>
+                                                    </td>
+                                                    <td>
+                                                        @if (@item.OrderStatusId == 1)
+                                                        {
+                                                            <b class="span_pending" style="color: #B2D5D0; font-weight: 600;">Chờ Xác Nhận</b>
+                                                        }
+                                                        else if (@item.OrderStatusId == 2)
+                                                        {
+                                                            <b class="span_pending" style="color: #21D568; font-weight: 600;">Đã Duyệt</b>
+                                                        }
+                                                        else if (@item.OrderStatusId == 3)
+                                                        {
+                                                            <b class="span_pending" style="color: #2EB8A7; font-weight: 600;">Đang Vận Chuyển</b>
+                                                        }
+                                                        else if (@item.OrderStatusId == 4)
+                                                        {
+                                                            <b class="span_pending" style="color:  #910d38; font-weight: 600;">Đã Giao</b>
+                                                        }
+                                                    </td>
+                                                    <td>
+                                                        @*<a type="button" class="xemdonhang" data-id="@item.OrderId">Xem Đơn Hàng</a>*@
+                                                        <a asp-controller="Account" asp-action="OrderDetails" asp-route-id="@item.OrderId">Xem Đơn Hàng</a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        }
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="paginate-pages pull-right page-account text-right col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="orderDetailsContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<script>
+    $('.xemdonhang').on('click', function () {
+        // Gửi yêu cầu Ajax để thêm sản phẩm vào giỏ hàng
+        $.ajax({
+            url: '/Account/Orders',
+            type: 'POST',
+            dataType: "JSON",
+            data: {
+                id: $(this).data("id"),
+                type: "ajax"
+            },
+            success: function (data) {
+                $('#orderDetailsContainer').html(data);
+            },
+            error: function (xhr) {
+                alert("error");
+            }
+        });
+    });
+</script>*@
+@*<script>
+    $(document).ready(function () {
+        $("#xemdonhang").click(function () {
+            //var madonhang = $(this).attr("data-madonhang")
+            $.ajax({
+                url: '/Account/OrderDetails',
+                datatype: "Json",
+                type="POST",
+                data:
+                {
+                    id: $(this).data("id")
+                },
+                async: true,
+                success: function (results) {
+                    $("#records_table").html("");
+                    $("#records_table").html(results);
+                },
+                error: function (xhr) {
+                    alert("error");
+                }
+            });
+        });
+    });
+</script>
+*@
+
