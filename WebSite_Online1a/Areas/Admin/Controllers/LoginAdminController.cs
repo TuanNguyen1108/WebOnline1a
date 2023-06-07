@@ -9,10 +9,10 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
     {
         private readonly WebOnline1Context _context;
         public INotyfService _notifyService_admin { get; }
-        public LoginAdminController(WebOnline1Context context, INotyfService notifyService)
+        public LoginAdminController(WebOnline1Context context, INotyfService notifyService_Admin)
         {
             _context = context;
-            _notifyService_admin = notifyService;
+            _notifyService_admin = notifyService_Admin;
         }
         public IActionResult Login()
         {
@@ -26,17 +26,17 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             {
                 // Kiểm tra email và mật khẩu đã mã hóa khớp với dữ liệu trong cơ sở dữ liệu
                 // kiểu không mã hóa md5 pass:
-                var account = _context.Accounts.FirstOrDefault(a => a.Email == model.Email && a.Password == model.Password);               
-                if (account != null)
+                var accountAdmin = _context.Accounts.FirstOrDefault(a => a.Email == model.Email && a.Password == model.Password);               
+                if (accountAdmin != null)
                 {
-                    if(account.RoleId == 1)
+                    if(accountAdmin.RoleId == 1)
                     {
                         // Lưu thông tin người dùng vào phiên - lấy được AccountId
                         // Lấy được Id của Account Khi Login
-                        HttpContext.Session.SetInt32("AccountId", account.AccountId);
-                        HttpContext.Session.SetString("Email", account.Email);
-                        HttpContext.Session.SetString("HoTen", account.HoTen);
-                        _notifyService_admin.Success("Đăng nhập Admin thành công");
+                        HttpContext.Session.SetInt32("AccountIdAdmin", accountAdmin.AccountId);
+                        HttpContext.Session.SetString("EmailAdmin", accountAdmin.Email);
+                        HttpContext.Session.SetString("HoTenAdmin", accountAdmin.HoTen);
+                        _notifyService_admin.Success("Đăng nhập trang Admin thành công");
                         // Chuyển hướng người dùng đến trang chủ hoặc URL mặc định                  
                         return RedirectToAction("Index", "Home");
                     }
@@ -56,7 +56,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         public IActionResult Logout()
         {
             /*HttpContext.Session.Clear();*/
-            HttpContext.Session.Remove("AccountId"); // xóa sesion của AccountId
+            HttpContext.Session.Remove("AccountIdAdmin"); // xóa sesion của AccountId
             return RedirectToAction("Login", "LoginAdmin");
         }
         /*WebOnline1Context db = new WebOnline1Context();

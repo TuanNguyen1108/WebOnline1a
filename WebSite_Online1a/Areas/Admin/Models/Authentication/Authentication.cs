@@ -8,7 +8,7 @@ namespace Website_Online.Areas.Admin.Models.Authentication
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            if (context.HttpContext.Session.GetInt32("AccountId") == null)
+            if (context.HttpContext.Session.GetInt32("AccountIdAdmin") == null)
             {
                 context.Result = new RedirectToRouteResult(
                   new RouteValueDictionary

@@ -25,9 +25,9 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             // hiện tên khi đăng nhập
-            ViewBag.UserName = HttpContext.Session.GetString("HoTen");
+            ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
-            var webOnline1Context = _context.Orders.Include(o => o.Account);
+            var webOnline1Context = _context.Orders.OrderByDescending(x=>x.OderDate).Include(o => o.Account);
             return View(await webOnline1Context.ToListAsync());
         }
 
@@ -105,7 +105,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("OrderId,AccountId,FullName,Address,OderDate,TotalMoney,Note,OrderStatusId")] Order order)
+        public async Task<IActionResult> Edit(int id, [Bind("OrderId,AccountId,FullName,Phone,Address,OderDate,TotalMoney,Note,OrderStatusId")] Order order)
         {
             if (id != order.OrderId)
             {

@@ -17,7 +17,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         {
             //ViewBag.UserName = HttpContext.Session.GetString("UserName"); 
             // hiện tên khi đăng nhập
-            ViewBag.UserName = HttpContext.Session.GetString("HoTen");
+            ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
             //Tổng Số Lượng Sản Phẩm
             int ProductCount = _context.Products.Count();
@@ -33,6 +33,22 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             ViewBag.AccountCount = AccountCount;
 
             return View();
+        }
+        public IActionResult AccountInfo()
+        {
+            // hiện tên khi đăng nhập
+            ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
+
+            int? accountIdAdmin = HttpContext.Session.GetInt32("AccountIdAdmin");
+            if (accountIdAdmin.HasValue)
+            {
+                var accountAdmin = _context.Accounts.FirstOrDefault(a => a.AccountId == accountIdAdmin.Value);
+                if (accountAdmin != null)
+                {
+                    return View(accountAdmin);
+                }
+            }
+            return RedirectToAction("Login", "LoginAdmin");
         }
     }
 }

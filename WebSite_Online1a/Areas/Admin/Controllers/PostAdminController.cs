@@ -26,7 +26,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             // hiện tên khi đăng nhập
-            ViewBag.UserName = HttpContext.Session.GetString("HoTen");
+            ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
             return _context.Posts != null ? 
                           View(await _context.Posts.ToListAsync()) :

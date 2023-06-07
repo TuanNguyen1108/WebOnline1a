@@ -26,6 +26,9 @@
                 <!-- .table -->
                 <table class="table">
                     <!-- thead -->
+                    <div style="font-weight: bold;">
+                        <a>Tổng Doanh Thu: @Model.Sum(p=>p.TotalMoney).Value.ToString("#,##,00").Replace(",",".") đ</a>
+                    </div>
                     <thead>
                         <tr>
                             <th class="align-middle">

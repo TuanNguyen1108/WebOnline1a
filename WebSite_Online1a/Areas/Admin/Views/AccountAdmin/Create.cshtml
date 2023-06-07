@@ -20,45 +20,46 @@
         </ol>
     </div>
     <hr class="my-10">
-    <div class="col-md-4">
+    <div class="col-md-8">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="col-md-7">
                 <label class="control-label">Tài Khoảng:</label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-7">
                 <label class="form-control-label">Role:</label>
                 <select asp-for="RoleId" class="form-control" asp-items="ViewBag.RoleId"></select>
             </div>
-            <div class="form-group">
+            <div class="col-md-7">
                 <label asp-for="Password" class="control-label"></label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-7">
                 <label asp-for="ConfirmPassword" class="control-label"></label>
                 <input asp-for="ConfirmPassword" class="form-control" />
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-7">
                 <label asp-for="HoTen" class="control-label"></label>
                 <input asp-for="HoTen" class="form-control" />
                 <span asp-validation-for="HoTen" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-7">
                 <label asp-for="Sdt" class="control-label"></label>
                 <input asp-for="Sdt" class="form-control" />
                 <span asp-validation-for="Sdt" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-7">
                 <label asp-for="Address" class="control-label"></label>
                 <input asp-for="Address" class="form-control" />
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
-            <div class="col-md-5">
-                <button type="submit" class="btn btn-danger">Lưu</button> |
+            <hr class="my-10">
+            <div class="col-md-7">
+                <button type="submit" class="btn btn-outline-success">Tạo mới</button>
                 <button asp-action="Index" class="btn btn-outline-secondary">Quay về</button>
             </div>
         </form>
