@@ -59,11 +59,13 @@
                                     <thead class="thead-default">
                                         <tr>
                                             <th style="background: #006666">Đơn hàng</th>
-                                            <th style="background: #006666">Ngày</th>
-                                            <th style="background: #006666">Địa chỉ</th>
+                                            <th style="background: #006666">Ngày Đặt</th>
+                                            <th style="background: #006666">Thông Tin Khách Hàng</th>
                                             <th style="background: #006666">Giá trị đơn hàng</th>
-                                            <th style="background: #006666">TT thanh toán</th>
                                             <th style="background: #006666">TT Đơn Hàng</th>
+                                            <th style="background: #006666">TT thanh toán</th>                                            
+                                            <th style="background: #006666">Ngày Gửi Hàng</th>
+                                            <th style="background: #006666">Ngày Nhận Hàng</th>
                                             <th style="background: #006666">Xem Chi Tiết</th>
                                         </tr>
                                     </thead>                               
@@ -76,14 +78,20 @@
 
                                                     <td><a href="" title="">@item.OrderId</a></td>
                                                     <td>@item.OderDate.Value.ToString("dd/MM/yyyy HH:mm:ss")</td>
-                                                    <td>
-                                                        @item.Address
+                                                    <td style="text-align: left;">
+                                                        <div>
+                                                             @item.FullName
+                                                        </div>
+                                                        <div>
+                                                             @item.Phone
+                                                        </div>
+                                                        <div>
+                                                             @item.Address
+                                                        </div>
+                                                        
                                                     </td>
                                                     <td>
                                                         <span class="price">@item.TotalMoney.Value.ToString("#,##,00").Replace(",",".")đ &nbsp</span>
-                                                    </td>
-                                                    <td>
-                                                        <b class="span_pending" style="color: #E49C06; font-weight: 600;">Chưa thanh toán</b>
                                                     </td>
                                                     <td>
                                                         @if (@item.OrderStatusId == 1)
@@ -92,7 +100,7 @@
                                                         }
                                                         else if (@item.OrderStatusId == 2)
                                                         {
-                                                            <b class="span_pending" style="color: #21D568; font-weight: 600;">Đã Duyệt</b>
+                                                            <b class="span_pending" style="color: #e68a47; font-weight: 600;">Đã Duyệt</b>
                                                         }
                                                         else if (@item.OrderStatusId == 3)
                                                         {
@@ -101,6 +109,38 @@
                                                         else if (@item.OrderStatusId == 4)
                                                         {
                                                             <b class="span_pending" style="color:  #910d38; font-weight: 600;">Đã Giao</b>
+                                                        }
+                                                    </td>
+                                                    <td>
+                                                        @if (@item.Payments == 1)
+                                                        {
+                                                            <b class="span_pending" style="color:  #6e9994; font-weight: 600;">Chưa thanh toán</b>
+                                                        }
+                                                        else if (@item.Payments == 2)
+                                                        {
+                                                            <b class="span_pending" style="color: #336699; font-weight: 600;">Đã thanh toán</b>
+                                                        }
+                                                        
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        @if (@item.ShipDate != null)
+                                                        {
+                                                            @item.ShipDate.Value.ToString("dd/MM/yyyy HH:mm:ss")
+                                                        }
+                                                        else
+                                                        {
+                                                            
+                                                        }
+                                                    </td>
+                                                    <td>
+                                                        @if (@item.DateReceived != null)
+                                                        {
+                                                            @item.DateReceived.Value.ToString("dd/MM/yyyy HH:mm:ss")
+                                                        }
+                                                        else
+                                                        {
+
                                                         }
                                                     </td>
                                                     <td>

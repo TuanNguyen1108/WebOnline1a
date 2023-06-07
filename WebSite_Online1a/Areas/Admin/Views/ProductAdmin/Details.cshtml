@@ -66,13 +66,22 @@
                                     <td> @Model.Specification.Battery </td>
                                 </tr>
                                 <tr>
-                                    <td> Mô Tả </td>
-                                    <td> @Model.Specification.Description </td>
+                                    <td>
+                                        Mô Tả
+                                    </td>
+                                    <td>
+                                        @{
+                                            var content = Model.Specification.Description; // Lấy nội dung từ CSDL
+                                        }
+                                        <div id="summernote-content">
+                                            @Html.Raw(content) <!-- Sử dụng Html.Raw để hiển thị nội dung HTML mà không bị mã hóa -->
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td> Giá </td>
                                     <td> @Model.Price</td>
-                                </tr>                               
+                                </tr>
                             </tbody>
                         </table>
                     </div>

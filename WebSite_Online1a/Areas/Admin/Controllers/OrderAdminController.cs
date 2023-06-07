@@ -27,7 +27,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             // hiện tên khi đăng nhập
             ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
-            var webOnline1Context = _context.Orders.OrderByDescending(x=>x.OderDate).Include(o => o.Account);
+            var webOnline1Context = _context.Orders.OrderByDescending(x => x.OderDate).Include(o => o.Account);
             return View(await webOnline1Context.ToListAsync());
         }
 
@@ -96,6 +96,14 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            var statusOptions = new List<OrderStatusOption>
+            {
+                new OrderStatusOption { Value = 1, TrangThaiDonHang = "Chờ Xác Nhận" },
+                new OrderStatusOption { Value = 2, TrangThaiDonHang = "Đã Duyệt" },
+                new OrderStatusOption { Value = 3, TrangThaiDonHang = "Đang Vận Chuyển" },
+                new OrderStatusOption { Value = 4, TrangThaiDonHang = "Đã Giao" },
+            };
+            ViewBag.StatusOptions = statusOptions;
             ViewData["AccountId"] = new SelectList(_context.Accounts, "AccountId", "AccountId", order.AccountId);
             return View(order);
         }
@@ -105,7 +113,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("OrderId,AccountId,FullName,Phone,Address,OderDate,TotalMoney,Note,OrderStatusId")] Order order)
+        public async Task<IActionResult> Edit(int id, [Bind("OrderId,AccountId,FullName,Phone,Address,OderDate,TotalMoney,Note,OrderStatusId,ShipDate,DateReceived,Payments")] Order order)
         {
             if (id != order.OrderId)
             {
@@ -116,6 +124,24 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             {
                 try
                 {
+                    if (order.OrderStatusId == 1 || order.OrderStatusId == 2)
+                    {
+                        order.Payments = 1;
+                        order.ShipDate = null;
+                        order.DateReceived = null;
+                    }
+                    if (order.OrderStatusId == 3)
+                    {
+                        order.Payments = 1;
+                        order.ShipDate = DateTime.Now;
+                        order.DateReceived = null;
+                    }
+                    if (order.OrderStatusId == 4)
+                    {
+                        order.Payments = 2;
+                        order.DateReceived = DateTime.Now;
+                    }
+
                     _context.Update(order);
                     await _context.SaveChangesAsync();
                 }

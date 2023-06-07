@@ -22,7 +22,19 @@ public partial class Order
 
     public int? OrderStatusId { get; set; }
 
+    public DateTime? ShipDate { get; set; }
+
+    public int? Payments { get; set; }
+
+    public DateTime? DateReceived { get; set; }
     public virtual Account? Account { get; set; }
 
     public virtual ICollection<OderDetail> OderDetails { get; set; } = new List<OderDetail>();
+}
+
+public class OrderStatusOption
+{
+    // hàm này dùng để select option cho trạng thái đơn hàng
+    public int Value { get; set; }
+    public string TrangThaiDonHang { get; set; }
 }

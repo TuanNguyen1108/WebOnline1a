@@ -43,7 +43,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         }
 
         // GET: Admin/PriceAdmin/Details/5
-        public async Task<IActionResult> Details(int? id)
+        /*public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Prices == null)
             {
@@ -59,7 +59,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             }
 
             return View(price);
-        }
+        }*/
 
         // GET: Admin/PriceAdmin/Create
         public IActionResult Create()
