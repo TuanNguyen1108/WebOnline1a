@@ -25,6 +25,9 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         // GET: Admin/PriceAdmin
         public async Task<IActionResult> Index(int? page)
         {
+            // hiện tên khi đăng nhập
+            ViewBag.UserName = HttpContext.Session.GetString("HoTen");
+
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
             //var pageSize = Utilities.PAGE_SIZE;//20
             var pageSize = 15;

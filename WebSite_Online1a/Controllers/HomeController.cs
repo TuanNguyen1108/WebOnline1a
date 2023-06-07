@@ -35,6 +35,13 @@ namespace WebSite_Online1a.Controllers
                  .ToList();
             ViewBag.SpSale = lsSpSale;
 
+            var lsTinNoiBat1 = _context.Posts
+               .AsNoTracking()
+               .Where(x => x.IsHot == true && x.Published == true)
+               .Take(5)
+               .ToList();
+            ViewBag.TinNoiBat1 = lsTinNoiBat1;
+
             return View();
         }
 		/*public async Task<IActionResult> Search(string name)

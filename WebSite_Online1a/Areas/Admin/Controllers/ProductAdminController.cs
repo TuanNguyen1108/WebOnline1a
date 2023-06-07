@@ -25,6 +25,9 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         // GET: Admin/ProductAdmin
         public async Task<IActionResult> Index()
         {
+            // hiện tên khi đăng nhập
+            ViewBag.UserName = HttpContext.Session.GetString("HoTen");
+
             var webOnline1Context = _context.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Specification);
             return View(await webOnline1Context.ToListAsync());
         }

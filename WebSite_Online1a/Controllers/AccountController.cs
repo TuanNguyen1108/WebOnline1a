@@ -170,7 +170,8 @@ namespace WebSite_Online1a.Controllers
                             /*.Include(x=>x.OrderStatus)*/
                             .AsNoTracking()
                             .Where(p => p.AccountId == accountId.Value)
-                            .Take(10)
+                            .OrderByDescending(p => p.OderDate) // Sắp xếp theo trường Ngày giảm dần
+                            .Take(20)
                             .ToList();
                     ViewBag.DanhSachDonHang = listdanhsachdonhang;
 

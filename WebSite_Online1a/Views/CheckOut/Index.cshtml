@@ -1,12 +1,186 @@
 ﻿@{
     ViewData["Title"] = "Index Thanh toán";
-    Layout = "~/Views/Shared/_LayoutThanhToan.cshtml";
+    //Layout = "~/Views/Shared/_LayoutThanhToan.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
     List<Price> Image = ViewBag.Image;
     List<CartItem> Carts = ViewBag.GioHang;
 }
 @model WebSite_Online1a.Models.MuaHangVM.MuaHangVM
 
-<div class="page-inner">
+<section class="bread-crumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li class="home">
+                <a href="/home"><span>Trang chủ</span></a>
+                <span class="mr_lr">&nbsp;/&nbsp;</span>
+            </li>
+
+            <li><strong><span>Trang Thanh Toán Khách Hàng</span></strong></li>
+
+        </ul>
+    </div>
+</section>
+<section class="signup page_customer_account">
+    <form asp-controller="CheckOut" asp-action="Index" method="post" class="cart ajaxcart cartpage">
+        <input hidden asp-for="CustomerId" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-12 col-right-ac">
+                    <div class="container1">
+                        <h2>THÔNG TIN SẢN PHẨM</h2>
+                        @if (Carts.Count() > 0)
+                        {
+                            foreach (var item in Carts)
+
+                            {
+                                <div class="container2">
+                                    <div class="product2">
+                                        <img width="80" height="80" src="~/IMAGE/Product_Details/@item.HinhAnh">
+                                        <div class="product-info">
+                                            <h6>@item.TenHH</h6>
+                                            <a>Màu: @item.Color - Số Lượng: @item.SoLuong - Giá: @item.ThanhTien.ToString("#,##,00")đ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        <hr class="my-10">
+                        <h4 style="text-align: right">
+                            Tổng Tiền: @Carts.Sum(p=>p.ThanhTien).ToString("#,##,00")đ
+                        </h4>
+                        <hr class="my-10">
+
+                        <h2>THÔNG TIN KHÁCH HÀNG</h2>
+                        <h4>
+                            @Model.Email
+                        </h4>
+
+                        <div class="form-group">
+                            <label>Họ và tên: </label>
+                            <input type="text" asp-for="FullName" required>
+                        </div>
+                        @*<div class="form-group">
+                            <label>Email: </label>
+                            <input type="email" asp-for="Email" required>
+                        </div>*@
+                        <div class="form-group">
+                            <label>Số Điện Thoại:</label>
+                            <input type="text" asp-for="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Địa chỉ:</label>
+                            <input type="text" asp-for="Address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">Ghi chú đơn hàng:</label>
+                            <input type="text" asp-for="Note">
+                        </div>
+                        <div class="form-group">
+                            <button asp-controller="Cart" asp-action="Index"
+                                    style=" display: block;
+                                            width: 100%;
+                                            padding: 10px;
+                                            font-size: 16px;
+                                            background-color: #d9ad7d;
+                                            color: #fff;
+                                            border: none;
+                                            border-radius: 5px;
+                                            cursor: pointer;">
+                                Quay Về Giỏ Hàng
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <button asp-controller="CheckOut" asp-action="CheckOut"
+                                    style=" display: block;
+                                            width: 100%;
+                                            padding: 10px;
+                                            font-size: 16px;
+                                            background-color: #006666;
+                                            color: #fff;
+                                            border: none;
+                                            border-radius: 5px;
+                                            cursor: pointer;">
+                                Thanh toán
+                            </button>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<style>
+    .product2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1px;
+    }
+
+    h6 {
+        text-align: center;
+        font-weight: bold
+    }
+
+    .product img {
+        width: 80px;
+        height: auto;
+        margin-right: 1px;
+    }
+</style>
+<style>
+    .container1 {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    /*button[type="submit"] {
+                                                display: block;
+                                                width: 100%;
+                                                padding: 10px;
+                                                font-size: 16px;
+                                                background-color: #006666;
+                                                color: #fff;
+                                                border: none;
+                                                border-radius: 5px;
+                                                cursor: pointer;
+                                            }*/
+
+    button[type="submit"]:hover {
+        background-color: #f2916e;
+    }
+</style>
+
+
+
+
+@*<div class="page-inner">
     <form asp-controller="CheckOut" asp-action="Index" method="post" class="cart ajaxcart cartpage">
         <input hidden asp-for="CustomerId" />
         <div class="page-section">
@@ -101,5 +275,4 @@
             </div>
         </div>
     </form>
-</div>
-
+</div>*@

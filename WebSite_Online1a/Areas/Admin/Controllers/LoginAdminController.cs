@@ -35,6 +35,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                         // Lấy được Id của Account Khi Login
                         HttpContext.Session.SetInt32("AccountId", account.AccountId);
                         HttpContext.Session.SetString("Email", account.Email);
+                        HttpContext.Session.SetString("HoTen", account.HoTen);
                         _notifyService_admin.Success("Đăng nhập Admin thành công");
                         // Chuyển hướng người dùng đến trang chủ hoặc URL mặc định                  
                         return RedirectToAction("Index", "Home");

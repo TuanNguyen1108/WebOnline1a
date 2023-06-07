@@ -67,7 +67,7 @@ namespace WebSite_Online1a.Controllers
             {
                 var khachhang = _context.Accounts.AsNoTracking().SingleOrDefault(x => x.AccountId == accountId);
                 model.CustomerId = khachhang.AccountId;
-                model.Email = khachhang.Email;
+                // model.Email = khachhang.Email; 
                 model.FullName = khachhang.HoTen;
                 model.Phone = khachhang.Sdt;
                 model.Address = khachhang.Address;
@@ -114,7 +114,7 @@ namespace WebSite_Online1a.Controllers
                     HttpContext.Session.Remove("GioHang");
                     // Thông Báo
                     _notifyService.Success("Đặt Hàng Thành Công");
-                    return RedirectToAction("Index","Cart");
+                    return RedirectToAction("Orders","Account");
                 }    
             }
             catch

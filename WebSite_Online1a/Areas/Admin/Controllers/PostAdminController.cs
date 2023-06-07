@@ -25,7 +25,10 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         // GET: Admin/PostAdmin
         public async Task<IActionResult> Index()
         {
-              return _context.Posts != null ? 
+            // hiện tên khi đăng nhập
+            ViewBag.UserName = HttpContext.Session.GetString("HoTen");
+
+            return _context.Posts != null ? 
                           View(await _context.Posts.ToListAsync()) :
                           Problem("Entity set 'WebOnline1Context.Posts'  is null.");
         }

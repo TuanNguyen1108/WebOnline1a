@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
@@ -7,69 +6,114 @@
 @model WebSite_Online1a.Models.Product
 
 <div class="page-inner">
-    <!-- .page-title-bar -->
+
     <header class="page-title-bar">
         <div class="d-flex flex-column flex-md-row">
             <p class="lead">
-                <span class="font-weight-bold">Hi, @ViewBag.UserName.</span> <span class="d-block text-muted">Here’s what’s happening with your business today.</span>
+                <span class="font-weight-bold">Xin Chào, @ViewBag.UserName</span>
+                <span class="d-block text-muted">Thống kê hôm nay</span>
             </p>
-
         </div>
-    </header><!-- /.page-title-bar -->
-    <!-- .page-section -->
+    </header>
+
     <div class="page-section">
-        <!-- .section-block -->
         <div class="section-block">
-            <!-- metric row -->
             <div class="metric-row">
                 <div class="col-lg-9">
                     <div class="metric-row metric-flush">
-                        <!-- metric column -->
+
                         <div class="col">
-                            <!-- .metric -->
                             <a asp-area="Admin" asp-controller="ProductAdmin" asp-action="Index" class="metric metric-bordered align-items-center">
                                 <h2 class="metric-label"> Sản Phẩm </h2>
                                 <p class="metric-value h3">
-                                    <sub><i class="oi oi-people"></i></sub> <span class="value">10</span>
+                                    <sub><i class="oi oi-people"></i></sub>
+                                    <span id="productCount">@ViewBag.ProductCount</span>
                                 </p>
-                            </a> <!-- /.metric -->
-                        </div><!-- /metric column -->
-                        <!-- metric column -->
+                            </a>
+                        </div>
+
                         <div class="col">
-                            <!-- .metric -->
                             <a asp-area="Admin" asp-controller="ProductAdmin" asp-action="Index" class="metric metric-bordered align-items-center">
                                 <h2 class="metric-label"> Đơn Hàng </h2>
                                 <p class="metric-value h3">
-                                    <sub><i class="oi oi-fork"></i></sub> <span class="value">12</span>
+                                    <sub><i class="oi oi-fork"></i></sub>
+                                    <span id="orderCount">@ViewBag.OrderCount</span>
                                 </p>
-                            </a> <!-- /.metric -->
-                        </div><!-- /metric column -->
-                        <!-- metric column -->
+                            </a>
+                        </div>
+
                         <div class="col">
-                            <!-- .metric -->
                             <a asp-area="Admin" asp-controller="PostAdmin" asp-action="Index" class="metric metric-bordered align-items-center">
                                 <h2 class="metric-label"> Tin Tức </h2>
                                 <p class="metric-value h3">
-                                    <sub><i class="fa fa-tasks"></i></sub> <span class="value">64</span>
+                                    <sub><i class="fa fa-tasks"></i></sub> 
+                                    <span id="postCount">@ViewBag.PostCount</span>
                                 </p>
-                            </a> <!-- /.metric -->
-                        </div><!-- /metric column -->
+                            </a>
+                        </div>
                     </div>
-                </div><!-- metric column -->
+                </div>
                 <div class="col-lg-3">
-                    <!-- .metric -->
-                    <a href="" class="metric metric-bordered">
+
+                    <a asp-area="Admin" asp-controller="AccountAdmin" asp-action="Index" class="metric metric-bordered">
                         <div class="metric-badge">
-                            <span class="badge badge-lg badge-success"><span class="oi oi-media-record pulse mr-1"></span> ONGOING TASKS</span>
+                            <span class="badge badge-lg badge-success">
+                                <span class="oi oi-media-record pulse mr-1"></span>
+                                Tài Khoản
+                            </span>
                         </div>
                         <p class="metric-value h3">
-                            <sub><i class="oi oi-timer"></i></sub> <span class="value">8</span>
+                            <sub><i class="oi oi-timer"></i></sub> 
+                            <span class="value">@ViewBag.AccountCount</span>
                         </p>
-                    </a> <!-- /.metric -->
-                </div><!-- /metric column -->
-            </div><!-- /metric row -->
-        </div><!-- /.section-block -->
-        <!-- grid row -->
-
-    </div><!-- /.page-section -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+@section scripts
+    {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lấy thẻ span bằng id
+            var productCountElement = document.getElementById('productCount');
+            var orderCountElement = document.getElementById('orderCount');
+            var postCountElement = document.getElementById('postCount');
+
+            // Giá trị ban đầu
+            var ProductCount = 0;
+            var OrderCount = 0;
+            var PostCount = 0;
+
+            var targetProductCount = parseInt("@ViewBag.ProductCount");
+            var targetOrderCount = parseInt("@ViewBag.OrderCount");
+            var targetPostCount = parseInt("@ViewBag.PostCount");
+
+            // Cập nhật giá trị và hiển thị sau mỗi 1 giây
+            setInterval(function () {
+                // Tăng từ 0 - viewbag.productcount
+                if (ProductCount <= targetProductCount)
+                {
+                    // Tăng giá trị số liệu 
+                    ProductCount++;
+                    // Cập nhật giá trị trong thẻ span
+                    productCountElement.textContent = ProductCount;
+                }
+                if (OrderCount <= targetOrderCount) {
+                    // Tăng giá trị số liệu
+                    OrderCount++;
+                    // Cập nhật giá trị trong thẻ span
+                    orderCountElement.textContent = OrderCount;
+                }
+                if (PostCount <= targetPostCount) {
+                    // Tăng giá trị số liệu
+                    PostCount++;
+                    // Cập nhật giá trị trong thẻ span
+                    postCountElement.textContent = PostCount;
+                }
+            }, 100);
+        });
+    </script>
+}
