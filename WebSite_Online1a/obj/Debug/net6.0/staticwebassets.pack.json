@@ -465,6 +465,10 @@
       "PackagePath": "staticwebassets\\Asset\\100\\449\\923\\themes\\875305\\assets\\wishlist-compare.js"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\Panner\\PannerXiaomi.png",
+      "PackagePath": "staticwebassets\\Asset\\Panner\\PannerXiaomi.png"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\Asset\\Panner\\panner1.png",
       "PackagePath": "staticwebassets\\Asset\\Panner\\panner1.png"
     },
@@ -817,6 +821,10 @@
       "PackagePath": "staticwebassets\\IMAGE\\Categorys\\ava-s22ultra-green.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\bac_4t2f-j7.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\bac_4t2f-j7.jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-12.png",
       "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-12.png"
     },
@@ -839,6 +847,10 @@
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\samsung-galaxy-z-fold4-5g-xanh.jpg",
       "PackagePath": "staticwebassets\\IMAGE\\Categorys\\samsung-galaxy-z-fold4-5g-xanh.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\xiaomi-13-pro-5g-den_on2h-bd.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\xiaomi-13-pro-5g-den_on2h-bd.jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\01052023.vietnamtrungquoc02.png",
@@ -909,6 +921,10 @@
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\13.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\3.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\3.png"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-13-Hong - 1.png",
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-13-Hong - 1.png"
     },
@@ -949,12 +965,40 @@
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-black.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\ava-s22ultra-green - Copy (2).png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-green - Copy (2).png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\ava-s22ultra-green - Copy.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-green - Copy.png"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\ava-s22ultra-green.png",
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-green.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\ava-s22ultra-scream - Copy.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-scream - Copy.png"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\ava-s22ultra-scream.png",
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\ava-s22ultra-scream.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\bac_4t2f-j7 - Copy.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\bac_4t2f-j7 - Copy.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\bac_4t2f-j7.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\bac_4t2f-j7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\den_c12i-l7 - Copy.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\den_c12i-l7 - Copy.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\den_c12i-l7.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\den_c12i-l7.jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\den_qtzx-cs_crca-ac_dx9w-hf.jpg",
@@ -1001,6 +1045,22 @@
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\iphone-14-xanh_asqx-zm.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\s22-5g-den.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\s22-5g-den.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\s22-5g-hong.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\s22-5g-hong.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\s22-5g-trang.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\s22-5g-trang.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\s22-xanh_rsv3-lb.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\s22-xanh_rsv3-lb.jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-den - 512Gb.jpg",
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\samsung-galaxy-z-fold4-5g-den - 512Gb.jpg"
     },
@@ -1037,6 +1097,18 @@
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\xanh_e4cf-rt_ppez-fc_rdrv-70.jpg"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\xiaomi-13-pro-5g-bac-ha_cqms-t7.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\xiaomi-13-pro-5g-bac-ha_cqms-t7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\xiaomi-13-pro-5g-den_on2h-bd.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\xiaomi-13-pro-5g-den_on2h-bd.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\xiaomi-13-pro-chinh-hang_rec5-45_r53b-mh.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\xiaomi-13-pro-chinh-hang_rec5-45_r53b-mh.jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\13.png",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\13.png"
     },
@@ -1045,8 +1117,28 @@
       "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone 14.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone-13-Hong - 1.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone-13-Hong - 1.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone-13-Trắng - 1.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone-13-Trắng - 1.png"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\ava-s22ultra-green.png",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\ava-s22ultra-green.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\ava-s22ultra-scream.png",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\ava-s22ultra-scream.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\bac_4t2f-j7.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\bac_4t2f-j7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\do_9b9x-zd_0oao-ab.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\do_9b9x-zd_0oao-ab.jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-12.png",
@@ -1065,8 +1157,16 @@
       "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-trang_linv-08.jpg"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-vang_36j3-5w.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-vang_36j3-5w.jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-xanh_asqx-zm.png",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-xanh_asqx-zm.png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\s22-xanh_rsv3-lb.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\s22-xanh_rsv3-lb.jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\samsung-galaxy-z-fold4-5g-kem.jpg",
@@ -1083,6 +1183,10 @@
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\xanh_e4cf-rt_ppez-fc_rdrv-70.jpg",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\xanh_e4cf-rt_ppez-fc_rdrv-70.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\xiaomi-13-pro-5g-den_on2h-bd.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\xiaomi-13-pro-5g-den_on2h-bd.jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\assets\\assetsLogin\\favicon.ico",
@@ -1707,10 +1811,6 @@
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\panner3.png",
-      "PackagePath": "staticwebassets\\panner3.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebSite_Online1a.Microsoft.AspNetCore.StaticWebAssets.props",

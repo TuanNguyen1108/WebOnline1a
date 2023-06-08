@@ -98,7 +98,11 @@
                                         else if (@item.OrderStatusId == 4)
                                         {
                                             <b class="span_pending" style="color:  #910d38; font-weight: 600;">Đã Giao</b>
-                                        }                                        
+                                        }
+                                        else if (@item.OrderStatusId == 5)
+                                        {
+                                            <b class="span_pending" style="color:  #cc2933; font-weight: 600;">Đã Hủy</b>
+                                        }
                                     </td>
                                     <td class="align-middle">
                                         @item.Note

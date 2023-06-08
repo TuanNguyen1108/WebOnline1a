@@ -91,6 +91,7 @@ namespace WebSite_Online1a.Controllers
                     donhang.Phone = model.Phone;
                     donhang.Address = muahang.Address;
                     donhang.OrderStatusId = 1; // đơn hàng mới nên sẽ chờ duyệt
+                    donhang.Payments = 1; // đơn hàng mới nên chưa thanh toán
                     donhang.OderDate = DateTime.Now;
                     donhang.TotalMoney = Convert.ToInt32(myCart.Sum(p => p.ThanhTien));
                     donhang.Note = muahang.Note;

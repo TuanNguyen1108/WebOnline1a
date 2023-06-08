@@ -236,6 +236,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/EditOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0T3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -322,6 +326,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/ProductSamsung/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFNhbXN1bmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/ProductXiaomi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFhpYW9taVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Shared/Error.cshtml]

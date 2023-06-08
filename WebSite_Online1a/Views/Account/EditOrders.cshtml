@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "EditOrders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model WebSite_Online1a.Models.Order
+
+
+@*<form asp-controller="Account" asp-action="EditOrders">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="OrderId" />
+    <input type="hidden" asp-for="AccountId" />
+    <input type="hidden" asp-for="FullName" />
+    <input type="hidden" asp-for="Phone" />
+    <input type="hidden" asp-for="Address" />
+    <input type="hidden" asp-for="OderDate" />
+    <input type="hidden" asp-for="TotalMoney" />
+    <input type="hidden" asp-for="Note" />
+
+    <input type="hidden" asp-for="ShipDate" />
+
+    <div class="col-md-5">
+        <label>Trạng Thái Đơn Hàng:</label>
+        @Html.DropDownListFor(model => model.OrderStatusId, new SelectList((IEnumerable<OrderStatusOption>)ViewBag.StatusOptions, "Value", "TrangThaiDonHang"), new { @class = "form-control" })
+    </div>
+    <hr class="my-10">
+    <div class="col-md-5">
+        <button asp-action="EditOrders" class="btn btn-danger">Lưu</button> |
+        <button asp-action="Orders" class="btn btn-outline-secondary">Quay về</button>
+    </div>
+</form>
+*@

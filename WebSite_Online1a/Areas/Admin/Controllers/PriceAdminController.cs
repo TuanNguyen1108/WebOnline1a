@@ -148,7 +148,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                             filename = Path.GetFileName(filename);
                             //đường dẫn của file
                             string uploadpath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot//IMAGE/Product_Details", filename);
-                            var stream = new FileStream(uploadpath, FileMode.Create);
+                            FileStream stream = new FileStream(uploadpath, FileMode.Create);
                             file.CopyToAsync(stream);
                             price.ColorImage = filename; //gán giá trị cho cột SeoDescription                            
 

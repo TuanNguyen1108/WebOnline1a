@@ -55,7 +55,7 @@
 
                         <div class="recent-orders">
                             <div class="table-responsive-block tab-all" style="overflow-x:auto; ">
-                                <table class="table table-cart table-order"  id="my-orders-table">
+                                <table class="table table-cart table-order" id="my-orders-table">
                                     <thead class="thead-default">
                                         <tr>
                                             <th style="background: #006666">Đơn hàng</th>
@@ -63,12 +63,13 @@
                                             <th style="background: #006666">Thông Tin Khách Hàng</th>
                                             <th style="background: #006666">Giá trị đơn hàng</th>
                                             <th style="background: #006666">TT Đơn Hàng</th>
-                                            <th style="background: #006666">TT thanh toán</th>                                            
+                                            <th style="background: #006666">TT thanh toán</th>
                                             <th style="background: #006666">Ngày Gửi Hàng</th>
                                             <th style="background: #006666">Ngày Nhận Hàng</th>
                                             <th style="background: #006666">Xem Chi Tiết</th>
+                                            <th style="background: #006666"></th>
                                         </tr>
-                                    </thead>                               
+                                    </thead>
                                     <tbody>
                                         @if (DonHang != null && DonHang.Count() > 0)
                                         {
@@ -80,15 +81,15 @@
                                                     <td>@item.OderDate.Value.ToString("dd/MM/yyyy HH:mm:ss")</td>
                                                     <td style="text-align: left;">
                                                         <div>
-                                                             @item.FullName
+                                                            @item.FullName
                                                         </div>
                                                         <div>
-                                                             @item.Phone
+                                                            @item.Phone
                                                         </div>
                                                         <div>
-                                                             @item.Address
+                                                            @item.Address
                                                         </div>
-                                                        
+
                                                     </td>
                                                     <td>
                                                         <span class="price">@item.TotalMoney.Value.ToString("#,##,00").Replace(",",".")đ &nbsp</span>
@@ -108,7 +109,11 @@
                                                         }
                                                         else if (@item.OrderStatusId == 4)
                                                         {
-                                                            <b class="span_pending" style="color:  #910d38; font-weight: 600;">Đã Giao</b>
+                                                            <b class="span_pending" style="color:  #336699; font-weight: 600;">Đã Giao</b>
+                                                        }
+                                                        else if (@item.OrderStatusId == 5)
+                                                        {
+                                                            <b class="span_pending" style="color:  #cc2933; font-weight: 600;">Đã Hủy</b>
                                                         }
                                                     </td>
                                                     <td>
@@ -120,9 +125,9 @@
                                                         {
                                                             <b class="span_pending" style="color: #336699; font-weight: 600;">Đã thanh toán</b>
                                                         }
-                                                        
+
                                                     </td>
-                                                    
+
                                                     <td>
                                                         @if (@item.ShipDate != null)
                                                         {
@@ -130,7 +135,7 @@
                                                         }
                                                         else
                                                         {
-                                                            
+
                                                         }
                                                     </td>
                                                     <td>
@@ -147,12 +152,51 @@
                                                         @*<a type="button" class="xemdonhang" data-id="@item.OrderId">Xem Đơn Hàng</a>*@
                                                         <a asp-controller="Account" asp-action="OrderDetails" asp-route-id="@item.OrderId">Xem Đơn Hàng</a>
                                                     </td>
+                                                    <td>
+                                                        @if (item.OrderStatusId == 1)
+                                                        {
+                                                            @*<a asp-controller="Account" asp-action="EditOrders" asp-route-id="@item.OrderId">Hủy Đơn</a>*@                                                                                                                           
+                                                            <button class="cancel-button" onclick="EditOrders('@item.OrderId')">
+                                                                Hủy Đơn
+                                                            </button>
+                                                        }
+                                                    </td>
                                                 </tr>
                                             }
                                         }
-
                                     </tbody>
                                 </table>
+                                <style>
+                                    .cancel-button {
+                                        background-color: #f44336;
+                                        border: none;
+                                        color: white;
+                                        padding: 10px 15px;
+                                        text-align: center;
+                                        font-size: 10px;
+                                        cursor: pointer;
+                                        border-radius: 4px;
+                                    }
+                                </style>
+                                <script>
+                                    function EditOrders(OrderId) {
+                                        Swal.fire({
+                                            title: 'Xác nhận hủy đơn',
+                                            text: 'Bạn có chắc chắn muốn hủy đơn hàng này không?',
+                                            icon: 'warning',
+                                            showCancelButton: true,
+                                            confirmButtonText: 'Đồng ý',
+                                            cancelButtonText: 'Hủy bỏ'
+                                        }).then((result) => {
+                                            if (result.isConfirmed) {
+                                                // Nếu người dùng nhấp vào "Đồng ý", chuyển đến controller
+                                                var url = '/Account/EditOrders/' + OrderId;
+                                                window.location.href = url;
+                                            }
+                                        });
+                                        return false;
+                                    }
+                                </script>
                             </div>
                             <div class="paginate-pages pull-right page-account text-right col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             </div>
@@ -165,6 +209,30 @@
         </div>
     </div>
 </section>
+
+
+@*<script>
+    $(document).ready(function () {
+        $('.delete-button').click(function () {
+            var orderId = $(this).data('order-id');
+            var confirmation = confirm("Bạn có chắc chắn muốn xóa đơn hàng này?");
+
+            if (confirmation) {
+                $.ajax({
+                    url: '/Account/EditOrders/',
+                    type: 'POST',
+                    success: function () {
+                        alert('Đơn hàng đã được xóa thành công.');
+                        // Thực hiện các hành động cần thiết sau khi xóa đơn hàng thành công.
+                    },
+                    error: function () {
+                        alert('Đã xảy ra lỗi khi xóa đơn hàng.');
+                    }
+                });
+            }
+        });
+    });
+</script>*@
 
 @*<script>
     $('.xemdonhang').on('click', function () {

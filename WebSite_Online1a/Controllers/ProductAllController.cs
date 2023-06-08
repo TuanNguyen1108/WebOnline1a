@@ -16,7 +16,8 @@ namespace WebSite_Online1a.Controllers
 			var listsanpham = _context.Products
 			.Include(p => p.Brand)
 			.Include(p => p.Category)
-			.Include(p => p.Specification)			
+			.Include(p => p.Specification)	
+			/*.OrderByDescending(x=>x.NameProduct)*/
 			.ToList();
 			return View(listsanpham);
 		}

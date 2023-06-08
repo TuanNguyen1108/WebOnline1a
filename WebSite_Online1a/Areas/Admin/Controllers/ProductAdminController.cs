@@ -28,7 +28,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             // hiện tên khi đăng nhập
             ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
-            var webOnline1Context = _context.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Specification);
+            var webOnline1Context = _context.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Specification).OrderByDescending(p=>p.ProductId);
             return View(await webOnline1Context.ToListAsync());
         }
 

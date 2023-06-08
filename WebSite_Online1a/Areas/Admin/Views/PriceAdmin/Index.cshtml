@@ -37,6 +37,12 @@
                 </div><!-- /.input-group -->
             </div>
             <div class="table-responsive">
+
+                <div class="card-footer">
+                    <a asp-area="Admin" asp-controller="PriceAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Chi Tiết</a>
+                </div>
+                <hr class="my-10">
+
                 <table class="table">
                     <thead>
                         <tr>
@@ -85,9 +91,9 @@
                         }
                     </tbody>
                 </table>
-                <div class="card-footer">
+                @*<div class="card-footer">
                     <a asp-area="Admin" asp-controller="PriceAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Chi Tiết</a>
-                </div>
+                </div>*@
 
                 <div aria-label="Page navigation example">
                     <ul class="pagination">

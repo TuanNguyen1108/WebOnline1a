@@ -5,6 +5,7 @@ using WebSite_Online1a.Models.MD5;
 using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WebSite_Online1a.Controllers
 {
@@ -180,6 +181,28 @@ namespace WebSite_Online1a.Controllers
             }
             return RedirectToAction("Login", "Account");
         }
+        
+        public IActionResult EditOrders(int id)
+        {
+            try
+            {
+                var donhang = _context.Orders;
+                var item = donhang.SingleOrDefault(x=>x.OrderId == id); 
+                if(item != null && item.OrderStatusId == 1)
+                {
+                    item.OrderStatusId = 5;
+                    item.Payments = 1;
+                }
+                _context.SaveChanges();
+                _notifyService.Success("Hủy Đơn Hàng thành công");
+                return RedirectToAction("Orders");
+            }
+            catch
+            {
+                return RedirectToAction("Index");
+            }
+        }
+        
         public IActionResult OrderDetails(int id)
         {
             // Lấy được Id của Account Khi Login
@@ -211,3 +234,60 @@ namespace WebSite_Online1a.Controllers
         }
     }
 }
+
+/*public async Task<IActionResult> EditOrders(int? id)
+        {
+            var order = await _context.Orders.FindAsync(id);
+            var statusOptions = new List<OrderStatusOption>
+            {
+                new OrderStatusOption { Value = 5, TrangThaiDonHang = "Đang Chờ Xác Nhận" },
+            };
+            ViewBag.StatusOptions = statusOptions;
+            return View(order);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditOrders(int id, [Bind("OrderId,AccountId,FullName,Phone,Address,OderDate,TotalMoney,Note,OrderStatusId,ShipDate,DateReceived,Payments")] Order order)
+        {
+            if (id != order.OrderId)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                if (order.OrderStatusId == 5)
+                {
+                    order.Payments = 1;
+                    order.ShipDate = null;
+                    order.DateReceived = null;
+                }
+                _context.Update(order);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Orders));
+            }           
+            return View();
+        }*/
+
+
+/*public IActionResult EditOrders(int id, [Bind("OrderId,AccountId,FullName,Phone,Address,OderDate,TotalMoney,Note,OrderStatusId,ShipDate,DateReceived,Payments")] Order order)
+        {
+            if (id != order.OrderId)
+            {
+                return NotFound();
+            }
+            // Lấy được Id của Account Khi Login
+            int? accountId = HttpContext.Session.GetInt32("AccountId");
+            if (accountId.HasValue)
+            {
+                // từ accountId => Thông tin của Account đó để hiển thị ra
+                var account = _context.Accounts.FirstOrDefault(a => a.AccountId == accountId.Value);
+                if (account != null)
+                {
+                    if(order.OrderStatusId == 5)
+                    _context.Update(order);
+                    _context.SaveChangesAsync();
+                    return View(account);
+                }
+            }
+            return View();
+        }*/
