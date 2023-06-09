@@ -10,6 +10,7 @@ public partial class Order
     public int? AccountId { get; set; }
 
     public string? FullName { get; set; }
+
     public string? Phone { get; set; }
 
     public string? Address { get; set; }
@@ -27,6 +28,7 @@ public partial class Order
     public int? Payments { get; set; }
 
     public DateTime? DateReceived { get; set; }
+
     public virtual Account? Account { get; set; }
 
     public virtual ICollection<OderDetail> OderDetails { get; set; } = new List<OderDetail>();

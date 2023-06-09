@@ -30,7 +30,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
 
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
             //var pageSize = Utilities.PAGE_SIZE;//20
-            var pageSize = 15;
+            var pageSize = 10;
             var lsPrice = _context.Prices.AsNoTracking().OrderByDescending(x => x.PriceId);
             // (x => x.CategoryId): lấy theo ID, id tạo sau sẽ hiện lên đầu tiên, có nghĩa là 1,2,3,4 thì 1-2 sẽ nằm trang 2, 3-4 sẽ nằm trang 1
 

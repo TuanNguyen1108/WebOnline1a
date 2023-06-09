@@ -14,13 +14,15 @@
                     <a href="/"><span>Trang chủ</span></a>
                     <span class="mr_lr">&nbsp;/&nbsp;</span>
                 </li>
-
                 <li>
                     <a href="/tin-tuc.html"><span>Tin tức</span></a>
                     <span class="mr_lr">&nbsp;/&nbsp;</span>
                 </li>
-                <li><strong><span>@Model.Title</span></strong></li>
-
+                <li>
+                    <strong>
+                        <span>@Model.Title</span>
+                    </strong>
+                </li>
             </ul>
         </div>
     </section>
@@ -57,33 +59,8 @@
                                 </div>
 
                                 <div class="content-mucluc auto_get">
-
-                                   @* <div id="mucluc" class="title_content clearfix clear">
-                                        <label>Xem nhanh</label>
-                                        <div class="toc-content">
-                                            <ol id="toc" data-toc="div.article-content-wrap" data-toc-headings="h2,h3,h4">
-                                                <li class="">
-                                                    <a href="#diem-qua-cau-hinh-may" class="">Điểm qua cấu hình máy</a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#hieu-nang" class="">
-                                                        Hiệu năng
-
-                                                    </a>
-                                                    <ol>
-                                                        <li class="active">
-                                                            <a href="#benchmark" class="active">Benchmark</a>
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                    </div>*@
-                                    @*<div class="article-content-wrap">
-                                        <img class="lazyload loaded" src="~/IMAGE/News/@Model.Image" alt="">
-                                    </div>*@
                                     <div class="article-content-wrap">
-                                        @*@Model.Contents*@
+
                                         @{
                                             var content = Model.Contents; // Lấy nội dung từ CSDL
                                         }
@@ -92,70 +69,17 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
 
-                            <div class="social-sharing">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21" fill="none">
-                                        <path d="M15.3927 7.23665C14.2334 7.23665 13.1998 6.68182 12.5385 5.82448L7.00168 8.93028C7.13148 9.30431 7.2027 9.70774 7.2027 10.1239C7.2027 10.544 7.13148 10.9434 6.99765 11.3215L12.5304 14.423C13.1875 13.5616 14.2253 13.0025 15.3887 13.0025C17.3725 13.0025 18.9919 14.6246 18.9919 16.6207C18.9919 18.6171 17.3766 20.2393 15.3884 20.2393C13.4006 20.2393 11.7852 18.6171 11.7852 16.621C11.7852 16.2008 11.8564 15.7974 11.9903 15.4234L6.46179 12.3216C5.80473 13.1873 4.76686 13.7421 3.6035 13.7421C1.61968 13.7421 0 12.12 0 10.1239C0 8.12772 1.61968 6.5056 3.60753 6.5056C4.77089 6.5056 5.80876 7.06448 6.47012 7.93018L12.0029 4.82465C11.8691 4.44631 11.7935 4.03882 11.7935 3.61838C11.7935 1.62628 13.4089 0.000110626 15.3968 0.000110626C17.3846 0.000110626 19 1.62223 19 3.61838C19.0003 5.61453 17.3806 7.23665 15.3927 7.23665ZM15.3927 19.1005C16.7571 19.1005 17.8662 17.9867 17.8662 16.6167C17.8662 15.2466 16.7571 14.1329 15.3927 14.1329C14.0284 14.1329 12.9193 15.2466 12.9193 16.6167C12.9193 17.9867 14.0327 19.1005 15.3927 19.1005ZM3.60753 7.64009C2.24315 7.64009 1.13407 8.75379 1.13407 10.1239C1.13407 11.4939 2.24315 12.6076 3.60753 12.6076C4.97191 12.6076 6.08099 11.4939 6.08099 10.1239C6.08099 8.75379 4.96761 7.64009 3.60753 7.64009ZM15.3927 1.13865C14.0284 1.13865 12.9193 2.25235 12.9193 3.62243C12.9193 4.9925 14.0284 6.10621 15.3927 6.10621C16.7571 6.10621 17.8662 4.9925 17.8662 3.62243C17.8662 2.25235 16.7571 1.13865 15.3927 1.13865Z" fill="#494949"></path>
-                                    </svg>
-                                    Chia sẻ bài viết:
-                                </span>
-                                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58589c2252fc2da4"></script>
-                                <div class="addthis_inline_share_toolbox" data-url="https://nd-tech.mysapo.net/danh-gia-hieu-nang-va-pin-nokia-x10-5g-dung-nhin-mat-ma-bat-hinh-dong-snapdragon-480-tot-hon-ban-tuong-day" data-title="Đánh giá hiệu năng và pin Nokia X10 5G: Đừng “nhìn mặt mà bắt hình dong”, Snapdragon 480 tốt hơn bạn tưởng đấy!" data-description="Để đánh giá hiệu năng một chiếc điện thoại nhiều người chỉ cần nhìn vào tên bộ vi xử lý là đã có thể kết luận chiếc điện thoại đó mạnh hay yếu. Với Snapdragon thì họ thường nhìn vào con số phía sau, số càng lớn thì họ cho là mạnh. Điều đó cũng có phần đúng, tuy nhiên, chúng ta cũng phải xem xét thời gian ra mắt cũng"><div id="atstbx" class="at-share-tbx-element at-share-tbx-native addthis_default_style addthis_20x20_style addthis-smartlayers addthis-animated at4-show"><a class="addthis_button_tweet at_native_button at300b"><div class="tweet_iframe_widget" style="width: 62px; height: 25px;"><span><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 73px; height: 20px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.2b2d73daf636805223fb11d48f3e94f7.vi.html#dnt=false&amp;id=twitter-widget-0&amp;lang=vi&amp;original_referer=https%3A%2F%2Fnd-tech.mysapo.net%2Fdanh-gia-hieu-nang-va-pin-nokia-x10-5g-dung-nhin-mat-ma-bat-hinh-dong-snapdragon-480-tot-hon-ban-tuong-day&amp;size=m&amp;text=%C4%90%C3%A1nh%20gi%C3%A1%20hi%E1%BB%87u%20n%C4%83ng%20v%C3%A0%20pin%20Nokia%20X10%205G%3A%20%C4%90%E1%BB%ABng%20%E2%80%9Cnh%C3%ACn%20m%E1%BA%B7t%20m%C3%A0%20b%E1%BA%AFt%20h%C3%ACnh%20dong%E2%80%9D%2C%20Snapdragon%20480%20t%E1%BB%91t%20h%C6%A1n%20b%E1%BA%A1n%20t%C6%B0%E1%BB%9Fng%20%C4%91%E1%BA%A5y!&amp;time=1681976974604&amp;type=share&amp;url=https%3A%2F%2Fnd-tech.mysapo.net%2Fdanh-gia-hieu-nang-va-pin-nokia-x10-5g-dung-nhin-mat-ma-bat-hinh-dong-snapdragon-480-tot-hon-ban-tuong-day%23.ZEDujC9jYmw.twitter" data-url="https://nd-tech.mysapo.net/danh-gia-hieu-nang-va-pin-nokia-x10-5g-dung-nhin-mat-ma-bat-hinh-dong-snapdragon-480-tot-hon-ban-tuong-day#.ZEDujC9jYmw.twitter"></iframe></span></div></a><a class="addthis_button_pinterest_pinit at300b" pi:pinit:layout="horizontal" pi:pinit:url="https://nd-tech.mysapo.net/danh-gia-hieu-nang-va-pin-nokia-x10-5g-dung-nhin-mat-ma-bat-hinh-dong-snapdragon-480-tot-hon-ban-tuong-day"><div class="pin_it_iframe_widget" style="height: 25px;"><span><span class="PIN_1681976973619_button_pin PIN_1681976973619_save" data-pin-log="button_pinit_bookmarklet" data-pin-href="https://www.pinterest.com/pin/create/button/">Lưu</span></span></div></a><a class="addthis_button_linkedin_counter at_native_button at300b"><div class="linkedin_counter_iframe_widget" style="width: 57px; height: 25px;"><span><iframe title="AddThis | LinkedIn Button" frameborder="0" role="presentation" scrolling="no" allowtransparency="true" scrollbars="no" style="width:57px; height:25px;" src="https://s7.addthis.com/static/linkedin.html#href=https%3A%2F%2Fnd-tech.mysapo.net%2Fdanh-gia-hieu-nang-va-pin-nokia-x10-5g-dung-nhin-mat-ma-bat-hinh-dong-snapdragon-480-tot-hon-ban-tuong-day&amp;dr=https%3A%2F%2Fnd-tech.mysapo.net%2Ftin-tuc&amp;conf=username%3Dra-58589c2252fc2da4%26services_exclude%3D%26services_exclude_natural%3D%26services_compact%3Dfacebook%252Ctwitter%252Cprint%252Cemail%252Cpinterest_share%252Cgmail%252Clinkedin%252Cmailto%252Ctumblr%252Cmessenger%252Cmore%26product%3Dscopl-300%26pubid%3Dra-58589c2252fc2da4&amp;share=imp_url%3D0%26url%3Dhttps%253A%252F%252Fnd-tech.mysapo.net%252Fdanh-gia-hieu-nang-va-pin-nokia-x10-5g-dung-nhin-mat-ma-bat-hinh-dong-snapdragon-480-tot-hon-ban-tuong-day%26title%3D%2525C4%252590%2525C3%2525A1nh%252520gi%2525C3%2525A1%252520hi%2525E1%2525BB%252587u%252520n%2525C4%252583ng%252520v%2525C3%2525A0%252520pin%252520Nokia%252520X10%2525205G%25253A%252520%2525C4%252590%2525E1%2525BB%2525ABng%252520%2525E2%252580%25259Cnh%2525C3%2525ACn%252520m%2525E1%2525BA%2525B7t%252520m%2525C3%2525A0%252520b%2525E1%2525BA%2525AFt%252520h%2525C3%2525ACnh%252520dong%2525E2%252580%25259D%25252C%252520Snapdragon%252520480%252520t%2525E1%2525BB%252591t%252520h%2525C6%2525A1n%252520b%2525E1%2525BA%2525A1n%252520t%2525C6%2525B0%2525E1%2525BB%25259Fng%252520%2525C4%252591%2525E1%2525BA%2525A5y!%26description%3D%25C4%2590%25E1%25BB%2583%2520%25C4%2591%25C3%25A1nh%2520gi%25C3%25A1%2520hi%25E1%25BB%2587u%2520n%25C4%2583ng%2520m%25E1%25BB%2599t%2520chi%25E1%25BA%25BFc%2520%25C4%2591i%25E1%25BB%2587n%2520tho%25E1%25BA%25A1i%2520nhi%25E1%25BB%2581u%2520ng%25C6%25B0%25E1%25BB%259Di%2520ch%25E1%25BB%2589%2520c%25E1%25BA%25A7n%2520nh%25C3%25ACn%2520v%25C3%25A0o%2520t%25C3%25AAn%2520b%25E1%25BB%2599%2520vi%2520x%25E1%25BB%25AD%2520l%25C3%25BD%2520l%25C3%25A0%2520%25C4%2591%25C3%25A3%2520c%25C3%25B3%2520th%25E1%25BB%2583%2520k%25E1%25BA%25BFt%2520lu%25E1%25BA%25ADn%2520chi%25E1%25BA%25BFc%2520%25C4%2591i%25E1%25BB%2587n%2520tho%25E1%25BA%25A1i%2520%25C4%2591%25C3%25B3%2520m%25E1%25BA%25A1nh%2520hay%2520y%25E1%25BA%25BFu.%2520V%25E1%25BB%259Bi%2520Snapdragon%2520th%25C3%25AC%2520h%25E1%25BB%258D%2520th%25C6%25B0%25E1%25BB%259Dng%2520nh%25C3%25ACn%2520v%25C3%25A0o%2520con%2520s%25E1%25BB%2591%2520ph%25C3%25ADa%2520sau%252C%2520s%25E1%25BB%2591%2520c%25C3%25A0ng%2520l%25E1%25BB%259Bn%2520th%25C3%25AC%2520h%25E1%25BB%258D%2520cho%2520l%25C3%25A0%2520m%25E1%25BA%25A1nh.%2520%25C4%2590i%25E1%25BB%2581u%2520%25C4%2591%25C3%25B3%2520c%25C5%25A9ng%2520c%25C3%25B3%2520ph%25E1%25BA%25A7n%2520%25C4%2591%25C3%25BAng%252C%2520tuy%2520nhi%25C3%25AAn%252C%2520ch%25C3%25BAng%2520ta%2520c%25C5%25A9ng%2520ph%25E1%25BA%25A3i%2520xem%2520x%25C3%25A9t%2520th%25E1%25BB%259Di%2520gian%2520ra%2520m%25E1%25BA%25AFt%2520c%25C5%25A9ng%26smd%3Drsi%253D%2526gen%253D0%2526rsc%253D%2526dr%253Dhttps%25253A%25252F%25252Fnd-tech.mysapo.net%25252Ftin-tuc%2526sta%253DAT-ra-58589c2252fc2da4%25252F-%25252F-%25252F6440ee8c687e6997%25252F1%26media%3Dundefined%26hideEmailSharingConfirmation%3Dfalse%26passthrough%3Dlinkedin%253D&amp;li="></iframe></span></div></a><a class="addthis_counter addthis_pill_style at_native_button" href="#" style="display: inline-block;"><a class="atc_s addthis_button_compact">Chia sẻ<span></span></a><a class="addthis_button_expanded" target="_blank" title="Thêm..." href="#"></a></a><div class="atclear"></div></div></div>
-                            </div>
-
-
-
-                            <form method="post" action="" id="" accept-charset="UTF-8">
-                                <input name="FormType" type="hidden" value="article_comments">
-                                <input name="utf8" type="hidden" value="true">
-                                <input type="hidden" id="Token-a8f88343ce2248b9a17ce66e81a14684" name="Token" value="03AKH6MRFKLDTX_18WUWhAnszDfuOfrQoTPWYbC_EgVuGx9kKxKVfKYKhwC0tn3Ulr4gRxglZEIwccwvPgy6bKhppbc6YTKjO46Ch3W3flylRDSQ1E_0Sty_NI1iTqjq_6iN9e4ioRv17J4IVOChiLNb30UoubJjZ8lfJ3PGq_vPHvxSke8Bi0-1cPR30MKEDJDQETJMQLPYwGmq7mgySGV3UufDVyJlTHecKXbTtJRTPkD7Jbd-DLe1R7_zi8BkP543EM_G-5s9_k_LjZg4spn4H5co3SmA-JB29hkRjnS5WwflBekbUQ_M_eX6MJWSibEs-733vcJ4mxpU3pPDV57LVoiliNpe3L_KZcL2D19HiPY9CYNaNpSFue8alWw8BaIV3dids5oe6stXjulrpnKYdn1IcXjhkObDztJm1jxbM5lAExjedVIelLXRai537WLaumqPno9OgoNg_O2GM5EFmjb8XwbmmiFdZkkoBLI0m5ex2ES3MPRGMddLqVpGF80iY-Lp-MR1YrBVbx5MuGDkPN0YMbyahyqw"><script src="https://www.google.com/recaptcha/api.js?render=6Ldtu4IUAAAAAMQzG1gCw3wFlx_GytlZyLrXcsuK">
-                                </script>
-                                <script>
-                                    grecaptcha.ready(function () { grecaptcha.execute("6Ldtu4IUAAAAAMQzG1gCw3wFlx_GytlZyLrXcsuK", { action: "article_comments" }).then(function (token) { document.getElementById("Token-a8f88343ce2248b9a17ce66e81a14684").value = token }); });
-                                </script>
-
-
-                                <div class="form-coment">
-                                    <div class="margin-top-0 margin-bottom-30 w-100">
-                                        <h5 class="title-form-coment">Viết bình luận của bạn</h5>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 col-12">
-                                            <fieldset class="form-group padding-0">
-                                                <input placeholder="Họ và tên" type="text" class="form-control form-control-lg" value="" id="full-name" name="Author" required="">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <fieldset class="form-group padding-0">
-                                                <input placeholder="Email" pattern="[a-z0-9._%+-]+@@[a-z0-9.-]+\.[a-z]{2,63}$" type="email" class="form-control form-control-lg" value="" name="Email" required="">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <fieldset class="form-group">
-                                        <textarea placeholder="Nội dung" class="form-control form-control-lg" id="comment" name="Body" rows="6" required=""></textarea>
-                                    </fieldset>
-                                    <button type="submit" class="btn btn-primary button_45">Gửi bình luận</button>
-                                </div> <!-- End form mail -->
-                            </form>
+                            
                         </div>
                         <div class="blog_left_base col-lg-3 col-12">
-                            <div class="position-sticky">
-                                <script>
-                                    $(".open_mnu").click(function () {
-                                        $(this).toggleClass('cls_mn').next().slideToggle();
-                                    });
-                                </script>
+                            <div class="position-sticky">                               
                                 <div class="blog_noibat">
                                     <h2 class="h2_sidebar_blog">
                                         <a href="/tin-tuc" title="Tin tức nổi bật">Tin tức nổi bật</a>
                                     </h2>
                                     <div class="blog_content">
-
                                         @if (TinNoiBat != null && TinNoiBat.Count() > 0)
                                         {
                                             foreach (var item in TinNoiBat)
@@ -168,47 +92,8 @@
                                                 </div>
                                             }
                                         }
-
                                     </div>
-                                </div>
-                                @*<div class="blog_noibat">
-                                    <h2 class="h2_sidebar_blog">
-                                        <a href="/tin-tuc" title="Tin tức nổi bật">Tin tức nổi bật</a>
-                                    </h2>
-                                    <div class="blog_content">
-
-                                        <div class="item clearfix">
-                                            <div class="contentright">
-                                                <h3><a title="Đánh giá hiệu năng và pin Nokia X10 5G: Đừng “nhìn mặt mà bắt hình dong”, Snapdragon 480 tốt hơn bạn tưởng đấy!" href="/danh-gia-hieu-nang-va-pin-nokia-x10-5g-dung-nhin-mat-ma-bat-hinh-dong-snapdragon-480-tot-hon-ban-tuong-day">Đánh giá hiệu năng và pin Nokia X10 5G: Đừng “nhìn mặt mà bắt hình dong”, Snapdragon 480 tốt hơn bạn tưởng đấy!</a></h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="item clearfix">
-                                            <div class="contentright">
-                                                <h3><a title="Đánh giá chi tiết camera Vivo X80: Camera Zeiss và chip hình ảnh Vivo V1+ “song kiếm hợp bích” sẽ như nào?" href="/danh-gia-chi-tiet-camera-vivo-x80-camera-zeiss-va-chip-hinh-anh-vivo-v1-song-kiem-hop-bich-se-nhu-nao">Đánh giá chi tiết camera Vivo X80: Camera Zeiss và chip hình ảnh Vivo V1+ “song kiếm hợp bích” sẽ như nào?</a></h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="item clearfix">
-                                            <div class="contentright">
-                                                <h3><a title="Top phụ kiện đồng giá dưới 500k siêu xịn tại ND Tech – Tổng xả kho ưu đãi cực to!" href="/top-phu-kien-dong-gia-duoi-500k-sieu-xin-tai-nd-tech-tong-xa-kho-uu-dai-cuc-to">Top phụ kiện đồng giá dưới 500k siêu xịn tại ND Tech – Tổng xả kho ưu đãi cực to!</a></h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="item clearfix">
-                                            <div class="contentright">
-                                                <h3><a title="ND Tech chính thức mở bán Laptop RedmiBook 15, “mưa” ưa đãi, mua ngay thôi!" href="/nd-tech-chinh-thuc-mo-ban-laptop-redmibook-15-mua-ua-dai-mua-ngay-thoi">ND Tech chính thức mở bán Laptop RedmiBook 15, “mưa” ưa đãi, mua ngay thôi!</a></h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="item clearfix">
-                                            <div class="contentright">
-                                                <h3><a title="Top linh kiện máy tính – PC không thể bỏ qua" href="/top-linh-kien-may-tinh-pc-khong-the-bo-qua">Top linh kiện máy tính – PC không thể bỏ qua</a></h3>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>*@
+                                </div>                               
                             </div>
                         </div>
                     </div>
@@ -272,9 +157,7 @@
                                         }
                                     }
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </article>

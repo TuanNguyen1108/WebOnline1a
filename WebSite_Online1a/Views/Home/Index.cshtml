@@ -353,7 +353,8 @@
                                                         <h3 class="product-name" style=" font-weight: bold;"><a href="@url">@item.NameProduct</a></h3>
                                                         <div class="price-box" style="color:  #ff0000; font-weight: bold;">
                                                             @item.Price.Value.ToString("#,##,00").Replace(",",".") VND &nbsp;
-                                                        </div>
+                                                            <span class="compare-price">@item.PriceOld.Value.ToString("#,##,00").Replace(",",".") ₫</span>
+                                                        </div>                                                        
                                                     </div>
                                                     <div class="action d-xl-block d-none">
                                                         <div class="actions-secondary">
@@ -372,14 +373,11 @@
                                                         </div>
                                                     </div>
                                                 </form>
-                                                <div class="flashsale__bottom" style="">
-
-
-
+                                                @*<div class="flashsale__bottom" style="">
                                                     <div class="flashsale__progressbar   ">
                                                         <div class="flashsale___percent" style="width: 66%;"></div>
                                                     </div>
-                                                </div>
+                                                </div>*@
                                             </div>
                                         </div>
                                     }

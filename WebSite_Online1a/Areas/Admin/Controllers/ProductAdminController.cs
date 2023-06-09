@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Controller;
 using WebDemo.Helpers;
 using Website_Online.Areas.Admin.Models.Authentication;
 using WebSite_Online1a.Models;
@@ -16,20 +17,52 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
     public class ProductAdminController : Controller
     {
         private readonly WebOnline1Context _context;
-
-        public ProductAdminController(WebOnline1Context context)
+        private readonly ILogger<WebOnline1Context> _logger;
+        public ProductAdminController(WebOnline1Context context, ILogger<WebOnline1Context> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: Admin/ProductAdmin
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 10)
         {
             // hiện tên khi đăng nhập
             ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
-            var webOnline1Context = _context.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Specification).OrderByDescending(p=>p.ProductId);
-            return View(await webOnline1Context.ToListAsync());
+            // Lấy tổng số sản phẩm từ cơ sở dữ liệu
+            int totalProducts = await _context.Products.CountAsync();
+            // Tính toán tổng số trang dựa trên tổng số sản phẩm và kích thước trang
+            int totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
+
+            var products = _context.Products.AsNoTracking()
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .Select(p => new
+                {
+                    Product = p,
+                    truyvan_Category = _context.Categories.FirstOrDefault(c => c.CategoryId == p.CategoryId),
+                    truyvan_Brand = _context.Brands.FirstOrDefault(b => b.BrandId == p.BrandId),
+                    truyvan_Specification = _context.Specifications.FirstOrDefault(s => s.SpecificationId == p.SpecificationId),
+                })
+                .Select(p => new Product
+                {
+                    ProductId = p.Product.ProductId,
+                    NameProduct = p.Product.NameProduct,
+                    Price = p.Product.Price,
+                    ProductImage = p.Product.ProductImage,
+                    Category = p.truyvan_Category, // Category vào Model của Product xem được: public virtual Category? Category { get; set; }
+                    Brand = p.truyvan_Brand, // Brand vào Model của Product xem được: public virtual Brand? Brand { get; set; }
+                    Specification = p.truyvan_Specification // BrandSpecification vào Model của Product xem được: public virtual Specification? Specification { get; set; }
+                })
+                .ToList();
+
+            // Truyền dữ liệu phân trang vào view
+            ViewBag.TotalPages = totalPages;
+            ViewBag.Page = page;
+            ViewBag.PageSize = pageSize;
+
+            return View(products);
         }
 
         // GET: Admin/ProductAdmin/Details/5
@@ -41,14 +74,35 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             }
 
             var product = await _context.Products
-                .Include(p => p.Brand)
-                .Include(p => p.Category)
-                .Include(p => p.Specification)
-                .FirstOrDefaultAsync(m => m.ProductId == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
+                .Where(p => p.ProductId == id)
+                .AsNoTracking()
+                .Select(p => new
+                {
+                    Product = p,
+                    Truyvan_Specification = _context.Specifications.FirstOrDefault(s => s.SpecificationId == p.SpecificationId)
+                })
+                .Select(p => new Product
+                {
+                    /* ProductId = p.ProductId,
+                     ProductImage = p.ProductImage,
+                     NameProduct = p.NameProduct,
+                     CategoryId = p.CategoryId,
+                     BrandId = p.BrandId,
+                     SpecificationId = p.SpecificationId,*/
+                    NameProduct = p.Product.NameProduct,
+                    Specification = p.Truyvan_Specification,
+                })
+                .FirstOrDefaultAsync();
+
+            //if()
+            //    .Include(p => p.Brand)
+            //    .Include(p => p.Category)
+            //    .Include(p => p.Specification)
+            //    .FirstOrDefaultAsync(m => m.ProductId == id);
+            //if (product == null)
+            //{
+            //    return NotFound();
+            //}
 
             return View(product);
         }
@@ -67,7 +121,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,BrandId,CategoryId,NameProduct,Gb,SpecificationId,ProductImage,Price,PriceOld,Alias,SpNoiBat,SpGiamGia,PhanTramGiamGia")] Product product , List<IFormFile> userfiles)
+        public async Task<IActionResult> Create([Bind("ProductId,BrandId,CategoryId,NameProduct,Gb,SpecificationId,ProductImage,Price,PriceOld,Alias,SpNoiBat,SpGiamGia,PhanTramGiamGia")] Product product, List<IFormFile> userfiles)
         {
             if (ModelState.IsValid)
             {
@@ -122,10 +176,10 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
             ViewData["SpecificationId"] = new SelectList(_context.Specifications, "SpecificationId", "SpecificationId", product.SpecificationId);*/
 
-            ViewData["NameBrand"] = new SelectList(_context.Brands, "BrandId", "NameBrand" , product.BrandId);
+            ViewData["NameBrand"] = new SelectList(_context.Brands, "BrandId", "NameBrand", product.BrandId);
             ViewData["NameCategory"] = new SelectList(_context.Categories, "CategoryId", "NameCategory", product.CategoryId);
             ViewData["NameSpecification"] = new SelectList(_context.Specifications, "SpecificationId", "NameSpecification", product.SpecificationId);
-            
+
             return View(product);
         }
 
@@ -218,14 +272,14 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             {
                 _context.Products.Remove(product);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ProductExists(int id)
         {
-          return (_context.Products?.Any(e => e.ProductId == id)).GetValueOrDefault();
+            return (_context.Products?.Any(e => e.ProductId == id)).GetValueOrDefault();
         }
     }
 }

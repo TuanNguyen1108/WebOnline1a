@@ -1,10 +1,9 @@
-﻿@using PagedList.Core.Mvc
-@model PagedList.Core.IPagedList<WebSite_Online1a.Models.Specification>
-
-@{
+﻿@{
     ViewData["Title"] = "Index thông số admin";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+
+@model List<Specification>
 
 <div class="page-inner">
 
@@ -100,19 +99,55 @@
                 <div class="card-footer">
                     <a asp-area="Admin" asp-controller="SpecificationAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Thông Số</a>
                 </div>
+                <!-- Phân trang -->
+                <div class="pagination">
+                    <!-- Hiển thị nút Previous nếu không ở trang đầu -->
+                    @if (ViewBag.Page > 1)
+                    {
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page - 1, pageSize = ViewBag.PageSize })">Previous</a>
+                    }
+
+                    <!-- Hiển thị số trang và liên kết đến từng trang -->
+                    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                    {
+                        <a href="@Url.Action("Index", new { page = i, pageSize = ViewBag.PageSize })" class="@(i == ViewBag.Page ? "active" : "")"> @i </a>
+                    }
+
+                    <!-- Hiển thị nút Next nếu không ở trang cuối cùng -->
+                    @if (ViewBag.Page < ViewBag.TotalPages)
+                    {
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page + 1, pageSize = ViewBag.PageSize })">Next</a>
+                    }
+                </div>
+                <!-- Phân trang -->
             </div>
         </div>
     </div>
     <hr class="my-10">
-    <!--Phân trang-->
-    <div aria-label="Page navigation example">
-        <ul class="pagination" >
-            <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="SpecificationAdmin" asp-action="Index" />
-        </ul>
-    </div>
-    <!--Phân trang-->
 </div>
 
+<style>
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+        .pagination a {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #333;
+            background-color: #eee;
+            border-radius: 4px;
+        }
+
+            .pagination a.active {
+                background-color: #009999;
+                color: #fff;
+            }
+</style>
 
 @section Scripts {
     <script>
@@ -138,3 +173,18 @@
     </script>
 
 }
+
+@*
+    @using PagedList.Core.Mvc
+    @model PagedList.Core.IPagedList<WebSite_Online1a.Models.Specification>
+*@
+
+@*
+    <!--Phân trang-->
+    <div aria-label="Page navigation example">
+        <ul class="pagination">
+            <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="SpecificationAdmin" asp-action="Index" />
+        </ul>
+    </div>
+    <!--Phân trang-->
+*@

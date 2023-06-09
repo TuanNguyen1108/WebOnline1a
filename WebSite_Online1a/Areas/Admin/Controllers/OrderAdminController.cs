@@ -15,15 +15,19 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
     public class OrderAdminController : Controller
     {
         private readonly WebOnline1Context _context;
-
-        public OrderAdminController(WebOnline1Context context)
+        private readonly ILogger<WebOnline1Context> _logger;
+        public OrderAdminController(WebOnline1Context context, ILogger<WebOnline1Context> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: Admin/OrderAdmin
         public async Task<IActionResult> Index()
         {
+            _logger.LogInformation("This is an information log.");
+            _logger.LogWarning("This is a warning log.");
+            _logger.LogError("This is an error log.");
             // hiện tên khi đăng nhập
             ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 

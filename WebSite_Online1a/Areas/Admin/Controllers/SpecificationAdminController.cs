@@ -23,20 +23,28 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         }
 
         // GET: Admin/SpecificationAdmin
-        public async Task<IActionResult> Index(int? page)
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 8)
         {
             // hiện tên khi đăng nhập
             ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
-            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            //var pageSize = Utilities.PAGE_SIZE;//20
-            var pageSize = 5;
-            var lsSpecification = _context.Specifications.AsNoTracking().OrderByDescending(x => x.SpecificationId);
-            // (x => x.CategoryId): lấy theo ID, id tạo sau sẽ hiện lên đầu tiên, có nghĩa là 1,2,3,4 thì 1-2 sẽ nằm trang 2, 3-4 sẽ nằm trang 1
+            // Lấy tổng số sản phẩm từ cơ sở dữ liệu
+            int totalSpecifications = await _context.Specifications.CountAsync();
+            // Tính toán tổng số trang dựa trên tổng số sản phẩm và kích thước trang
+            int totalPages = (int)Math.Ceiling((double)totalSpecifications / pageSize);
 
-            PagedList<Specification> models = new PagedList<Specification>(lsSpecification, pageNumber, pageSize);
-            ViewBag.CurrentPage = pageNumber;
-            return View(models);
+            var specifications = _context.Specifications
+                .AsNoTracking()
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            // Truyền dữ liệu phân trang vào view
+            ViewBag.TotalPages = totalPages;
+            ViewBag.Page = page;
+            ViewBag.PageSize = pageSize;
+
+            return View(specifications);
         }
 
         // GET: Admin/SpecificationAdmin/Details/5
@@ -47,12 +55,22 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var specification = await _context.Specifications
-                .FirstOrDefaultAsync(m => m.SpecificationId == id);
-            if (specification == null)
-            {
-                return NotFound();
-            }
+            var specification = _context.Specifications
+                .Where(s => s.SpecificationId == id)
+                .AsNoTracking()
+                .Select(s => new Specification
+                {
+                    NameSpecification = s.NameSpecification,
+                    SizeCreen = s.SizeCreen,
+                    Cpu = s.Cpu,
+                    OperatingSystem = s.OperatingSystem,
+                    Ram = s.Ram,
+                    Camera = s.Camera,
+                    CameraSelfie = s.CameraSelfie,
+                    Battery = s.Battery,
+                    Description = s.Description,
+                })
+                .FirstOrDefault();
 
             return View(specification);
         }
@@ -162,14 +180,14 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             {
                 _context.Specifications.Remove(specification);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SpecificationExists(int id)
         {
-          return (_context.Specifications?.Any(e => e.SpecificationId == id)).GetValueOrDefault();
+            return (_context.Specifications?.Any(e => e.SpecificationId == id)).GetValueOrDefault();
         }
     }
 }

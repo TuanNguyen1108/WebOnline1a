@@ -118,9 +118,12 @@ public partial class WebOnline1Context : DbContext
 
             entity.Property(e => e.OrderId).HasColumnName("Order_ID");
             entity.Property(e => e.AccountId).HasColumnName("Account_ID");
+            entity.Property(e => e.DateReceived).HasColumnType("datetime");
             entity.Property(e => e.FullName).HasMaxLength(250);
             entity.Property(e => e.OderDate).HasColumnType("datetime");
             entity.Property(e => e.OrderStatusId).HasColumnName("OrderStatus_ID");
+            entity.Property(e => e.Phone).HasMaxLength(250);
+            entity.Property(e => e.ShipDate).HasColumnType("datetime");
 
             entity.HasOne(d => d.Account).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.AccountId)
@@ -206,17 +209,17 @@ public partial class WebOnline1Context : DbContext
 
             entity.Property(e => e.SpecificationId).HasColumnName("Specification_ID");
             entity.Property(e => e.Battery)
-                .HasMaxLength(50)
+                .HasMaxLength(550)
                 .HasColumnName("battery");
-            entity.Property(e => e.Camera).HasMaxLength(50);
+            entity.Property(e => e.Camera).HasMaxLength(550);
             entity.Property(e => e.CameraSelfie)
-                .HasMaxLength(50)
+                .HasMaxLength(550)
                 .HasColumnName("Camera_Selfie");
-            entity.Property(e => e.Cpu).HasMaxLength(50);
+            entity.Property(e => e.Cpu).HasMaxLength(550);
             entity.Property(e => e.NameSpecification).HasMaxLength(250);
-            entity.Property(e => e.OperatingSystem).HasMaxLength(50);
-            entity.Property(e => e.Ram).HasMaxLength(50);
-            entity.Property(e => e.SizeCreen).HasMaxLength(50);
+            entity.Property(e => e.OperatingSystem).HasMaxLength(550);
+            entity.Property(e => e.Ram).HasMaxLength(550);
+            entity.Property(e => e.SizeCreen).HasMaxLength(550);
         });
 
         OnModelCreatingPartial(modelBuilder);
