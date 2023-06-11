@@ -33,7 +33,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             return View(await webOnline1Context.ToListAsync());
         }
 
-        // GET: Admin/CategoryAdmin/Details/5
+        /*// GET: Admin/CategoryAdmin/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Categories == null)
@@ -50,7 +50,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             }
 
             return View(category);
-        }
+        }*/
 
         // GET: Admin/CategoryAdmin/Create
         public IActionResult Create()
@@ -112,7 +112,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             if (category == null)
             {
                 return NotFound();
-            }          
+            }
             ViewData["NameBrand"] = new SelectList(_context.Brands, "BrandId", "NameBrand");
             return View(category);
         }
@@ -159,25 +159,29 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CategoryExists(category.CategoryId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return RedirectToAction(nameof(Index));
                 }
                 return RedirectToAction(nameof(Index));
             }
 
-           
+
             ViewData["Brand"] = new SelectList(_context.Brands, "BrandId", "NameBrand", category.BrandId);
             return View(category);
         }
 
+        public IActionResult Delete(int id)
+        {
+            var category = _context.Categories.SingleOrDefault(x => x.CategoryId == id);
+            if (category != null)
+            {
+                _context.Categories.Remove(category);
+            }    
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         // GET: Admin/CategoryAdmin/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        /*public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Categories == null)
             {
@@ -217,6 +221,6 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         private bool CategoryExists(int id)
         {
           return (_context.Categories?.Any(e => e.CategoryId == id)).GetValueOrDefault();
-        }
+        }*/
     }
 }

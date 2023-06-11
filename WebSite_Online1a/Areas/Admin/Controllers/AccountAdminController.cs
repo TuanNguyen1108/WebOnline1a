@@ -87,6 +87,13 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+
+            var account_status = new List<AccountStatus>
+            {
+                new AccountStatus {Value = 1, TrangThaiTaiKhoan = "On"},
+                new AccountStatus {Value = 2, TrangThaiTaiKhoan = "Off"},
+            };
+            ViewBag.AccountStatus = account_status;
             ViewData["RoleId"] = new SelectList(_context.Roles, "RoleId", "RoleName", account.RoleId);
             return View(account);
         }
@@ -96,7 +103,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AccountId,Email,Password,ConfirmPassword,HoTen,Sdt,Address,RoleId")] Account account)
+        public async Task<IActionResult> Edit(int id, [Bind("AccountId,Email,Password,ConfirmPassword,HoTen,Sdt,Address,RoleId,Status")] Account account)
         {
             if (id != account.AccountId)
             {
@@ -112,14 +119,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AccountExists(account.AccountId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return RedirectToAction(nameof(Index));
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -128,46 +128,57 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             return View(account);
         }
 
-        // GET: Admin/AccountAdmin/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int id)
         {
-            if (id == null || _context.Accounts == null)
-            {
-                return NotFound();
-            }
-
-            var account = await _context.Accounts
-                .FirstOrDefaultAsync(m => m.AccountId == id);
-            if (account == null)
-            {
-                return NotFound();
-            }
-
-            return View(account);
-        }
-
-        // POST: Admin/AccountAdmin/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.Accounts == null)
-            {
-                return Problem("Entity set 'WebOnline1Context.Accounts'  is null.");
-            }
-            var account = await _context.Accounts.FindAsync(id);
+            var account = _context.Accounts.SingleOrDefault(x => x.AccountId == id);
             if (account != null)
             {
                 _context.Accounts.Remove(account);
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
 
-        private bool AccountExists(int id)
-        {
-            return (_context.Accounts?.Any(e => e.AccountId == id)).GetValueOrDefault();
-        }
+        // GET: Admin/AccountAdmin/Delete/5
+        /* public async Task<IActionResult> Delete(int? id)
+         {
+             if (id == null || _context.Accounts == null)
+             {
+                 return NotFound();
+             }
+
+             var account = await _context.Accounts
+                 .FirstOrDefaultAsync(m => m.AccountId == id);
+             if (account == null)
+             {
+                 return NotFound();
+             }
+
+             return View(account);
+         }
+
+         // POST: Admin/AccountAdmin/Delete/5
+         [HttpPost, ActionName("Delete")]
+         [ValidateAntiForgeryToken]
+         public async Task<IActionResult> DeleteConfirmed(int id)
+         {
+             if (_context.Accounts == null)
+             {
+                 return Problem("Entity set 'WebOnline1Context.Accounts'  is null.");
+             }
+             var account = await _context.Accounts.FindAsync(id);
+             if (account != null)
+             {
+                 _context.Accounts.Remove(account);
+             }
+
+             await _context.SaveChangesAsync();
+             return RedirectToAction(nameof(Index));
+         }
+
+         private bool AccountExists(int id)
+         {
+             return (_context.Accounts?.Any(e => e.AccountId == id)).GetValueOrDefault();
+         }*/
     }
 }

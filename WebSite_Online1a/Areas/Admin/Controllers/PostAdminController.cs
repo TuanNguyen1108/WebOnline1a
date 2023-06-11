@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -23,15 +24,28 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         }
 
         // GET: Admin/PostAdmin
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 8)
         {
             // hiện tên khi đăng nhập
             ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
-            return _context.Posts != null ? 
-                          View(await _context.Posts.ToListAsync()) :
-                          Problem("Entity set 'WebOnline1Context.Posts'  is null.");
-        }
+            //lấy tống số post có trong csdl
+            int totalPost = await _context.Posts.CountAsync();
+            // Tính toán tổng số trang dựa trên tổng số sản phẩm và kích thước trang
+            int totalPages = (int)Math.Ceiling((double)totalPost/pageSize);
+
+            var post = _context.Posts.AsNoTracking()
+                        .OrderByDescending(p=>p.PostId)
+                        .Skip((page - 1) * pageSize)
+                        .Take(pageSize)
+                        .ToList();
+            //truyền dữ liệu vào ViewBag
+            ViewBag.TotalPages = totalPages;
+            ViewBag.Page = page;
+            ViewBag.PageSize = pageSize;
+
+            return View(post)
+ ;        }
 
         // GET: Admin/PostAdmin/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -152,60 +166,63 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PostExists(post.PostId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return RedirectToAction(nameof(Index));
                 }
                 return RedirectToAction(nameof(Index));
             }
             return View(post);
         }
-
-        // GET: Admin/PostAdmin/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int id)
         {
-            if (id == null || _context.Posts == null)
-            {
-                return NotFound();
-            }
-
-            var post = await _context.Posts
-                .FirstOrDefaultAsync(m => m.PostId == id);
-            if (post == null)
-            {
-                return NotFound();
-            }
-
-            return View(post);
-        }
-
-        // POST: Admin/PostAdmin/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.Posts == null)
-            {
-                return Problem("Entity set 'WebOnline1Context.Posts'  is null.");
-            }
-            var post = await _context.Posts.FindAsync(id);
+            var post = _context.Posts.SingleOrDefault(x => x.PostId == id);
             if (post != null)
             {
                 _context.Posts.Remove(post);
             }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
 
-        private bool PostExists(int id)
-        {
-          return (_context.Posts?.Any(e => e.PostId == id)).GetValueOrDefault();
-        }
+        /* // GET: Admin/PostAdmin/Delete/5
+         public async Task<IActionResult> Delete(int? id)
+         {
+             if (id == null || _context.Posts == null)
+             {
+                 return NotFound();
+             }
+
+             var post = await _context.Posts
+                 .FirstOrDefaultAsync(m => m.PostId == id);
+             if (post == null)
+             {
+                 return NotFound();
+             }
+
+             return View(post);
+         }
+
+         // POST: Admin/PostAdmin/Delete/5
+         [HttpPost, ActionName("Delete")]
+         [ValidateAntiForgeryToken]
+         public async Task<IActionResult> DeleteConfirmed(int id)
+         {
+             if (_context.Posts == null)
+             {
+                 return Problem("Entity set 'WebOnline1Context.Posts'  is null.");
+             }
+             var post = await _context.Posts.FindAsync(id);
+             if (post != null)
+             {
+                 _context.Posts.Remove(post);
+             }
+
+             await _context.SaveChangesAsync();
+             return RedirectToAction(nameof(Index));
+         }
+
+         private bool PostExists(int id)
+         {
+           return (_context.Posts?.Any(e => e.PostId == id)).GetValueOrDefault();
+         }*/
     }
 }

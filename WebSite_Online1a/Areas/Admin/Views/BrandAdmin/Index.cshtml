@@ -22,17 +22,6 @@
     <div class="card card-fluid">
         <!-- .card-body -->
         <div class="card-body">
-            <div class="input-group input-group-alt">
-                <form asp-action="Search" method="get" class="form-inline">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
-                        </div>
-                        <input name="name" type="text" class="form-control" placeholder="Tìm Kiếm Thương Hiệu">
-                        <button class="btn btn-danger">Tìm</button>
-                    </div>
-                </form>
-            </div>
             <div class="table-responsive">
                 <!-- .table -->
                 <table class="table">
@@ -57,16 +46,12 @@
                                         @item.NameBrand
                                     </td>
                                     <td></td>
-                                    <td class="align-middle text-right">
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="BrandAdmin" asp-action="Details" asp-route-id="@item.BrandId">
-                                            <i class="fa fa-calendar-week"></i>
-                                            <span class="sr-only">Details</span>
-                                        </a>
+                                    <td class="align-middle text-right">                                       
                                         <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="BrandAdmin" asp-action="Edit" asp-route-id="@item.BrandId">
                                             <i class="fa fa-pencil-alt"></i>
                                             <span class="sr-only">Edit</span>
-                                        </a>
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="BrandAdmin" asp-action="Delete" asp-route-id="@item.BrandId">
+                                        </a>                             
+                                        <a class="btn btn-sm btn-icon btn-secondary" onclick="ConfirmDeleteBrand(@item.BrandId)">
                                             <i class="far fa-trash-alt"></i>
                                             <span class="sr-only">Remove</span>
                                         </a>
@@ -83,13 +68,46 @@
             </div>
         </div>
     </div>
-    <hr class="my-10">
-    <!-- .section-block -->
-    <!--Phân trang-->
-    @*<div aria-label="Page navigation example">
-    <ul class="pagination">
-    <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="Category" asp-action="Index" />
-    </ul>
-    </div>*@
-    <!--Phân trang-->
+    <hr class="my-10">  
 </div>
+
+
+<script>
+    function ConfirmDeleteBrand(brandId) {
+        Swal.fire({
+            title: 'Xác nhận xóa thương hiệu này',
+            text: 'Bạn có chắc chắn muốn xóa thương hiệu này không?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Đồng ý',
+            cancelButtonText: 'Hủy bỏ'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                deleteBrand(brandId);
+            }
+        });
+    }
+    function deleteBrand(brandId) {
+        $.ajax({
+            url: '@Url.Action("Delete", "BrandAdmin")',
+            type: 'POST',
+            data: { id: brandId },
+            success: function () {
+                Swal.fire(
+                    'Đã Xóa Thành Công',
+                    'Thương Hiệu này đã được xóa.',
+                    'success'
+                ).then(() => {
+                    location.reload();
+                });
+            },
+            error: function () {
+                Swal.fire(
+                    'Error!',
+                    'An error occurred while deleting the price.',
+                    'error'
+                );
+            }
+        });
+    }
+</script>

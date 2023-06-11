@@ -5,7 +5,7 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<div class="page-inner">
+@*<div class="page-inner">
     <div>
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -26,17 +26,11 @@
 
         <tr class="row-details bg-light collapse" id="details-cid5743">
             <td colspan="6">
-                <div class="row">
-                    <div class="col-md-auto text-center">
-                        <div class="tile tile-xl tile-circle bg-purple mb-2"> O </div>
-                        <h3 class="card-title mb-2"> Thông Tin Sản phẩm </h3>
-                        <h3 class="card-title mb-2"> @Model.NameProduct </h3>
-                    </div>
+                <div class="row">                   
+                    <h3 class="card-title mb-2"> Thông Tin Sản phẩm: @Model.NameProduct </h3>
                     <div class="col-md-8">
                         <table class="table table-bordered">
-
                             <tbody>
-
                                 <tr>
                                     <td> Màn Hình </td>
                                     <td> @Model.Specification.SizeCreen</td>
@@ -97,4 +91,4 @@
         </div>
     </form>
     <hr class="my-10">
-</div>
+</div>*@

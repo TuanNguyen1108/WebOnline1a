@@ -18,40 +18,40 @@
         </ol>
     </div>
     <!-- table -->
-    <hr class="my-10">
     <div class="card card-fluid">
         <!-- .card-body -->
         <div class="card-body">
-            <div class="form-group">
-                <!-- .input-group -->
-                <div class="input-group input-group-alt">
-                    <form asp-action="Index" method="get" class="form-inline">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
-                            </div>
-                            <input id="keyword" name="keyword" type="text" class="form-control" placeholder="Tìm Kiếm Sản Phẩm">
-                            <button class="btn btn-danger">Tìm</button>
-                        </div>
-                    </form>
-                </div><!-- /.input-group -->
-            </div>
             <div class="card-footer">
-                <a asp-area="Admin" asp-controller="ProductAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Sản Phẩm</a>
+                <form asp-action="Index" method="get" class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                        </div>
+                        <input id="keyword" name="keyword" type="text" class="form-control" placeholder="Tìm Kiếm Sản Phẩm">
+                        <button class="btn btn-danger">Tìm</button>
+                    </div>
+                </form>
+                <a asp-area="Admin" asp-controller="ProductAdmin" asp-action="Create" class="card-footer-item">
+                    <i class="fa fa-plus-circle mr-1"></i>
+                    Thêm Sản Phẩm
+                </a>
+                <style>
+                    .card-footer-item {
+                        text-align: left;
+                    }
+                </style>
             </div>
             <hr class="my-10">
             <div class="table-responsive">
                 <table class="table">
                     <thead>
                         <tr>
-
-                            <th class="align-middle">Tên Sản Phẩm</th>
+                            <th class="align-middle" style="width: 250px;">Tên Sản Phẩm</th>
                             <th class="align-middle">Danh Mục</th>
                             <th class="align-middle">Thương Hiệu</th>
                             <th class="align-middle">Thông Số KT</th>
                             <th class="align-middle">Giá</th>
                             <th class="align-middle">Hình Ảnh</th>
-
                         </tr>
                     </thead>
                     <tbody id="records_table">
@@ -72,21 +72,26 @@
                                     <td class="align-middle">
                                         @item.Specification.NameSpecification
                                     </td>
-                                    <td class="align-middle">@item.Price.Value.ToString("#,##0")₫</td>
+                                    <td class="align-middle">
+                                        @if(item.Price != null)
+                                        {
+                                            <a>@item.Price.Value.ToString("#,##0")đ</a>
+                                        }
+                                        else
+                                        {
+                                            
+                                        }
+                                    </td>
                                     <td class="align-middle">
                                         <img width="100" height="100" src="~/IMAGE/Products/@item.ProductImage">
                                     </td>
 
                                     <td class="align-middle text-right">
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="ProductAdmin" asp-action="Details" asp-route-id="@item.ProductId">
-                                            <i class="fa fa-calendar-week"></i>
-                                            <span class="sr-only">Details</span>
-                                        </a>
                                         <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="ProductAdmin" asp-action="Edit" asp-route-id="@item.ProductId">
                                             <i class="fa fa-pencil-alt"></i>
                                             <span class="sr-only">Edit</span>
                                         </a>
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="ProductAdmin" asp-action="Delete" asp-route-id="@item.ProductId">
+                                        <a class="btn btn-sm btn-icon btn-secondary" onclick="confirmDelete(@item.ProductId)">
                                             <i class="far fa-trash-alt"></i>
                                             <span class="sr-only">Remove</span>
                                         </a>
@@ -96,25 +101,23 @@
                         }
                     </tbody>
                 </table>
-              
+
                 <!-- Phân trang -->
                 <div class="pagination">
                     <!-- Hiển thị nút Previous nếu không ở trang đầu -->
                     @if (ViewBag.Page > 1)
                     {
-                        <a href="@Url.Action("Index", new { page = ViewBag.Page - 1, pageSize = ViewBag.PageSize })">Previous</a>
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page - 1, pageSize = ViewBag.PageSize })">Trước</a>
                     }
-
                     <!-- Hiển thị số trang và liên kết đến từng trang -->
                     @for (int i = 1; i <= ViewBag.TotalPages; i++)
                     {
                         <a href="@Url.Action("Index", new { page = i, pageSize = ViewBag.PageSize })" class="@(i == ViewBag.Page ? "active" : "")"> @i </a>
                     }
-
                     <!-- Hiển thị nút Next nếu không ở trang cuối cùng -->
                     @if (ViewBag.Page < ViewBag.TotalPages)
                     {
-                        <a href="@Url.Action("Index", new { page = ViewBag.Page + 1, pageSize = ViewBag.PageSize })">Next</a>
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page + 1, pageSize = ViewBag.PageSize })">Sau</a>
                     }
                 </div>
                 <!-- Phân trang -->
@@ -148,6 +151,48 @@
 </style>
 
 @section Scripts {
+    <script>
+        //confirmDelete(productId) : productId bên trong ngoặc là tên mình đặt cho Id lấy được từ onclick= ...
+        function confirmDelete(productId) {
+            Swal.fire({
+                title: 'Xác nhận xóa sản phẩm này',
+                text: 'Bạn có chắc chắn muốn xóa sản phẩm này không?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Đồng ý',
+                cancelButtonText: 'Hủy bỏ'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    deleteProduct(productId);
+                }
+            });
+        }
+        // nếu không muốn hiện thông báo xác nhận xóa thì thay deletePrice = confirmDelete
+        function deleteProduct(productId) {
+            $.ajax({
+                url: '@Url.Action("Delete", "ProductAdmin")',
+                type: 'POST',
+                data: { id: productId },
+                success: function () {
+                    Swal.fire(
+                        'Đã Xóa Thành Công',
+                        'Sản phẩm này đã được xóa.',
+                        'success'
+                    ).then(() => {
+                        location.reload();
+                    });
+                },
+                error: function () {
+                    Swal.fire(
+                        'Error!',
+                        'An error occurred while deleting the price.',
+                        'error'
+                    );
+                }
+            });
+        }
+    </script>
+
     <script>
         $(document).ready(function () {
             $("#keyword").keyup(function () {
@@ -187,80 +232,5 @@
 
 
 
-@* <div aria-label="Page navigation example">
-                <ul class="pagination">
-                <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="Brand" asp-action="Index" />
-                </ul>
-                </div>*@
 
-@*<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NameProduct)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Gb)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductImage)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Alias)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Category)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Specification)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NameProduct)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gb)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProductImage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Alias)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand.BrandId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category.CategoryId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Specification.SpecificationId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>*@

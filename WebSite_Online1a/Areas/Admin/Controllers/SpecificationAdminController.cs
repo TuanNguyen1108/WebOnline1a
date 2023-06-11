@@ -35,6 +35,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
 
             var specifications = _context.Specifications
                 .AsNoTracking()
+                .OrderByDescending(s=>s.SpecificationId)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToList();
@@ -134,21 +135,25 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!SpecificationExists(specification.SpecificationId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return RedirectToAction(nameof(Index));
                 }
                 return RedirectToAction(nameof(Index));
             }
             return View(specification);
         }
 
-        // GET: Admin/SpecificationAdmin/Delete/5
+        public IActionResult Delete(int id)
+        {
+            var specification = _context.Specifications.SingleOrDefault(x => x.SpecificationId == id);
+            if (specification != null)
+            {
+                _context.Specifications.Remove(specification);
+            }
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        /*// GET: Admin/SpecificationAdmin/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Specifications == null)
@@ -188,6 +193,6 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         private bool SpecificationExists(int id)
         {
             return (_context.Specifications?.Any(e => e.SpecificationId == id)).GetValueOrDefault();
-        }
+        }*/
     }
 }

@@ -36,14 +36,14 @@
                                 Role
                             </th>
                             <th>
+                                Trạng Thái
+                            </th>
+                            <th>
                                 Tên
                             </th>
                             <th>
-                                Số Điện Thoại
-                            </th>
-                            <th>
-                                Địa Chỉ
-                            </th>
+                                SĐT
+                            </th>                                                    
                         </tr>
                     </thead><!-- /thead -->
                     <!-- tbody -->
@@ -59,15 +59,22 @@
                                     <td class="align-middle">
                                         @item.Role.RoleName
                                     </td>
-                                    <td>
+                                    <td class="align-middle">
+                                        @if (@item.Status == 1)
+                                        {
+                                            <span class="badge badge-subtle badge-success">On</span>
+                                        }
+                                        else if (item.Status == 2)
+                                        {
+                                            <span class="badge badge-subtle badge-warning">Off</span>
+                                        }
+                                    </td>
+                                    <td class="align-middle">
                                         @item.HoTen
                                     </td>
-                                    <td>
+                                    <td class="align-middle">
                                         @item.Sdt
-                                    </td>
-                                    <td>
-                                        @item.Address
-                                    </td>
+                                    </td>                                                                      
                                     <td></td>
                                     <td class="align-middle text-right">
                                         <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="AccountAdmin" asp-action="Details" asp-route-id="@item.AccountId">
@@ -78,7 +85,7 @@
                                             <i class="fa fa-pencil-alt"></i>
                                             <span class="sr-only">Edit</span>
                                         </a>
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="AccountAdmin" asp-action="Delete" asp-route-id="@item.AccountId">
+                                        <a class="btn btn-sm btn-icon btn-secondary" onclick="ConfirmDeleteAccount(@item.AccountId)">
                                             <i class="far fa-trash-alt"></i>
                                             <span class="sr-only">Remove</span>
                                         </a>
@@ -86,7 +93,6 @@
                                 </tr>
                             }
                         }
-
                     </tbody>
                 </table>
                 <div class="card-footer">
@@ -97,3 +103,43 @@
     </div>
     <hr class="my-10">
 </div>
+
+<script>
+    function ConfirmDeleteAccount(accountId) {
+        Swal.fire({
+            title: 'Xác nhận xóa tài khoản này',
+            text: 'Bạn có chắc chắn muốn xóa tài khoản này không?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Đồng ý',
+            cancelButtonText: 'Hủy bỏ'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                deleteAccount(accountId);
+            }
+        });
+    }
+    function deleteAccount(accountId) {
+        $.ajax({
+            url: '@Url.Action("Delete", "AccountAdmin")',
+            type: 'POST',
+            data: { id: accountId },
+            success: function () {
+                Swal.fire(
+                    'Đã Xóa Thành Công',
+                    'Tài khoản này đã được xóa.',
+                    'success'
+                ).then(() => {
+                    location.reload();
+                });
+            },
+            error: function () {
+                Swal.fire(
+                    'Error!',
+                    'An error occurred while deleting the price.',
+                    'error'
+                );
+            }
+        });
+    }
+</script>

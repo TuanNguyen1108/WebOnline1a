@@ -46,7 +46,7 @@
             </div>
             <div class="col-md-5">
                 <label class="form-control-label">Giá:</label>
-                <input class="form-control" id="priceInput1" oninput="formatPrice1()" type="text" asp-for="PriceOld">
+                <input class="form-control" id="priceInput1" oninput="formatPrice1()" type="text" asp-for="PriceOld" >
                 <span id="formattedPrice1"></span>
 
                 <script>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-5">
                 <label class="form-control-label">Giá Mới:</label>
-                <input class="form-control" id="priceInput" oninput="formatPrice()" type="text" asp-for="Price">
+                <input class="form-control" id="priceInput" oninput="formatPrice()" type="text" asp-for="Price" >
                 <span id="formattedPrice"></span>
 
                 <script>
@@ -113,22 +113,8 @@
                 <hr class="my-10">
             </div>
             <div class="col-md-5">
-                <button type="submit" class="btn btn-outline-success" value="Show Alert" id="btn">Tạo mới</button>
-                <button asp-action="Index" class="btn btn-outline-secondary" value="Show Alert" id="btn1">Quay về</button>
-
-                <script>
-                    var button = document.getElementById("btn");
-                    button.onclick = function () {
-                        alert("Thêm Sản Phẩm Thành Công");
-                    }
-                </script>
-                <script>
-                    var button1 = document.getElementById("btn1");
-                    button1.onclick = function () {
-                        alert("Bạn chưa thêm sản phẩm, có chắc chắn muốn quay về");
-                    }
-                </script>
-
+                <button type="submit" class="btn btn-outline-success">Tạo mới</button>
+                <button asp-action="Index" class="btn btn-outline-secondary">Quay về</button>               
             </div>
         </form>
     }

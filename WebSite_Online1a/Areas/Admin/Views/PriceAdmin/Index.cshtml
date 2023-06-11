@@ -1,10 +1,8 @@
-﻿@using PagedList.Core.Mvc
-@model PagedList.Core.IPagedList<WebSite_Online1a.Models.Price>
-
-@{
+﻿@{
     ViewData["Title"] = "Index chi tiết sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+@model List<Price>
 
 <div class="page-inner">
     <div>
@@ -75,38 +73,119 @@
                                         <img width="140" height="100" src="~/IMAGE/Product_Details/@item.ColorImage">
                                     </td>
 
-                                    <td class="align-middle text-right">                                       
+                                    <td class="align-middle text-right">
                                         <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="PriceAdmin" asp-action="Edit" asp-route-id="@item.PriceId">
                                             <i class="fa fa-pencil-alt"></i>
                                             <span class="sr-only">Edit</span>
                                         </a>
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="PriceAdmin" asp-action="Delete" asp-route-id="@item.PriceId">
+                                        <a class="btn btn-sm btn-icon btn-secondary" onclick="confirmDelete(@item.PriceId)">
                                             <i class="far fa-trash-alt"></i>
                                             <span class="sr-only">Remove</span>
-                                        </a>
+                                        </a>                                      
                                     </td>
-
                                 </tr>
                             }
                         }
                     </tbody>
                 </table>
-                @*<div class="card-footer">
-                    <a asp-area="Admin" asp-controller="PriceAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Chi Tiết</a>
-                </div>*@
+                <!-- Phân trang -->
+                <div class="pagination">
+                    <!-- Hiển thị nút Previous nếu không ở trang đầu -->
+                    @if (ViewBag.Page > 1)
+                    {
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page - 1, pageSize = ViewBag.PageSize })">Previous</a>
+                    }
 
-                <div aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="PriceAdmin" asp-action="Index" />
-                    </ul>
+                    <!-- Hiển thị số trang và liên kết đến từng trang -->
+                    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                    {
+                        <a href="@Url.Action("Index", new { page = i, pageSize = ViewBag.PageSize })" class="@(i == ViewBag.Page ? "active" : "")"> @i </a>
+                    }
+
+                    <!-- Hiển thị nút Next nếu không ở trang cuối cùng -->
+                    @if (ViewBag.Page < ViewBag.TotalPages)
+                    {
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page + 1, pageSize = ViewBag.PageSize })">Next</a>
+                    }
                 </div>
+                <!-- Phân trang -->
             </div>
         </div>
     </div>
     <hr class="my-10">
 </div>
 
+<style>
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+        .pagination a {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #333;
+            background-color: #eee;
+            border-radius: 4px;
+        }
+
+            .pagination a.active {
+                background-color: #009999;
+                color: #fff;
+            }
+</style>
+
+
+
 @section Scripts {
+    <script>
+        function confirmDelete(priceId_ten_gi_cung_duoc) {
+            //onclick="confirmDelete(@@item.PriceId) :  
+            // khi click vào thẻ chứa function là confirmDelete(Id là gì đó)
+             // thì sẽ hiện thông báo xác nhận, đồng ý sẽ thực hiện hàm, hàm được viết ở dưới. 
+                  // tên hàm là gì cũng được, nhưng id phải khớp với id đã khai báo trên confirmDelete
+            Swal.fire({
+                title: 'Xác nhận xóa thuộc tính này',
+                text: 'Bạn có chắc chắn muốn xóa giá này không?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Đồng ý',
+                cancelButtonText: 'Hủy bỏ'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    deletePrice(priceId_ten_gi_cung_duoc);
+                }
+            });
+        }
+        // nếu không muốn hiện thông báo xác nhận xóa thì thay deletePrice = confirmDelete
+        function deletePrice(priceId_ten_gi_cung_duoc) {
+            $.ajax({
+                url: '@Url.Action("Delete", "PriceAdmin")',
+                type: 'POST',
+                data: { id: priceId_ten_gi_cung_duoc },
+                success: function () {
+                    Swal.fire(
+                        'Đã Xóa Thành Công',
+                        'Giá này đã được xóa.',
+                        'success'
+                    ).then(() => {
+                        location.reload();
+                    });
+                },
+                error: function () {
+                    Swal.fire(
+                        'Error!',
+                        'An error occurred while deleting the price.',
+                        'error'
+                    );
+                }
+            });
+        }
+    </script>
+
     <script>
         $(document).ready(function () {
             $("#keyword").keyup(function () {
@@ -131,7 +210,15 @@
 }
 
 
+@*@using PagedList.Core.Mvc
+@model PagedList.Core.IPagedList<WebSite_Online1a.Models.Price>*@
 
+
+@*<div aria-label="Page navigation example">
+    <ul class="pagination">
+        <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="PriceAdmin" asp-action="Index" />
+    </ul>
+</div>*@
 
 
 @*<h1>Index</h1>

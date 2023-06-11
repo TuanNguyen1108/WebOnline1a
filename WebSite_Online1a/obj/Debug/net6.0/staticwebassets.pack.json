@@ -837,6 +837,14 @@
       "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-13.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-14-pro-max-den_2t86-0z_7dh2-k0_js4e-cw_j33e-d7.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-14-pro-max-den_2t86-0z_7dh2-k0_js4e-cw_j33e-d7.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-14-pro-max-vang_xiav-ph_zg26-zb_r2c6-o8_a646-1o.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-14-pro-max-vang_xiav-ph_zg26-zb_r2c6-o8_a646-1o.jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Categorys\\iphone-14-pro.png",
       "PackagePath": "staticwebassets\\IMAGE\\Categorys\\iphone-14-pro.png"
     },
@@ -863,6 +871,10 @@
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\638207095891280513_cach-tao-video-tu-anh.webp",
       "PackagePath": "staticwebassets\\IMAGE\\News\\638207095891280513_cach-tao-video-tu-anh.webp"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\Iphone-14-Plus (3).jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\News\\Iphone-14-Plus (3).jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\News\\PC-Gaming-E-Power-G1660ti-3.webp",
@@ -945,12 +957,24 @@
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-13-Đen.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Plus (1).jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Plus (1).jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Plus (1).png",
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Plus (1).png"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Plus (2).jpg",
       "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Plus (2).jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Plus (3).jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Plus (3).jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Plus (4).jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Product_Details\\Iphone-14-Plus (4).jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Product_Details\\Iphone-14-Pro-Max-Bạc.png",
@@ -1121,6 +1145,14 @@
       "PackagePath": "staticwebassets\\IMAGE\\Products\\13.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\4003d286-80f8-4e71-9fda-0d1ea1e37a60.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\4003d286-80f8-4e71-9fda-0d1ea1e37a60.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\98563309-7852-4ff4-80ab-e578435f3dcf.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\98563309-7852-4ff4-80ab-e578435f3dcf.jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone 14.png",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone 14.png"
     },
@@ -1133,8 +1165,20 @@
       "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone-13-Trắng - 1.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone-14-Plus (1).jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone-14-Plus (1).jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone-14-Plus (1).png",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone-14-Plus (1).png"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone-14-Plus (2).jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone-14-Plus (2).jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone-14-Plus (3).jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\Iphone-14-Plus (3).jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\Iphone-14-Plus (4).jpg",
@@ -1157,12 +1201,24 @@
       "PackagePath": "staticwebassets\\IMAGE\\Products\\do_9b9x-zd_0oao-ab.jpg"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\f41e6c2e-dc79-48a8-a67d-62d006f17118.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\f41e6c2e-dc79-48a8-a67d-62d006f17118.jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-12.png",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-12.png"
     },
     {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-pro-max-den_2t86-0z_7dh2-k0_js4e-cw_j33e-d7.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-pro-max-den_2t86-0z_7dh2-k0_js4e-cw_j33e-d7.jpg"
+    },
+    {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-pro-max-tim_6wwl-cw_n9nk-3h_c7vz-un_j1l5-06.jpg",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-pro-max-tim_6wwl-cw_n9nk-3h_c7vz-un_j1l5-06.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-pro-max-vang_xiav-ph_zg26-zb_r2c6-o8_a646-1o.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\iphone-14-pro-max-vang_xiav-ph_zg26-zb_r2c6-o8_a646-1o.jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\iphone-14-pro.png",
@@ -1183,6 +1239,10 @@
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\s22-xanh_rsv3-lb.jpg",
       "PackagePath": "staticwebassets\\IMAGE\\Products\\s22-xanh_rsv3-lb.jpg"
+    },
+    {
+      "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\samsung-galaxy-z-fold4-5g-den.jpg",
+      "PackagePath": "staticwebassets\\IMAGE\\Products\\samsung-galaxy-z-fold4-5g-den.jpg"
     },
     {
       "Id": "D:\\.NET Core\\WebSite_Online1a\\WebSite_Online1a\\WebSite_Online1a\\wwwroot\\IMAGE\\Products\\samsung-galaxy-z-fold4-5g-kem.jpg",

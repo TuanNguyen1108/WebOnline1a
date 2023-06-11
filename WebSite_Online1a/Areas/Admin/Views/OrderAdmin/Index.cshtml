@@ -24,11 +24,9 @@
         <div class="card-body">
             <div class="table-responsive">
                 <!-- .table -->
+                <h6 style="font-weight: bold;">Tổng Doanh Thu: @Model.Sum(p=>p.TotalMoney).Value.ToString("#,##,00").Replace(",",".") đ</h6>
                 <table class="table">
                     <!-- thead -->
-                    <div style="font-weight: bold;">
-                        <a>Tổng Doanh Thu: @Model.Sum(p=>p.TotalMoney).Value.ToString("#,##,00").Replace(",",".") đ</a>
-                    </div>
                     <thead>
                         <tr>
                             <th class="align-middle">
@@ -36,7 +34,7 @@
                             </th>
                             <th class="align-middle">
                                 Khách Hàng
-                            </th>                            
+                            </th>
                             <th class="align-middle">
                                 SĐT
                             </th>
@@ -69,11 +67,11 @@
                                     </td>
                                     <td class="align-middle">
                                         @item.FullName
-                                    </td>                                    
+                                    </td>
                                     <td class="align-middle">
                                         @item.Phone
                                     </td>
-                                    <td class ="align-middle">
+                                    <td class="align-middle">
                                         @item.OderDate.Value.ToString("dd/MM/yyyy HH:mm:ss")
                                     </td>
                                     <td class="align-middle">

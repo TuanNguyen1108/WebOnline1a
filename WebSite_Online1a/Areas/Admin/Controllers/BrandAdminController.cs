@@ -36,7 +36,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         }
 
         // GET: Admin/BrandAdmin/Details/5
-        public async Task<IActionResult> Details(int? id)
+        /*public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Brands == null)
             {
@@ -51,7 +51,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             }
 
             return View(brand);
-        }
+        }*/
 
         // GET: Admin/BrandAdmin/Create
         public IActionResult Create()
@@ -115,22 +115,25 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BrandExists(brand.BrandId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return RedirectToAction(nameof(Index));
                 }
                 return RedirectToAction(nameof(Index));
             }
             return View(brand);
         }
 
+        public IActionResult Delete(int id)
+        {
+            var brand = _context.Brands.SingleOrDefault(x => x.BrandId == id);
+            if (brand != null)
+            {
+                _context.Brands.Remove(brand);
+            }
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
         // GET: Admin/BrandAdmin/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        /*public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Brands == null)
             {
@@ -169,6 +172,6 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         private bool BrandExists(int id)
         {
           return (_context.Brands?.Any(e => e.BrandId == id)).GetValueOrDefault();
-        }
+        }*/
     }
 }

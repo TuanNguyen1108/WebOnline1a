@@ -50,6 +50,7 @@ namespace WebSite_Online1a.Controllers
                     //Password = password,
                     ConfirmPassword = ConfirmPassword,
                     RoleId = 2, // khi tạo ở trang người dùng thì sẽ có roleid = 2(user)
+                    Status = 1, // Trạng thái khi tạo account mới sẽ = 1 => (On)
                     HoTen = HoTen,
                     Sdt = Sdt,
                 };
@@ -77,7 +78,7 @@ namespace WebSite_Online1a.Controllers
                 //if (account != null && account.Role == "User")
                 if (account != null)
                 {
-                    if (account.RoleId == 2)
+                    if (account.RoleId == 2 && account.Status == 1)
                     {
                         // Lưu thông tin người dùng vào phiên - lấy được AccountId
                         // Lấy được Id của Account Khi Login

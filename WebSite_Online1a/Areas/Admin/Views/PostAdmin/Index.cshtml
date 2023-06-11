@@ -19,26 +19,14 @@
     </div>
 
     <!-- table -->
-    <hr class="my-10">
     <div class="card card-fluid">
         <!-- .card-body -->
         <div class="card-body">
-            <div class="form-group">
-                <!-- Form Search-->
-                <div class="input-group input-group-alt">
-
-                    @*<form asp-action="Search" method="get" class="form-inline">
-                    <div class="input-group">
-                    <div class="input-group-prepend">
-                    <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
-                    </div>
-                    <input name="name" type="text" class="form-control" placeholder="Tìm Kiếm Sản Phẩm">
-                    <button class="btn btn-danger">Tìm</button>
-                    </div>
-                    </form>*@
-
-                </div>
-                <!-- Form Search-->
+            <div class="card-footer">
+                <a asp-area="Admin" asp-controller="PostAdmin" asp-action="Create" class="card-footer-item">
+                    <i class="fa fa-plus-circle mr-1"></i>
+                    Thêm Tin Mới
+                </a>
             </div>
             <div class="table-responsive">
                 <table class="table">
@@ -86,7 +74,7 @@
                                             <i class="fa fa-pencil-alt"></i>
                                             <span class="sr-only">Edit</span>
                                         </a>
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="PostAdmin" asp-action="Delete" asp-route-id="@item.PostId">
+                                        <a class="btn btn-sm btn-icon btn-secondary" onclick="ConfirmDeletePost(@item.PostId)">
                                             <i class="far fa-trash-alt"></i>
                                             <span class="sr-only">Remove</span>
                                         </a>
@@ -97,18 +85,92 @@
                         }
                     </tbody>
                 </table>
-                <div class="card-footer">
-                    <a asp-area="Admin" asp-controller="PostAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Tin Mới</a>
+                <!-- Phân trang -->
+                <div class="pagination">
+                    <!-- Hiển thị nút Previous nếu không ở trang đầu -->
+                    @if (ViewBag.Page > 1)
+                    {
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page - 1, pageSize = ViewBag.PageSize })">Trước</a>
+                    }
+
+                    <!-- Hiển thị số trang và liên kết đến từng trang -->
+                    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                    {
+                        <a href="@Url.Action("Index", new { page = i, pageSize = ViewBag.PageSize })" class="@(i == ViewBag.Page ? "active" : "")"> @i </a>
+                    }
+
+                    <!-- Hiển thị nút Next nếu không ở trang cuối cùng -->
+                    @if (ViewBag.Page < ViewBag.TotalPages)
+                    {
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page + 1, pageSize = ViewBag.PageSize })">Sau</a>
+                    }
                 </div>
+                <!-- Phân trang -->
             </div>
         </div>
     </div>
     <hr class="my-10">
-    @*<!--Phân trang-->
-    <div aria-label="Page navigation example">
-    <ul class="pagination">
-    <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="Specification" asp-action="Index" />
-    </ul>
-    </div>
-    <!--Phân trang-->*@
 </div>
+
+<style>
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+        .pagination a {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #333;
+            background-color: #eee;
+            border-radius: 4px;
+        }
+
+            .pagination a.active {
+                background-color: #009999;
+                color: #fff;
+            }
+</style>
+
+<script>
+    function ConfirmDeletePost(postId) {
+        Swal.fire({
+            title: 'Xác nhận xóa tin tức này',
+            text: 'Bạn có chắc chắn muốn xóa tin tức này không?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Đồng ý',
+            cancelButtonText: 'Hủy bỏ'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                deletePost(postId);
+            }
+        });
+    }
+    function deletePost(postId) {
+        $.ajax({
+            url: '@Url.Action("Delete", "PostAdmin")',
+            type: 'POST',
+            data: { id: postId },
+            success: function () {
+                Swal.fire(
+                    'Đã Xóa Thành Công',
+                    'Tin tức này đã được xóa.',
+                    'success'
+                ).then(() => {
+                    location.reload();
+                });
+            },
+            error: function () {
+                Swal.fire(
+                    'Error!',
+                    'An error occurred while deleting the price.',
+                    'error'
+                );
+            }
+        });
+    }
+</script>

@@ -22,7 +22,7 @@
     <div class="card card-fluid">
         <!-- .card-body -->
         <div class="card-body">
-            <div class="input-group input-group-alt">
+            <div class="card-footer">
                 <form asp-action="Search" method="get" class="form-inline">
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -32,6 +32,10 @@
                         <button class="btn btn-danger">Tìm</button>
                     </div>
                 </form>
+                <a asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Create" class="card-footer-item" style="text-align:left">
+                    <i class="fa fa-plus-circle mr-1"></i>
+                    Thêm Danh Mục
+                </a>
             </div>
             <div class="table-responsive">
                 <!-- .table -->
@@ -66,19 +70,23 @@
                                         @item.Brand.NameBrand
                                     </td>
                                     <td>
-                                        <img width="100" height="100"  src="~/IMAGE/Categorys/@item.CategoryImage" />
+                                        <img width="100" height="100" src="~/IMAGE/Categorys/@item.CategoryImage" />
                                     </td>
                                     <td></td>
                                     <td class="align-middle text-right">
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Details" asp-route-id="@item.CategoryId">
-                                            <i class="fa fa-calendar-week"></i>
-                                            <span class="sr-only">Details</span>
-                                        </a>
+                                        @* <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Details" asp-route-id="@item.CategoryId">
+                                <i class="fa fa-calendar-week"></i>
+                                <span class="sr-only">Details</span>
+                                </a>*@
                                         <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Edit" asp-route-id="@item.CategoryId">
                                             <i class="fa fa-pencil-alt"></i>
                                             <span class="sr-only">Edit</span>
                                         </a>
-                                        <a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Delete" asp-route-id="@item.CategoryId">
+                                        @*<a class="btn btn-sm btn-icon btn-secondary" asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Delete" asp-route-id="@item.CategoryId">
+                                <i class="far fa-trash-alt"></i>
+                                <span class="sr-only">Remove</span>
+                                </a>*@
+                                        <a class="btn btn-sm btn-icon btn-secondary" onclick="ConfirmDeleteCategory(@item.CategoryId)">
                                             <i class="far fa-trash-alt"></i>
                                             <span class="sr-only">Remove</span>
                                         </a>
@@ -86,27 +94,54 @@
                                 </tr>
                             }
                         }
-
                     </tbody>
                 </table>
-                <div class="card-footer">
-                    <a asp-area="Admin" asp-controller="CategoryAdmin" asp-action="Create" class="card-footer-item"><i class="fa fa-plus-circle mr-1"></i> Thêm Danh Mục</a>
-                </div>
             </div>
         </div>
     </div>
     <hr class="my-10">
-    <!-- .section-block -->
-    <!--Phân trang-->
-    @*<div aria-label="Page navigation example">
-    <ul class="pagination">
-    <pager class="pager-container" options="@PagedListRenderOptions.Bootstrap4PageNumbersOnly" list="@Model" asp-area="Admin" asp-controller="Category" asp-action="Index" />
-    </ul>
-    </div>*@
-    <!--Phân trang-->
 </div>
 
 @section Scripts {
+    <script>
+        function ConfirmDeleteCategory(categoryId) {
+            Swal.fire({
+                title: 'Xác nhận xóa sản phẩm này',
+                text: 'Bạn có chắc chắn muốn xóa sản phẩm này không?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Đồng ý',
+                cancelButtonText: 'Hủy bỏ'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    deleteCategory(categoryId);
+                }
+            });
+        }
+        function deleteCategory(categoryId) {
+            $.ajax({
+                url: '@Url.Action("Delete", "CategoryAdmin")',
+                type: 'POST',
+                data: { id: categoryId },
+                success: function () {
+                    Swal.fire(
+                        'Đã Xóa Thành Công',
+                        'Danh mục này đã được xóa.',
+                        'success'
+                    ).then(() => {
+                        location.reload();
+                    });
+                },
+                error: function () {
+                    Swal.fire(
+                        'Error!',
+                        'An error occurred while deleting the price.',
+                        'error'
+                    );
+                }
+            });
+        }
+    </script>
     <script>
         $(document).ready(function () {
             $("#keyword").keyup(function () {

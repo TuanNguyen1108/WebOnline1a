@@ -31,3 +31,9 @@ public partial class Account
 
     public virtual Role? Role { get; set; }
 }
+
+public class AccountStatus
+{
+    public int Value { get; set; }
+    public string TrangThaiTaiKhoan { get; set; }
+}

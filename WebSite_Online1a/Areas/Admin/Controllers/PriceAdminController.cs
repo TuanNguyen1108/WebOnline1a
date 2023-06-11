@@ -23,43 +23,31 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         }
 
         // GET: Admin/PriceAdmin
-        public async Task<IActionResult> Index(int? page)
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 8)
         {
             // hiện tên khi đăng nhập
             ViewBag.UserName = HttpContext.Session.GetString("HoTenAdmin");
 
-            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            //var pageSize = Utilities.PAGE_SIZE;//20
-            var pageSize = 10;
-            var lsPrice = _context.Prices.AsNoTracking().OrderByDescending(x => x.PriceId);
-            // (x => x.CategoryId): lấy theo ID, id tạo sau sẽ hiện lên đầu tiên, có nghĩa là 1,2,3,4 thì 1-2 sẽ nằm trang 2, 3-4 sẽ nằm trang 1
+            // Lấy tổng số sản phẩm từ cơ sở dữ liệu
+            int totalPrice = await _context.Prices.CountAsync();
+            // Tính toán tổng số trang dựa trên tổng số sản phẩm và kích thước trang
+            int totalPages = (int)Math.Ceiling((double)totalPrice / pageSize);
 
-            PagedList<Price> models = new PagedList<Price>(lsPrice, pageNumber, pageSize);
-            ViewBag.CurrentPage = pageNumber;
-            return View(models);
+            var specifications = _context.Prices
+               .OrderByDescending(p => p.PriceId)
+              .AsNoTracking()
+              .Skip((page - 1) * pageSize)
+              .Take(pageSize)
+              .ToList();
 
-            /*  var webOnline1Context = _context.Prices.Include(p => p.Product);
-              return View(await webOnline1Context.ToListAsync());*/
+            // Truyền dữ liệu phân trang vào view
+            ViewBag.TotalPages = totalPages;
+            ViewBag.Page = page;
+            ViewBag.PageSize = pageSize;
+
+            return View(specifications);
         }
 
-        // GET: Admin/PriceAdmin/Details/5
-        /*public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Prices == null)
-            {
-                return NotFound();
-            }
-
-            var price = await _context.Prices
-                .Include(p => p.Product)
-                .FirstOrDefaultAsync(m => m.PriceId == id);
-            if (price == null)
-            {
-                return NotFound();
-            }
-
-            return View(price);
-        }*/
 
         // GET: Admin/PriceAdmin/Create
         public IActionResult Create()
@@ -68,9 +56,6 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             return View();
         }
 
-        // POST: Admin/PriceAdmin/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("PriceId,NamePrice,ProductId,PriceOld,PriceNew,Gb,Color,ColorImage")] Price price, List<IFormFile> userfiles)
@@ -124,9 +109,6 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             return View(price);
         }
 
-        // POST: Admin/PriceAdmin/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("PriceId,NamePrice,ProductId,PriceOld,PriceNew,Gb,Color,ColorImage")] Price price, List<IFormFile> userfiles)
@@ -138,44 +120,52 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                try
+                if (userfiles.Count > 0)
                 {
-                    if (userfiles.Count > 0)
+                    foreach (var file in userfiles)
                     {
-                        foreach (var file in userfiles)
-                        {
-                            string filename = file.FileName;
-                            filename = Path.GetFileName(filename);
-                            //đường dẫn của file
-                            string uploadpath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot//IMAGE/Product_Details", filename);
-                            FileStream stream = new FileStream(uploadpath, FileMode.Create);
-                            file.CopyToAsync(stream);
-                            price.ColorImage = filename; //gán giá trị cho cột SeoDescription                            
+                        string filename = file.FileName;
+                        filename = Path.GetFileName(filename);
+                        //đường dẫn của file
+                        string uploadpath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot//IMAGE/Product_Details", filename);
+                        var stream = new FileStream(uploadpath, FileMode.Create);
+                        file.CopyToAsync(stream);
+                        price.ColorImage = filename; //gán giá trị cho cột SeoDescription                            
 
-                        }
-                        ViewBag.Message = "Total" + userfiles.Count.ToString() + "Files Upoaded Successfully.";
                     }
-                    _context.Update(price);
-                    await _context.SaveChangesAsync();
+                    ViewBag.Message = "Total" + userfiles.Count.ToString() + "Files Upoaded Successfully.";
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PriceExists(price.PriceId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _context.Update(price);
+                await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductId", price.ProductId);
             return View(price);
         }
 
-        // GET: Admin/PriceAdmin/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.Prices == null)
+            {
+                return NotFound();
+            }
+
+            var price = await _context.Prices
+                /*.Include(p => p.Product)*/
+                .FirstOrDefaultAsync(m => m.PriceId == id);
+            if (price != null)
+            {
+                _context.Prices.Remove(price);
+            }
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+
+
+
+        /*// GET: Admin/PriceAdmin/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Prices == null)
@@ -208,14 +198,9 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             {
                 _context.Prices.Remove(price);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool PriceExists(int id)
-        {
-          return (_context.Prices?.Any(e => e.PriceId == id)).GetValueOrDefault();
-        }
+        }*/
     }
 }

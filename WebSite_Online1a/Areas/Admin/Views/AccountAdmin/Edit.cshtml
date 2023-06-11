@@ -33,6 +33,10 @@
             <select asp-for="RoleId" class="form-control" asp-items="ViewBag.RoleId"></select>
         </div>
         <div class="col-md-5">
+            <label>Trạng Thái Tài Khoản:</label>
+            @Html.DropDownListFor(model => model.Status, new SelectList((IEnumerable<AccountStatus>)ViewBag.AccountStatus, "Value", "TrangThaiTaiKhoan"), new { @class = "form-control" })
+        </div>
+        <div class="col-md-5">
             <label asp-for="Password" class="control-label"></label>
             <input asp-for="Password" class="form-control" />
             <span asp-validation-for="Password" class="text-danger"></span>

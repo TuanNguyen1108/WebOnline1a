@@ -36,6 +36,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             int totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
 
             var products = _context.Products.AsNoTracking()
+                .OrderByDescending(p=>p.ProductId)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .Select(p => new
@@ -65,7 +66,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             return View(products);
         }
 
-        // GET: Admin/ProductAdmin/Details/5
+        /*// GET: Admin/ProductAdmin/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Products == null)
@@ -83,29 +84,18 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 })
                 .Select(p => new Product
                 {
-                    /* ProductId = p.ProductId,
+                    *//* ProductId = p.ProductId,
                      ProductImage = p.ProductImage,
                      NameProduct = p.NameProduct,
                      CategoryId = p.CategoryId,
                      BrandId = p.BrandId,
-                     SpecificationId = p.SpecificationId,*/
+                     SpecificationId = p.SpecificationId,*//*
                     NameProduct = p.Product.NameProduct,
                     Specification = p.Truyvan_Specification,
                 })
-                .FirstOrDefaultAsync();
-
-            //if()
-            //    .Include(p => p.Brand)
-            //    .Include(p => p.Category)
-            //    .Include(p => p.Specification)
-            //    .FirstOrDefaultAsync(m => m.ProductId == id);
-            //if (product == null)
-            //{
-            //    return NotFound();
-            //}
-
+                .FirstOrDefaultAsync();          
             return View(product);
-        }
+        }*/
 
         // GET: Admin/ProductAdmin/Create
         public IActionResult Create()
@@ -116,9 +106,6 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             return View();
         }
 
-        // POST: Admin/ProductAdmin/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductId,BrandId,CategoryId,NameProduct,Gb,SpecificationId,ProductImage,Price,PriceOld,Alias,SpNoiBat,SpGiamGia,PhanTramGiamGia")] Product product, List<IFormFile> userfiles)
@@ -153,9 +140,9 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BrandId"] = new SelectList(_context.Brands, "BrandId", "BrandId", product.BrandId);
+           /* ViewData["BrandId"] = new SelectList(_context.Brands, "BrandId", "BrandId", product.BrandId);
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
-            ViewData["SpecificationId"] = new SelectList(_context.Specifications, "SpecificationId", "SpecificationId", product.SpecificationId);
+            ViewData["SpecificationId"] = new SelectList(_context.Specifications, "SpecificationId", "SpecificationId", product.SpecificationId);*/
             return View(product);
         }
 
@@ -172,10 +159,7 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            /*ViewData["BrandId"] = new SelectList(_context.Brands, "BrandId", "BrandId", product.BrandId);
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
-            ViewData["SpecificationId"] = new SelectList(_context.Specifications, "SpecificationId", "SpecificationId", product.SpecificationId);*/
-
+           
             ViewData["NameBrand"] = new SelectList(_context.Brands, "BrandId", "NameBrand", product.BrandId);
             ViewData["NameCategory"] = new SelectList(_context.Categories, "CategoryId", "NameCategory", product.CategoryId);
             ViewData["NameSpecification"] = new SelectList(_context.Specifications, "SpecificationId", "NameSpecification", product.SpecificationId);
@@ -183,9 +167,6 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
             return View(product);
         }
 
-        // POST: Admin/ProductAdmin/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProductId,BrandId,CategoryId,NameProduct,Gb,SpecificationId,ProductImage,Price,PriceOld,Alias,SpNoiBat,SpGiamGia,PhanTramGiamGia")] Product product, List<IFormFile> userfiles)
@@ -220,25 +201,32 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductExists(product.ProductId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return RedirectToAction(nameof(Index));
+
                 }
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["BrandId"] = new SelectList(_context.Brands, "BrandId", "BrandId", product.BrandId);
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
-            ViewData["SpecificationId"] = new SelectList(_context.Specifications, "SpecificationId", "SpecificationId", product.SpecificationId);
+            }            
             return View(product);
         }
 
-        // GET: Admin/ProductAdmin/Delete/5
         public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.Products == null)
+            {
+                return NotFound();
+            }
+
+            var products = await _context.Products.FirstOrDefaultAsync(x => x.ProductId == id);
+            if (products != null)
+            {
+                _context.Products.Remove(products);
+            }
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        // GET: Admin/ProductAdmin/Delete/5
+        /*public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Products == null)
             {
@@ -280,6 +268,6 @@ namespace WebSite_Online1a.Areas.Admin.Controllers
         private bool ProductExists(int id)
         {
             return (_context.Products?.Any(e => e.ProductId == id)).GetValueOrDefault();
-        }
+        }*/
     }
 }
