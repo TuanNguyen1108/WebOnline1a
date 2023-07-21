@@ -120,3 +120,98 @@
     }
     <hr class="my-10">
 </div>
+
+
+
+
+<h2>Create Product</h2>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label class="control-label">Tên Sản Phẩm:</label>
+        <input class="form-control" asp-for="NameProduct" />
+        <span class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Gb:</label>
+        <input class="form-control" asp-for="Gb" />
+        <span class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">Thương Hiệu:</label>
+        <select asp-for="BrandId" class="form-control" asp-items="ViewBag.NameBrand"></select>
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">Thông Số:</label>
+        <select asp-for="SpecificationId" class="form-control" asp-items="ViewBag.NameSpecification"></select>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Giá ban đầu:</label>
+        <input class="form-control" asp-for="PriceOld" />
+        <span class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Giá hiện tại:</label>
+        <input class="form-control" asp-for="Price" />
+        <span class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">Hình Ảnh:</label>
+        <input name="userfiles" type="file" multiple asp-for="ProductImage">
+    </div>
+    <hr />
+    <h4>Create Prices</h4>
+    <div class="form-group">
+        <button type="button" id="add-price-btn" class="btn btn-danger">Add New Price</button>
+    </div>
+    <div id="price-container">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="color-input">Color:</label>
+                    <input type="text" id="color-input" name="prices[0].Color" placeholder="Enter color" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label for="price-input">Price:</label>
+                    <input type="text" id="price-input" name="prices[0].PriceNew" placeholder="Enter price" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div style="text-align: center">
+        <button type="submit" class="btn btn-outline-success">Tạo mới</button>
+        <button asp-action="Index" class="btn btn-outline-secondary">Quay về</button>
+    </div>
+</form>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var priceContainer = $('#price-container');
+            var priceIndex = 1;
+
+            $('#add-price-btn').click(function () {
+                var priceInput =
+                    '<div class="form-group">' +
+                    '<div class="row">' +
+                    '<div class="col-md-6">' +
+                    '<input type="text" name="prices[' + priceIndex + '].Color" placeholder="Color" class="form-control price-input" />' +
+                    '<span class="text-danger"></span>' +
+                    '</div>' +
+                    '<div class="col-md-6">' +
+                    '<input type="text" name="prices[' + priceIndex + '].PriceNew" placeholder="Price" class="form-control price-input" />' +
+                    '<span class="text-danger"></span>' +
+                    '</div>'
+                '</div>'
+                '</div>';
+
+                priceContainer.append(priceInput);
+                priceIndex++;
+            });
+        });
+    </script>
+}
