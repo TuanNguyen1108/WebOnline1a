@@ -9,357 +9,357 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebSite_Online1a
 build_property.RootNamespace = WebSite_Online1a
-build_property.ProjectDir = D:\.NET Core\WebSite_Online1a\WebSite_Online1a\WebSite_Online1a\
+build_property.ProjectDir = /Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\.NET Core\WebSite_Online1a\WebSite_Online1a\WebSite_Online1a
+build_property.MSBuildProjectDirectory = /Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudEFkbWluXENyZWF0ZS5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudEFkbWluL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudEFkbWluXERlbGV0ZS5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudEFkbWluL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudEFkbWluXERldGFpbHMuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudEFkbWluL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudEFkbWluXEVkaXQuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudEFkbWluL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudEFkbWluXEluZGV4LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/AccountAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudEFkbWluL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRBZG1pblxDcmVhdGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRBZG1pbi9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRBZG1pblxEZWxldGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRBZG1pbi9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRBZG1pblxEZXRhaWxzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRBZG1pbi9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRBZG1pblxFZGl0LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRBZG1pbi9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRBZG1pblxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/BrandAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRBZG1pbi9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBZG1pblxDcmVhdGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnlBZG1pbi9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBZG1pblxEZWxldGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnlBZG1pbi9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBZG1pblxEZXRhaWxzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnlBZG1pbi9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBZG1pblxFZGl0LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnlBZG1pbi9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBZG1pblxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/CategoryAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnlBZG1pbi9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/Home/AccountInfo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBY2NvdW50SW5mby5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/Home/AccountInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9BY2NvdW50SW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/LoginAdmin/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9naW5BZG1pblxMb2dpbi5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/LoginAdmin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTG9naW5BZG1pbi9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJBZG1pblxDcmVhdGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvT3JkZXJBZG1pbi9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJBZG1pblxEZWxldGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvT3JkZXJBZG1pbi9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJBZG1pblxEZXRhaWxzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvT3JkZXJBZG1pbi9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJBZG1pblxFZGl0LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvT3JkZXJBZG1pbi9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJBZG1pblxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/OrderAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvT3JkZXJBZG1pbi9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdEFkbWluXENyZWF0ZS5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUG9zdEFkbWluL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdEFkbWluXERlbGV0ZS5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUG9zdEFkbWluL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdEFkbWluXERldGFpbHMuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUG9zdEFkbWluL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdEFkbWluXEVkaXQuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUG9zdEFkbWluL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdEFkbWluXEluZGV4LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PostAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUG9zdEFkbWluL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VBZG1pblxDcmVhdGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJpY2VBZG1pbi9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VBZG1pblxEZWxldGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJpY2VBZG1pbi9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VBZG1pblxEZXRhaWxzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJpY2VBZG1pbi9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VBZG1pblxFZGl0LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJpY2VBZG1pbi9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VBZG1pblxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/PriceAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJpY2VBZG1pbi9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXENyZWF0ZS5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdEFkbWluL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXERlbGV0ZS5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdEFkbWluL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXERldGFpbHMuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdEFkbWluL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXEVkaXQuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdEFkbWluL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXEluZGV4LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/ProductAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdEFkbWluL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SearchAdmin/ListCategorySearchPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VhcmNoQWRtaW5cTGlzdENhdGVnb3J5U2VhcmNoUGFydGlhbC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SearchAdmin/ListCategorySearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2VhcmNoQWRtaW4vTGlzdENhdGVnb3J5U2VhcmNoUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SearchAdmin/ListPriceSearchPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VhcmNoQWRtaW5cTGlzdFByaWNlU2VhcmNoUGFydGlhbC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SearchAdmin/ListPriceSearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2VhcmNoQWRtaW4vTGlzdFByaWNlU2VhcmNoUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SearchAdmin/ListProductSearchPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VhcmNoQWRtaW5cTGlzdFByb2R1Y3RTZWFyY2hQYXJ0aWFsLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SearchAdmin/ListProductSearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2VhcmNoQWRtaW4vTGlzdFByb2R1Y3RTZWFyY2hQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SearchAdmin/ListSpecificationSearchPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VhcmNoQWRtaW5cTGlzdFNwZWNpZmljYXRpb25TZWFyY2hQYXJ0aWFsLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SearchAdmin/ListSpecificationSearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2VhcmNoQWRtaW4vTGlzdFNwZWNpZmljYXRpb25TZWFyY2hQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/Shared/_AdminLayoutLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dExvZ2luLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/Shared/_AdminLayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19BZG1pbkxheW91dExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lmaWNhdGlvbkFkbWluXENyZWF0ZS5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3BlY2lmaWNhdGlvbkFkbWluL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lmaWNhdGlvbkFkbWluXERlbGV0ZS5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3BlY2lmaWNhdGlvbkFkbWluL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lmaWNhdGlvbkFkbWluXERldGFpbHMuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3BlY2lmaWNhdGlvbkFkbWluL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lmaWNhdGlvbkFkbWluXEVkaXQuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3BlY2lmaWNhdGlvbkFkbWluL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lmaWNhdGlvbkFkbWluXEluZGV4LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/SpecificationAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3BlY2lmaWNhdGlvbkFkbWluL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Areas/Admin/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/AccountInfo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50SW5mby5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Account/AccountInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9BY2NvdW50SW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/ChangePassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9DaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/EditOrders.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0T3JkZXJzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Account/EditOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9FZGl0T3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/OrderDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPcmRlckRldGFpbHMuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Account/OrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9PcmRlckRldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/Orders.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPcmRlcnMuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Account/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9PcmRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/CartSoSanh/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFNvU2FuaFxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/CartYeuThich/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFlldVRoaWNoXEluZGV4LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/CartSoSanh/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydFNvU2FuaC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Cart/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/CartYeuThich/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydFlldVRoaWNoL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/CheckOut/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcSW5kZXguY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/CheckOut/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hlY2tPdXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Home/GioiThieu.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHaW9pVGhpZXUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Home/GioiThieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9HaW9pVGhpZXUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Home/LienHe.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaWVuSGUuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Home/LienHe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9MaWVuSGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Home/Search.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Login/AccountInfo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWNjb3VudEluZm8uY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Login/AccountInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vQWNjb3VudEluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Login/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Login/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Login/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Post/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWxzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Post/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Post/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Post/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/ProductAll/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEFsbFxEZXRhaWxzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/ProductAll/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdEFsbC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/ProductAll/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEFsbFxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/ProductAll/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdEFsbC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/ProductApple/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEFwcGxlXEluZGV4LmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/ProductApple/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdEFwcGxlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/ProductSamsung/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFNhbXN1bmdcSW5kZXguY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/ProductSamsung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdFNhbXN1bmcvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/ProductXiaomi/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFhpYW9taVxJbmRleC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/ProductXiaomi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdFhpYW9taS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Shared/_FooterPartialView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsVmlldy5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Shared/_FooterPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Gb290ZXJQYXJ0aWFsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Shared/_HeaderPartialView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJQYXJ0aWFsVmlldy5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Shared/_HeaderPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19IZWFkZXJQYXJ0aWFsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-wstxa2m6q5
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4kr29skbtd
 
-[D:/.NET Core/WebSite_Online1a/WebSite_Online1a/WebSite_Online1a/Views/Shared/_LayoutThanhToan.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRUaGFuaFRvYW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-0zn5wutpdn
+[/Users/tuan/Desktop/Project/WebOnline1a/WebSite_Online1a/Views/Shared/_LayoutThanhToan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXRUaGFuaFRvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-naov7e7jm9

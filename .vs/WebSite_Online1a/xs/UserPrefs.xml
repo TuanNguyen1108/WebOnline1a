@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{637F139B-E85F-43E9-8B1A-CE3E066EC881}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebSite_Online1a/Models/WebOnline1Context.cs">
+    <Files>
+      <File FileName="WebSite_Online1a/Models/WebOnline1Context.cs" Line="17" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebSite_Online1a">
+            <Node name="WebSite_Online1a" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="WebOnline1Context.cs" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WebSite__Online1a PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
